@@ -13,6 +13,7 @@ const STATE_COLORS = {
   root: { fill: '#44403c', stroke: '#1c1917', text: '#fafaf9' },
   expanded: { fill: '#7c4f2a', stroke: '#5c3418', text: '#fef9f5' },
   frontier: { fill: '#e7e5e4', stroke: '#a8a29e', text: '#78716c' },
+  dead: { fill: '#d6d3d1', stroke: '#a8a29e', text: '#a8a29e' },
 };
 
 const DEPTH_RADIUS = [22, 18, 15, 13, 12, 11, 10];

@@ -41,7 +41,7 @@ export function AtlasPage({ data }: AtlasPageProps) {
     let list = Object.entries(data.lexicon);
 
     if (q) {
-      list = list.filter(([lemma, e]) => {
+      list = list.filter(([lemma]) => {
         const forms = morphForms[lemma] ?? [];
         return lemma.includes(q) || forms.some(f => f.includes(q));
       });
