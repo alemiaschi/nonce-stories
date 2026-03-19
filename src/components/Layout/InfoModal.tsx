@@ -160,6 +160,11 @@ export function InfoModal({ onClose }: InfoModalProps) {
               <a href="https://claude.ai/code" target="_blank" rel="noopener noreferrer"
                 className="text-amber-700 underline hover:text-amber-900">Claude Code</a>.
             </p>
+            <p className="text-stone-500 text-xs">
+              Source code and data are available on{' '}
+              <a href="https://github.com/alemiaschi/nonce-stories" target="_blank" rel="noopener noreferrer"
+                className="text-amber-700 underline hover:text-amber-900">GitHub</a>.
+            </p>
           </Section>
 
         </div>
