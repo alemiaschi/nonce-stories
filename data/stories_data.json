@@ -2730,17 +2730,6 @@
       ],
       "stories_about": []
     },
-    "turelm": {
-      "id": "turelm",
-      "pos": "adjective",
-      "has_concept": false,
-      "introduced_in": "story_0",
-      "depth_introduced": 0,
-      "appears_in": [
-        "story_0"
-      ],
-      "stories_about": []
-    },
     "janvire": {
       "id": "janvire",
       "pos": "adjective",
@@ -2832,7 +2821,7 @@
   },
   "meta": {
     "total_stories": 1,
-    "total_words": 58,
+    "total_words": 57,
     "total_concepts_discovered": 0,
     "max_depth": 0,
     "latest_week": 0,
@@ -2862,7 +2851,7 @@
       },
       {
         "pos": "adj",
-        "count": 12
+        "count": 11
       },
       {
         "pos": "adv",
@@ -2879,14 +2868,14 @@
     ],
     "concepts": {
       "discovered": 0,
-      "undiscovered": 58,
-      "total": 58
+      "undiscovered": 57,
+      "total": 57
     },
     "words_per_week": [
       {
         "week": 0,
-        "new": 58,
-        "cumulative": 58
+        "new": 57,
+        "cumulative": 57
       }
     ],
     "stories_per_depth": [
@@ -2898,7 +2887,7 @@
     "frontier_per_depth": [
       {
         "depth": 0,
-        "count": 58
+        "count": 57
       }
     ],
     "story_density_scatter": [
@@ -3075,9 +3064,9 @@
         "story_id": "story_0",
         "date": "2026-03-17",
         "week": 0,
-        "new_words": 58,
+        "new_words": 57,
         "reused_words": 0,
-        "total_words": 58
+        "total_words": 57
       }
     ],
     "word_cooccurrence": [
@@ -3236,7 +3225,7 @@
       {
         "week": 0,
         "stories": 1,
-        "words": 58,
+        "words": 57,
         "concepts": 0
       }
     ],

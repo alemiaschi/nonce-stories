@@ -7,7 +7,7 @@
     "last_updated": "2026-03-17",
     "current_week": 0,
     "total_stories": 1,
-    "total_lexicon_entries": 58,
+    "total_lexicon_entries": 57,
     "total_concepts_discovered": 0,
     "max_depth_reached": 0,
     "density_curve": {
@@ -1193,25 +1193,6 @@
       "stories_about": [],
       "annotation": null
     },
-    "turelm": {
-      "id": "turelm",
-      "concept": null,
-      "concept_discovered_from": null,
-      "context_notes": null,
-      "pos": "adjective",
-      "morphology": {
-        "comparative": "turelmun",
-        "superlative": "turelmest",
-        "adverb": "turelmelu"
-      },
-      "introduced_in": "story_0",
-      "depth_introduced": 0,
-      "appears_in": [
-        "story_0"
-      ],
-      "stories_about": [],
-      "annotation": null
-    },
     "janvire": {
       "id": "janvire",
       "concept": null,
@@ -1402,7 +1383,6 @@
         "torvak",
         "trelvik",
         "tremique",
-        "turelm",
         "ulmaren",
         "velune",
         "venquar",
@@ -1462,7 +1442,6 @@
         "torvak",
         "trelvik",
         "tremique",
-        "turelm",
         "ulmaren",
         "velune",
         "venquar",
@@ -1523,7 +1502,6 @@
         "krelith": null,
         "brendive": null,
         "morvasse": null,
-        "turelm": null,
         "janvire": null,
         "olpheque": null,
         "vrenelu": null,
@@ -1536,7 +1514,9 @@
       "state": "root",
       "created": "2026-03-17",
       "week": 0,
-      "title": "The Brolm"
+      "title": "The Brolm",
+      "status": "active",
+      "death_note": null
     }
   },
   "expansion_log": [
