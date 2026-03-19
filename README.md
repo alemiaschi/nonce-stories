@@ -1,5 +1,7 @@
 # The Brolm — Nonce Stories
 
+![The Brolm](public/the_brolm.png)
+
 A literary-interactive web app. Readers explore a tree of short stories composed entirely of invented (*nonce*) words. Clicking a nonce word navigates into a sub-story that contextually reveals its meaning. The deeper you go, the more intelligible the language becomes.
 
 **Live site:** [alemiaschi.github.io/nonce-stories](https://alemiaschi.github.io/nonce-stories/)
