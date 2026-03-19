@@ -1,0 +1,3255 @@
+{
+  "stories": {
+    "story_0": {
+      "id": "story_0",
+      "depth": 0,
+      "parent": null,
+      "parent_word": null,
+      "tokens": [
+        {
+          "text": "In",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "the",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "brolm",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "brolm"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "of",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "a",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "drussik",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "drussik"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "velune",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "velune"
+        },
+        {
+          "text": ",",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "where",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "the",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "venquaren",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "venquar"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "quelthane",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "quelthane"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "thendarara",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "thendara"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "through",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "the",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "gelvon",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "gelvon"
+        },
+        {
+          "text": ",",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "there",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "was",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "a",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "quelith",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "quelith"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "that",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "no",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "one",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "could",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "ornique",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "ornique"
+        },
+        {
+          "text": ".",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "It",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "had",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "sulvekara",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "sulvek"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "from",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "the",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "marrath",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "marrath"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "—",
+          "type": "function"
+        },
+        {
+          "text": "—",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "vrenelu",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "vrenelu"
+        },
+        {
+          "text": ",",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "the",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "way",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "all",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "grothik",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "grothik"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "drossiken",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "drossik"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "sulvek",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "sulvek"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "—",
+          "type": "function"
+        },
+        {
+          "text": "—",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "and",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "it",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "brasheled",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "brashel"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "against",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "the",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "shendir",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "shendir"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "with",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "a",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "thengar",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "thengar"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "pellumom",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "pellum"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "that",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "the",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "pralune",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "pralune"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "themselves",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "could",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "not",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "grothen",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "grothen"
+        },
+        {
+          "text": ".",
+          "type": "function"
+        },
+        {
+          "text": "\n\n",
+          "type": "function"
+        },
+        {
+          "text": "The",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "zilmara",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "zilmara"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "of",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "those",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "jorvunden",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "jorvund"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "was",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "morvasse",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "morvasse"
+        },
+        {
+          "text": ".",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "Every",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "torvak",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "torvak"
+        },
+        {
+          "text": ",",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "every",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "felgor",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "felgor"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "that",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "had",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "melvired",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "melvir"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "across",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "the",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "ondrev",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "ondrev"
+        },
+        {
+          "text": ",",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "keltharara",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "kelthar"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "something",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "brendive",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "brendive"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "into",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "the",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "crullenis",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "crullen"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "halquen",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "halquen"
+        },
+        {
+          "text": ".",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "And",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "the",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "halquen",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "halquen"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "tremiquera",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "tremique"
+        },
+        {
+          "text": ".",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "It",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "tremiquera",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "tremique"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "dorsmil",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "dorsmil"
+        },
+        {
+          "text": ",",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "as",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "if",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "the",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "nurithek",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "nurithek"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "of",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "the",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "bressiv",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "bressiv"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "had",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "quelithara",
+          "type": "content"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "it",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "from",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "within",
+          "type": "function"
+        },
+        {
+          "text": ",",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "and",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "the",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "brolm",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "brolm"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "—",
+          "type": "function"
+        },
+        {
+          "text": "—",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "the",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "sulvane",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "sulvane"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "brolm",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "brolm"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "with",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "its",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "drussik",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "drussik"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "velune",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "velune"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "—",
+          "type": "function"
+        },
+        {
+          "text": "—",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "halvornara",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "halvorn"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "once",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "more",
+          "type": "function"
+        },
+        {
+          "text": ".",
+          "type": "function"
+        },
+        {
+          "text": "\n\n",
+          "type": "function"
+        },
+        {
+          "text": "No",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "one",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "vrisora",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "vriso"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "why",
+          "type": "function"
+        },
+        {
+          "text": ".",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "The",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "plenviren",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "plenvir"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "were",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "olpheque",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "olpheque"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "about",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "it",
+          "type": "function"
+        },
+        {
+          "text": ",",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "trelvik",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "trelvik"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "zandiqueing",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "zandique"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "their",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "savendri",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "savendri"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "in",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "the",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "kethane",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "kethane"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "that",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "drovainera",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "drovaine"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "above",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "the",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "thuravel",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "thuravel"
+        },
+        {
+          "text": ".",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "But",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "a",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "dranqet",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "dranqet"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "genvasse",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "genvasse"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "quelmara",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "quelm"
+        },
+        {
+          "text": ".",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "And",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "when",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "it",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "quelmara",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "quelm"
+        },
+        {
+          "text": ",",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "the",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "vorelm",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "vorelm"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "vossimer",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "vossimer"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "of",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "the",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "drossik",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "drossik"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "—",
+          "type": "function"
+        },
+        {
+          "text": "—",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "which",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "had",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "been",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "pelnare",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "pelnare"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "for",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "so",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "many",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "jorvunden",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "jorvund"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "that",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "the",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "brolm",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "brolm"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "itself",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "had",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "nuvessera",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "nuvesse"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "—",
+          "type": "function"
+        },
+        {
+          "text": "—",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "grothened",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "grothen"
+        },
+        {
+          "text": ".",
+          "type": "function"
+        },
+        {
+          "text": "\n\n",
+          "type": "function"
+        },
+        {
+          "text": "It",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "grothened",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "grothen"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "janvirely",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "janvire"
+        },
+        {
+          "text": ".",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "The",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "ulmaren",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "ulmaren"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "melvired",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "melvir"
+        },
+        {
+          "text": ".",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "And",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "from",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "inside",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "the",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "quelith",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "quelith"
+        },
+        {
+          "text": ",",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "from",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "the",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "very",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "thengarath",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "thengar"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "of",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "its",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "pellumom",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "pellum"
+        },
+        {
+          "text": ",",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "the",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "felgoren",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "felgor"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "began",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "to",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "ornique",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "ornique"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "what",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "had",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "sulvekara",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "sulvek"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "from",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "the",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "marrath",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "marrath"
+        },
+        {
+          "text": ":",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "that",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "the",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "venquaren",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "venquar"
+        },
+        {
+          "text": ",",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "thendaraing",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "thendara"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "quelthane",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "quelthane"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "through",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "the",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "gelvon",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "gelvon"
+        },
+        {
+          "text": ",",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "were",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "not",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "venquaren",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "venquar"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "at",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "all",
+          "type": "function"
+        },
+        {
+          "text": ",",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "but",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "the",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "brendive",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "brendive"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "zilmara",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "zilmara"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "of",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "a",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "krelith",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "krelith"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "halquen",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "halquen"
+        },
+        {
+          "text": ",",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "prothelu",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "prothelu"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "tremiqueing",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "tremique"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "into",
+          "type": "function"
+        },
+        {
+          "text": " ",
+          "type": "function"
+        },
+        {
+          "text": "brolm",
+          "type": "nonce",
+          "state": "frontier",
+          "child_story": null,
+          "lemma": "brolm"
+        },
+        {
+          "text": ".",
+          "type": "function"
+        }
+      ],
+      "week": 0,
+      "created": "2026-03-17",
+      "status": "active",
+      "death_note": null,
+      "title": "The Brolm"
+    }
+  },
+  "lexicon": {
+    "brolm": {
+      "id": "brolm",
+      "pos": "noun",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "velune": {
+      "id": "velune",
+      "pos": "noun",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "venquar": {
+      "id": "venquar",
+      "pos": "noun",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "drossik": {
+      "id": "drossik",
+      "pos": "adjective/noun",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "quelith": {
+      "id": "quelith",
+      "pos": "noun/verb",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "marrath": {
+      "id": "marrath",
+      "pos": "noun",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "gelvon": {
+      "id": "gelvon",
+      "pos": "noun",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "shendir": {
+      "id": "shendir",
+      "pos": "noun",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "pralune": {
+      "id": "pralune",
+      "pos": "noun",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "torvak": {
+      "id": "torvak",
+      "pos": "noun",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "zilmara": {
+      "id": "zilmara",
+      "pos": "noun",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "ondrev": {
+      "id": "ondrev",
+      "pos": "noun",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "crullen": {
+      "id": "crullen",
+      "pos": "noun",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "felgor": {
+      "id": "felgor",
+      "pos": "noun",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "nurithek": {
+      "id": "nurithek",
+      "pos": "noun",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "bressiv": {
+      "id": "bressiv",
+      "pos": "noun",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "halquen": {
+      "id": "halquen",
+      "pos": "noun",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "jorvund": {
+      "id": "jorvund",
+      "pos": "noun",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "kethane": {
+      "id": "kethane",
+      "pos": "noun",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "plenvir": {
+      "id": "plenvir",
+      "pos": "noun",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "savendri": {
+      "id": "savendri",
+      "pos": "noun",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "thuravel": {
+      "id": "thuravel",
+      "pos": "noun",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "dranqet": {
+      "id": "dranqet",
+      "pos": "noun",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "vossimer": {
+      "id": "vossimer",
+      "pos": "noun",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "ulmaren": {
+      "id": "ulmaren",
+      "pos": "noun",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "quelm": {
+      "id": "quelm",
+      "pos": "verb",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "vriso": {
+      "id": "vriso",
+      "pos": "verb",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "thendara": {
+      "id": "thendara",
+      "pos": "verb",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "melvir": {
+      "id": "melvir",
+      "pos": "verb",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "grothen": {
+      "id": "grothen",
+      "pos": "verb",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "sulvek": {
+      "id": "sulvek",
+      "pos": "verb",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "ornique": {
+      "id": "ornique",
+      "pos": "verb",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "brashel": {
+      "id": "brashel",
+      "pos": "verb",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "pellum": {
+      "id": "pellum",
+      "pos": "verb",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "drovaine": {
+      "id": "drovaine",
+      "pos": "verb",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "kelthar": {
+      "id": "kelthar",
+      "pos": "verb",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "nuvesse": {
+      "id": "nuvesse",
+      "pos": "verb",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "zandique": {
+      "id": "zandique",
+      "pos": "verb",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "halvorn": {
+      "id": "halvorn",
+      "pos": "verb",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "tremique": {
+      "id": "tremique",
+      "pos": "verb",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "thengar": {
+      "id": "thengar",
+      "pos": "adjective",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "vorelm": {
+      "id": "vorelm",
+      "pos": "adjective",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "drussik": {
+      "id": "drussik",
+      "pos": "adjective",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "pelnare": {
+      "id": "pelnare",
+      "pos": "adjective",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "grothik": {
+      "id": "grothik",
+      "pos": "adjective",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "sulvane": {
+      "id": "sulvane",
+      "pos": "adjective",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "krelith": {
+      "id": "krelith",
+      "pos": "adjective",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "brendive": {
+      "id": "brendive",
+      "pos": "adjective",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "morvasse": {
+      "id": "morvasse",
+      "pos": "adjective",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "turelm": {
+      "id": "turelm",
+      "pos": "adjective",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "janvire": {
+      "id": "janvire",
+      "pos": "adjective",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "olpheque": {
+      "id": "olpheque",
+      "pos": "adjective",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "vrenelu": {
+      "id": "vrenelu",
+      "pos": "adverb",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "quelthane": {
+      "id": "quelthane",
+      "pos": "adverb",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "dorsmil": {
+      "id": "dorsmil",
+      "pos": "adverb",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "trelvik": {
+      "id": "trelvik",
+      "pos": "adverb",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "genvasse": {
+      "id": "genvasse",
+      "pos": "adverb",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    },
+    "prothelu": {
+      "id": "prothelu",
+      "pos": "adverb",
+      "has_concept": false,
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": []
+    }
+  },
+  "meta": {
+    "total_stories": 1,
+    "total_words": 58,
+    "total_concepts_discovered": 0,
+    "max_depth": 0,
+    "latest_week": 0,
+    "last_updated": "2026-03-17"
+  },
+  "breadcrumb_labels": {
+    "story_0": "The Brolm"
+  },
+  "expansion_log": [
+    {
+      "week": 0,
+      "date": "2026-03-17",
+      "action": "created_root",
+      "story_id": "story_0",
+      "notes": "Story 0 created with 58 nonce lemmas (25 nouns, 15 verbs, 12 adjectives, 6 adverbs). All concepts null — meanings to be discovered through future expansion."
+    }
+  ],
+  "stats": {
+    "pos_distribution": [
+      {
+        "pos": "noun",
+        "count": 23
+      },
+      {
+        "pos": "verb",
+        "count": 15
+      },
+      {
+        "pos": "adj",
+        "count": 12
+      },
+      {
+        "pos": "adv",
+        "count": 6
+      },
+      {
+        "pos": "adj/n",
+        "count": 1
+      },
+      {
+        "pos": "n/v",
+        "count": 1
+      }
+    ],
+    "concepts": {
+      "discovered": 0,
+      "undiscovered": 58,
+      "total": 58
+    },
+    "words_per_week": [
+      {
+        "week": 0,
+        "new": 58,
+        "cumulative": 58
+      }
+    ],
+    "stories_per_depth": [
+      {
+        "depth": 0,
+        "count": 1
+      }
+    ],
+    "frontier_per_depth": [
+      {
+        "depth": 0,
+        "count": 58
+      }
+    ],
+    "story_density_scatter": [
+      {
+        "story_id": "story_0",
+        "depth": 0,
+        "actual": 1.0,
+        "target": 1.0,
+        "word_count": 216
+      }
+    ],
+    "density_curve": [
+      {
+        "depth": 0,
+        "target": 1.0
+      },
+      {
+        "depth": 1,
+        "target": 0.94
+      },
+      {
+        "depth": 2,
+        "target": 0.87
+      },
+      {
+        "depth": 3,
+        "target": 0.78
+      },
+      {
+        "depth": 4,
+        "target": 0.65
+      },
+      {
+        "depth": 5,
+        "target": 0.45
+      },
+      {
+        "depth": 6,
+        "target": 0.25
+      },
+      {
+        "depth": 7,
+        "target": 0.05
+      }
+    ],
+    "length_curve": [
+      {
+        "depth": 0,
+        "min": 300,
+        "max": 400,
+        "mid": 350.0
+      },
+      {
+        "depth": 1,
+        "min": 200,
+        "max": 300,
+        "mid": 250.0
+      },
+      {
+        "depth": 2,
+        "min": 150,
+        "max": 200,
+        "mid": 175.0
+      },
+      {
+        "depth": 3,
+        "min": 100,
+        "max": 150,
+        "mid": 125.0
+      },
+      {
+        "depth": 4,
+        "min": 80,
+        "max": 120,
+        "mid": 100.0
+      },
+      {
+        "depth": 5,
+        "min": 60,
+        "max": 100,
+        "mid": 80.0
+      },
+      {
+        "depth": 6,
+        "min": 50,
+        "max": 80,
+        "mid": 65.0
+      }
+    ],
+    "top_words_by_appearance": [
+      {
+        "word": "brashel",
+        "count": 1
+      },
+      {
+        "word": "brendive",
+        "count": 1
+      },
+      {
+        "word": "bressiv",
+        "count": 1
+      },
+      {
+        "word": "brolm",
+        "count": 1
+      },
+      {
+        "word": "crullen",
+        "count": 1
+      },
+      {
+        "word": "dorsmil",
+        "count": 1
+      },
+      {
+        "word": "dranqet",
+        "count": 1
+      },
+      {
+        "word": "drossik",
+        "count": 1
+      },
+      {
+        "word": "drovaine",
+        "count": 1
+      },
+      {
+        "word": "drussik",
+        "count": 1
+      },
+      {
+        "word": "felgor",
+        "count": 1
+      },
+      {
+        "word": "gelvon",
+        "count": 1
+      },
+      {
+        "word": "genvasse",
+        "count": 1
+      },
+      {
+        "word": "grothen",
+        "count": 1
+      },
+      {
+        "word": "grothik",
+        "count": 1
+      },
+      {
+        "word": "halquen",
+        "count": 1
+      },
+      {
+        "word": "halvorn",
+        "count": 1
+      },
+      {
+        "word": "janvire",
+        "count": 1
+      },
+      {
+        "word": "jorvund",
+        "count": 1
+      },
+      {
+        "word": "kelthar",
+        "count": 1
+      }
+    ],
+    "reuse_per_story": [
+      {
+        "story_id": "story_0",
+        "date": "2026-03-17",
+        "week": 0,
+        "new_words": 58,
+        "reused_words": 0,
+        "total_words": 58
+      }
+    ],
+    "word_cooccurrence": [
+      {
+        "word_a": "brashel",
+        "word_b": "brendive",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "bressiv",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "brolm",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "crullen",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "dorsmil",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "dranqet",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "drossik",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "drovaine",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "drussik",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "felgor",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "gelvon",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "genvasse",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "grothen",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "grothik",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "halquen",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "halvorn",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "janvire",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "jorvund",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "kelthar",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "kethane",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "krelith",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "marrath",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "melvir",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "morvasse",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "nurithek",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "nuvesse",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "olpheque",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "ondrev",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "ornique",
+        "count": 1
+      },
+      {
+        "word_a": "brashel",
+        "word_b": "pellum",
+        "count": 1
+      }
+    ],
+    "cumulative_growth": [
+      {
+        "week": 0,
+        "stories": 1,
+        "words": 58,
+        "concepts": 0
+      }
+    ],
+    "root_coverage": 0.0,
+    "weekly_changelog": [
+      {
+        "week": 0,
+        "date": "2026-03-17",
+        "action": "created_root",
+        "story_id": "story_0",
+        "words_introduced": 58,
+        "notes": "Story 0 created with 58 nonce lemmas (25 nouns, 15 verbs, 12 adjectives, 6 adverbs). All concepts null — meanings to be discovered through future expansion."
+      }
+    ]
+  }
+}

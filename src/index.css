@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+/* Base typography */
+:root {
+  font-family: 'Lora', Georgia, 'Times New Roman', serif;
+  line-height: 1.8;
+  color: #292524;
+  background-color: #fafaf9;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Utility: serif prose */
+.font-serif {
+  font-family: 'Lora', Georgia, 'Times New Roman', serif;
+}
+
+/* Utility: monospace for nonce words, labels, code */
+.font-mono {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background: #fde68a;
+  color: #292524;
+}
+
+/* SVG text baseline fix */
+text {
+  dominant-baseline: auto;
+}

@@ -1,0 +1,1552 @@
+{
+  "meta": {
+    "project_title": "The Brolm",
+    "project_subtitle": "Nonce Stories",
+    "version": "0.1.0",
+    "created": "2026-03-17",
+    "last_updated": "2026-03-17",
+    "current_week": 0,
+    "total_stories": 1,
+    "total_lexicon_entries": 58,
+    "total_concepts_discovered": 0,
+    "max_depth_reached": 0,
+    "density_curve": {
+      "0": 1.0,
+      "1": 0.94,
+      "2": 0.87,
+      "3": 0.78,
+      "4": 0.65,
+      "5": 0.45,
+      "6": 0.25,
+      "leaf": 0.05
+    },
+    "length_curve": {
+      "0": [
+        300,
+        400
+      ],
+      "1": [
+        200,
+        300
+      ],
+      "2": [
+        150,
+        200
+      ],
+      "3": [
+        100,
+        150
+      ],
+      "4": [
+        80,
+        120
+      ],
+      "5": [
+        60,
+        100
+      ],
+      "6": [
+        50,
+        80
+      ]
+    },
+    "reuse_curve": {
+      "description": "Target fraction of nonce lemmas in each new story that should be drawn from the existing lexicon (not newly invented). This is a guideline, not a hard rule — individual stories may vary. Lower reuse = more new vocabulary, higher reuse = denser cross-referencing. The curve shifts upward as the project matures and the lexicon grows.",
+      "1": 0.65,
+      "2": 0.7,
+      "3": 0.75,
+      "4": 0.8,
+      "5": 0.85,
+      "6": 0.9,
+      "leaf": 0.95,
+      "adjustment_note": "These are starting values. Alessio adjusts as the project evolves. Early phase favors lower reuse (more world-building). Later phases favor higher reuse (denser semantic web, faster reader comprehension)."
+    },
+    "morphological_rules": {
+      "inflectional": {
+        "noun_plural": {
+          "rule": "-en after consonant, -ren after vowel",
+          "examples": [
+            "brolm → brolmen",
+            "velune → veluneren"
+          ]
+        },
+        "noun_possessive": {
+          "rule": "-is",
+          "examples": [
+            "brolm → brolmis",
+            "velune → veluneis",
+            "crullen → crullenis"
+          ]
+        },
+        "verb_past": {
+          "rule": "-ara after consonant, -ra after vowel; English -ed also permitted for euphony",
+          "examples": [
+            "quelm → quelmara",
+            "tremique → tremiquera",
+            "melvir → melvired"
+          ]
+        },
+        "verb_participle": {
+          "rule": "-ith (formal) or English -ing (when used with English auxiliaries)",
+          "examples": [
+            "quelm → quelmith",
+            "thendara → thendaraing",
+            "zandique → zandiqueing"
+          ]
+        },
+        "verb_3rd_singular": {
+          "rule": "-et",
+          "examples": [
+            "quelm → quelmet",
+            "vriso → vrisoet"
+          ]
+        },
+        "adj_comparative": {
+          "rule": "-un",
+          "examples": [
+            "thengar → thengarun"
+          ]
+        },
+        "adj_superlative": {
+          "rule": "-est",
+          "examples": [
+            "thengar → thengarest"
+          ]
+        },
+        "adj_adverb": {
+          "rule": "-elu (formal) or English -ly (for readability)",
+          "examples": [
+            "thengar → thengarelu",
+            "janvire → janvirely"
+          ]
+        }
+      },
+      "derivational": {
+        "noun_to_adj": {
+          "rule": "-ik",
+          "examples": [
+            "brolm → brolmik"
+          ]
+        },
+        "verb_to_noun_act": {
+          "rule": "-om",
+          "examples": [
+            "pellum → pellumom"
+          ]
+        },
+        "adj_to_noun_quality": {
+          "rule": "-ath",
+          "examples": [
+            "thengar → thengarath"
+          ]
+        }
+      },
+      "notes": "Zero-derivation (conversion) is permitted: a noun may be used verbally or an adjective may be used nominally, following natural English patterns. When nonce morphology would create unpronounceable clusters, English-style inflection (-ed, -ing, -ly) is preferred."
+    },
+    "functional_words": [
+      "in",
+      "the",
+      "of",
+      "a",
+      "where",
+      "through",
+      "there",
+      "was",
+      "that",
+      "no",
+      "one",
+      "could",
+      "it",
+      "had",
+      "from",
+      "way",
+      "all",
+      "and",
+      "with",
+      "those",
+      "every",
+      "across",
+      "something",
+      "into",
+      "as",
+      "if",
+      "not",
+      "were",
+      "about",
+      "their",
+      "above",
+      "but",
+      "when",
+      "which",
+      "for",
+      "so",
+      "many",
+      "itself",
+      "once",
+      "more",
+      "why",
+      "began",
+      "to",
+      "what",
+      "at",
+      "very",
+      "its",
+      "themselves",
+      "been",
+      "against",
+      "within",
+      "inside",
+      "an",
+      "or",
+      "yet",
+      "because",
+      "although",
+      "while",
+      "do",
+      "does",
+      "did",
+      "will",
+      "would",
+      "can",
+      "may",
+      "might",
+      "shall",
+      "should",
+      "must",
+      "I",
+      "you",
+      "he",
+      "she",
+      "they",
+      "we",
+      "me",
+      "him",
+      "her",
+      "them",
+      "us",
+      "who",
+      "this",
+      "these",
+      "on",
+      "by",
+      "between",
+      "among",
+      "is",
+      "are",
+      "has",
+      "have",
+      "be",
+      "being",
+      "his",
+      "my",
+      "your",
+      "our",
+      "then",
+      "how",
+      "here",
+      "still",
+      "also",
+      "even",
+      "just",
+      "now",
+      "than",
+      "such",
+      "each",
+      "other",
+      "another",
+      "both",
+      "neither",
+      "either",
+      "some",
+      "any",
+      "most",
+      "own",
+      "only",
+      "again",
+      "never",
+      "always",
+      "often",
+      "too",
+      "much",
+      "before",
+      "after",
+      "since",
+      "during",
+      "until",
+      "upon",
+      "toward",
+      "towards",
+      "without",
+      "near",
+      "like",
+      "unlike",
+      "despite",
+      "except",
+      "per",
+      "via"
+    ]
+  },
+  "lexicon": {
+    "brolm": {
+      "id": "brolm",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "brolmen",
+        "possessive": "brolmis"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "velune": {
+      "id": "velune",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "veluneren",
+        "possessive": "veluneis"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "venquar": {
+      "id": "venquar",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "venquaren",
+        "possessive": "venquaris"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "drossik": {
+      "id": "drossik",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective/noun",
+      "morphology": {
+        "plural": "drossiken",
+        "possessive": "drossikis"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "quelith": {
+      "id": "quelith",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun/verb",
+      "morphology": {
+        "plural": "quelithen",
+        "possessive": "quelithis"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "marrath": {
+      "id": "marrath",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "marrathen",
+        "possessive": "marrathis"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "gelvon": {
+      "id": "gelvon",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "gelvonen",
+        "possessive": "gelvonis"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "shendir": {
+      "id": "shendir",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "shendiren",
+        "possessive": "shendiris"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "pralune": {
+      "id": "pralune",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "praluneren",
+        "possessive": "praluneis"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "torvak": {
+      "id": "torvak",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "torvaken",
+        "possessive": "torvakis"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "zilmara": {
+      "id": "zilmara",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "zilmararen",
+        "possessive": "zilmarais"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "ondrev": {
+      "id": "ondrev",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "ondreven",
+        "possessive": "ondrevis"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "crullen": {
+      "id": "crullen",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "crullenen",
+        "possessive": "crullenis"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "felgor": {
+      "id": "felgor",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "felgoren",
+        "possessive": "felgoris"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "nurithek": {
+      "id": "nurithek",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "nuritheken",
+        "possessive": "nurithekis"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "bressiv": {
+      "id": "bressiv",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "bressiven",
+        "possessive": "bressivis"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "halquen": {
+      "id": "halquen",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "halquenen",
+        "possessive": "halquenis"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "jorvund": {
+      "id": "jorvund",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "jorvunden",
+        "possessive": "jorvundis"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "kethane": {
+      "id": "kethane",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "kethaneren",
+        "possessive": "kethaneis"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "plenvir": {
+      "id": "plenvir",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "plenviren",
+        "possessive": "plenviris"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "savendri": {
+      "id": "savendri",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "savendriren",
+        "possessive": "savendriis"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "thuravel": {
+      "id": "thuravel",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "thuravelen",
+        "possessive": "thuravelis"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "dranqet": {
+      "id": "dranqet",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "dranqeten",
+        "possessive": "dranqetis"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "vossimer": {
+      "id": "vossimer",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "vossimeren",
+        "possessive": "vossimeris"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "ulmaren": {
+      "id": "ulmaren",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "ulmarenen",
+        "possessive": "ulmarenis"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "quelm": {
+      "id": "quelm",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "quelmara",
+        "participle": "quelmith",
+        "third_person": "quelmet"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "vriso": {
+      "id": "vriso",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "vrisora",
+        "participle": "vrisoith",
+        "third_person": "vrisoet"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "thendara": {
+      "id": "thendara",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "thendarara",
+        "participle": "thendaraith",
+        "third_person": "thendaraet"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "melvir": {
+      "id": "melvir",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "melvirara",
+        "participle": "melvirith",
+        "third_person": "melviret"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "grothen": {
+      "id": "grothen",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "grothenara",
+        "participle": "grothenith",
+        "third_person": "grothenet"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "sulvek": {
+      "id": "sulvek",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "sulvekara",
+        "participle": "sulvekith",
+        "third_person": "sulveket"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "ornique": {
+      "id": "ornique",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "orniquera",
+        "participle": "orniqueith",
+        "third_person": "orniqueet"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "brashel": {
+      "id": "brashel",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "brashelara",
+        "participle": "brashelith",
+        "third_person": "brashelet"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "pellum": {
+      "id": "pellum",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "pellumara",
+        "participle": "pellumith",
+        "third_person": "pellumet"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "drovaine": {
+      "id": "drovaine",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "drovainera",
+        "participle": "drovaineith",
+        "third_person": "drovaineet"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "kelthar": {
+      "id": "kelthar",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "keltharara",
+        "participle": "keltharith",
+        "third_person": "keltharet"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "nuvesse": {
+      "id": "nuvesse",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "nuvessera",
+        "participle": "nuvesseith",
+        "third_person": "nuvesseet"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "zandique": {
+      "id": "zandique",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "zandiquera",
+        "participle": "zandiqueith",
+        "third_person": "zandiqueet"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "halvorn": {
+      "id": "halvorn",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "halvornara",
+        "participle": "halvornith",
+        "third_person": "halvornet"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "tremique": {
+      "id": "tremique",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "tremiquera",
+        "participle": "tremiqueith",
+        "third_person": "tremiqueet"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "thengar": {
+      "id": "thengar",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "thengarun",
+        "superlative": "thengarest",
+        "adverb": "thengarelu"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "vorelm": {
+      "id": "vorelm",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "vorelmun",
+        "superlative": "vorelmest",
+        "adverb": "vorelmelu"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "drussik": {
+      "id": "drussik",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "drussikun",
+        "superlative": "drussikest",
+        "adverb": "drussikelu"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "pelnare": {
+      "id": "pelnare",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "pelnareun",
+        "superlative": "pelnareest",
+        "adverb": "pelnareelu"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "grothik": {
+      "id": "grothik",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "grothikun",
+        "superlative": "grothikest",
+        "adverb": "grothikelu"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "sulvane": {
+      "id": "sulvane",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "sulvaneun",
+        "superlative": "sulvaneest",
+        "adverb": "sulvaneelu"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "krelith": {
+      "id": "krelith",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "krelithun",
+        "superlative": "krelithest",
+        "adverb": "krelithelu"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "brendive": {
+      "id": "brendive",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "brendiveun",
+        "superlative": "brendiveest",
+        "adverb": "brendiveelu"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "morvasse": {
+      "id": "morvasse",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "morvasseun",
+        "superlative": "morvasseest",
+        "adverb": "morvasseelu"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "turelm": {
+      "id": "turelm",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "turelmun",
+        "superlative": "turelmest",
+        "adverb": "turelmelu"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "janvire": {
+      "id": "janvire",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "janvireun",
+        "superlative": "janvireest",
+        "adverb": "janvireelu"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "olpheque": {
+      "id": "olpheque",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "olphequeun",
+        "superlative": "olphequeest",
+        "adverb": "olphequeelu"
+      },
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "vrenelu": {
+      "id": "vrenelu",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adverb",
+      "morphology": {},
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "quelthane": {
+      "id": "quelthane",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adverb",
+      "morphology": {},
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "dorsmil": {
+      "id": "dorsmil",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adverb",
+      "morphology": {},
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "trelvik": {
+      "id": "trelvik",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adverb",
+      "morphology": {},
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "genvasse": {
+      "id": "genvasse",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adverb",
+      "morphology": {},
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    },
+    "prothelu": {
+      "id": "prothelu",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adverb",
+      "morphology": {},
+      "introduced_in": "story_0",
+      "depth_introduced": 0,
+      "appears_in": [
+        "story_0"
+      ],
+      "stories_about": [],
+      "annotation": null
+    }
+  },
+  "story_tree": {
+    "story_0": {
+      "id": "story_0",
+      "depth": 0,
+      "parent": null,
+      "parent_nonce_word": null,
+      "nonce_density_target": 1.0,
+      "nonce_density_actual": 1.0,
+      "word_count": 216,
+      "nonce_content_words": 89,
+      "functional_words": 127,
+      "text": "In the brolm of a drussik velune, where the venquaren quelthane thendarara through the gelvon, there was a quelith that no one could ornique. It had sulvekara from the marrath — vrenelu, the way all grothik drossiken sulvek — and it brasheled against the shendir with a thengar pellumom that the pralune themselves could not grothen.\n\nThe zilmara of those jorvunden was morvasse. Every torvak, every felgor that had melvired across the ondrev, keltharara something brendive into the crullenis halquen. And the halquen tremiquera. It tremiquera dorsmil, as if the nurithek of the bressiv had quelithara it from within, and the brolm — the sulvane brolm with its drussik velune — halvornara once more.\n\nNo one vrisora why. The plenviren were olpheque about it, trelvik zandiqueing their savendri in the kethane that drovainera above the thuravel. But a dranqet genvasse quelmara. And when it quelmara, the vorelm vossimer of the drossik — which had been pelnare for so many jorvunden that the brolm itself had nuvessera — grothened.\n\nIt grothened janvirely. The ulmaren melvired. And from inside the quelith, from the very thengarath of its pellumom, the felgoren began to ornique what had sulvekara from the marrath: that the venquaren, thendaraing quelthane through the gelvon, were not venquaren at all, but the brendive zilmara of a krelith halquen, prothelu tremiqueing into brolm.",
+      "nonce_words_used": [
+        "brashel",
+        "brendive",
+        "bressiv",
+        "brolm",
+        "crullen",
+        "dorsmil",
+        "dranqet",
+        "drossik",
+        "drovaine",
+        "drussik",
+        "felgor",
+        "gelvon",
+        "genvasse",
+        "grothen",
+        "grothik",
+        "halquen",
+        "halvorn",
+        "janvire",
+        "jorvund",
+        "kelthar",
+        "kethane",
+        "krelith",
+        "marrath",
+        "melvir",
+        "morvasse",
+        "nurithek",
+        "nuvesse",
+        "olpheque",
+        "ondrev",
+        "ornique",
+        "pellum",
+        "pelnare",
+        "plenvir",
+        "pralune",
+        "prothelu",
+        "quelith",
+        "quelm",
+        "quelthane",
+        "savendri",
+        "shendir",
+        "sulvane",
+        "sulvek",
+        "thendara",
+        "thengar",
+        "thuravel",
+        "torvak",
+        "trelvik",
+        "tremique",
+        "turelm",
+        "ulmaren",
+        "velune",
+        "venquar",
+        "vorelm",
+        "vossimer",
+        "vrenelu",
+        "vriso",
+        "zandique",
+        "zilmara"
+      ],
+      "nonce_words_new": [
+        "brashel",
+        "brendive",
+        "bressiv",
+        "brolm",
+        "crullen",
+        "dorsmil",
+        "dranqet",
+        "drossik",
+        "drovaine",
+        "drussik",
+        "felgor",
+        "gelvon",
+        "genvasse",
+        "grothen",
+        "grothik",
+        "halquen",
+        "halvorn",
+        "janvire",
+        "jorvund",
+        "kelthar",
+        "kethane",
+        "krelith",
+        "marrath",
+        "melvir",
+        "morvasse",
+        "nurithek",
+        "nuvesse",
+        "olpheque",
+        "ondrev",
+        "ornique",
+        "pellum",
+        "pelnare",
+        "plenvir",
+        "pralune",
+        "prothelu",
+        "quelith",
+        "quelm",
+        "quelthane",
+        "savendri",
+        "shendir",
+        "sulvane",
+        "sulvek",
+        "thendara",
+        "thengar",
+        "thuravel",
+        "torvak",
+        "trelvik",
+        "tremique",
+        "turelm",
+        "ulmaren",
+        "velune",
+        "venquar",
+        "vorelm",
+        "vossimer",
+        "vrenelu",
+        "vriso",
+        "zandique",
+        "zilmara"
+      ],
+      "children": {
+        "brolm": null,
+        "velune": null,
+        "venquar": null,
+        "drossik": null,
+        "quelith": null,
+        "marrath": null,
+        "gelvon": null,
+        "shendir": null,
+        "pralune": null,
+        "torvak": null,
+        "zilmara": null,
+        "ondrev": null,
+        "crullen": null,
+        "felgor": null,
+        "nurithek": null,
+        "bressiv": null,
+        "halquen": null,
+        "jorvund": null,
+        "kethane": null,
+        "plenvir": null,
+        "savendri": null,
+        "thuravel": null,
+        "dranqet": null,
+        "vossimer": null,
+        "ulmaren": null,
+        "quelm": null,
+        "vriso": null,
+        "thendara": null,
+        "melvir": null,
+        "grothen": null,
+        "sulvek": null,
+        "ornique": null,
+        "brashel": null,
+        "pellum": null,
+        "drovaine": null,
+        "kelthar": null,
+        "nuvesse": null,
+        "zandique": null,
+        "halvorn": null,
+        "tremique": null,
+        "thengar": null,
+        "vorelm": null,
+        "drussik": null,
+        "pelnare": null,
+        "grothik": null,
+        "sulvane": null,
+        "krelith": null,
+        "brendive": null,
+        "morvasse": null,
+        "turelm": null,
+        "janvire": null,
+        "olpheque": null,
+        "vrenelu": null,
+        "quelthane": null,
+        "dorsmil": null,
+        "trelvik": null,
+        "genvasse": null,
+        "prothelu": null
+      },
+      "state": "root",
+      "created": "2026-03-17",
+      "week": 0,
+      "title": "The Brolm"
+    }
+  },
+  "expansion_log": [
+    {
+      "week": 0,
+      "date": "2026-03-17",
+      "action": "created_root",
+      "story_id": "story_0",
+      "words_introduced": 58,
+      "notes": "Story 0 created with 58 nonce lemmas (25 nouns, 15 verbs, 12 adjectives, 6 adverbs). All concepts null — meanings to be discovered through future expansion."
+    }
+  ]
+}

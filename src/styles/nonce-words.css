@@ -1,0 +1,134 @@
+/* ── Nonce word visual states ─────────────────────────────────────────── */
+
+.nonce-word {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  font-size: 0.93em;
+  letter-spacing: 0.01em;
+}
+
+/* Frontier: word exists but no story yet */
+.nonce-frontier {
+  color: #7c5c38;
+  opacity: 0.82;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #b8945a;
+  text-underline-offset: 3px;
+  cursor: default;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+.nonce-frontier:hover {
+  opacity: 1;
+  color: #5e4328;
+}
+
+/* Expanded: sub-story exists, clickable */
+.nonce-expanded {
+  color: #7c3d0e;
+  opacity: 1;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #c26820;
+  text-underline-offset: 3px;
+  cursor: pointer;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+.nonce-expanded:hover {
+  color: #4a2406;
+  text-decoration-color: #7c3d0e;
+}
+
+/* Deep-solved: entire sub-tree explored */
+.nonce-deep-solved {
+  color: #4a2406;
+  opacity: 1;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #7c3d0e;
+  text-underline-offset: 3px;
+  cursor: pointer;
+  text-shadow: 0 0 12px rgba(180, 90, 20, 0.3);
+  transition: color 0.15s ease, text-shadow 0.15s ease;
+}
+.nonce-deep-solved:hover {
+  color: #2d1404;
+  text-shadow: 0 0 16px rgba(180, 90, 20, 0.5);
+}
+
+/* Dead: child story has been declared withered/closed */
+.nonce-dead {
+  color: #78716c;
+  opacity: 0.6;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #a8a29e;
+  text-underline-offset: 3px;
+  cursor: pointer;
+  transition: color 0.15s ease, opacity 0.15s ease;
+}
+.nonce-dead:hover {
+  opacity: 0.85;
+  color: #57534e;
+}
+
+/* Highlight flash — triggered from Atlas / Word Trail navigation */
+@keyframes nonce-highlight-flash {
+  0%   { background-color: rgba(251, 191, 36, 0.45); border-radius: 2px; }
+  60%  { background-color: rgba(251, 191, 36, 0.2);  border-radius: 2px; }
+  100% { background-color: transparent; }
+}
+.nonce-highlighted {
+  animation: nonce-highlight-flash 2.2s ease-out;
+}
+
+/* Click pulse on frontier words */
+@keyframes frontier-pulse {
+  0%   { opacity: 0.6; }
+  40%  { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+.nonce-pulsing {
+  animation: frontier-pulse 0.55s ease-in-out;
+}
+
+/* Story enter transition */
+@keyframes story-enter {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.story-enter {
+  animation: story-enter 0.35s ease-out;
+}
+
+/* Tooltip */
+.nonce-tooltip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.nonce-tooltip-inner {
+  display: block;
+  background: #292524;
+  color: #e7e5e4;
+  font-family: 'Lora', Georgia, serif;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 6px 10px;
+  border-radius: 4px;
+  max-width: 260px;
+  white-space: normal;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+.nonce-tooltip-arrow {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #292524;
+  transform: rotate(45deg);
+  margin: -5px auto 0;
+}

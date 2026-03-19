@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.DS_Store
+
+# Private — not committed to the public repo
+CLAUDE.md
+DEPLOY.md
+NONCE_STORIES_SPEC.md
+story_0_draft.md
+nonce_stories_memory.json
