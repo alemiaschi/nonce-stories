@@ -39,6 +39,15 @@ export function InfoModal({ onClose }: InfoModalProps) {
 
         <div className="px-8 py-8 space-y-7">
 
+          {/* Hero image */}
+          <div className="-mx-8 -mt-8 mb-2">
+            <img
+              src={`${import.meta.env.BASE_URL}the_brolm.png`}
+              alt="The Brolm — story tree"
+              className="w-full rounded-t-xl"
+            />
+          </div>
+
           {/* Title */}
           <div>
             <p className="text-[10px] font-mono text-stone-400 uppercase tracking-widest mb-2">About</p>

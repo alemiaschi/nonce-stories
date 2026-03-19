@@ -18,13 +18,20 @@ export function Header() {
     <>
       <header className="border-b border-stone-200 bg-stone-50/95 backdrop-blur-sm sticky top-0 z-50">
         <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
-          <Link to="/" className="block group shrink-0">
-            <h1 className="font-serif text-base font-medium text-stone-700 leading-tight group-hover:text-stone-900 transition-colors">
-              The Brolm
-            </h1>
-            <p className="text-[10px] text-stone-400 tracking-[0.2em] uppercase mt-0.5">
-              Nonce Stories
-            </p>
+          <Link to="/" className="flex items-center gap-3 group shrink-0">
+            <img
+              src={`${import.meta.env.BASE_URL}brolm_logo.png`}
+              alt="The Brolm"
+              className="w-9 h-9 rounded-full opacity-90 group-hover:opacity-100 transition-opacity"
+            />
+            <div>
+              <h1 className="font-serif text-base font-medium text-stone-700 leading-tight group-hover:text-stone-900 transition-colors">
+                The Brolm
+              </h1>
+              <p className="text-[10px] text-stone-400 tracking-[0.2em] uppercase mt-0.5">
+                Nonce Stories
+              </p>
+            </div>
           </Link>
 
           <nav className="flex items-center gap-1 overflow-x-auto">
