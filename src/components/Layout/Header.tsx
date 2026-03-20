@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { InfoModal } from './InfoModal';
 
 const NAV_LINKS = [
-  { to: '/',        label: 'read'    },
+  { to: '/read',    label: 'read'    },
   { to: '/map',     label: 'map'     },
   { to: '/atlas',   label: 'atlas'   },
   { to: '/stories', label: 'stories' },

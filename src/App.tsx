@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { getAppData } from './data/loader';
 import { Header } from './components/Layout/Header';
+import { LandingPage } from './components/Landing/LandingPage';
 import { ReadingPane } from './components/ReadingPane/ReadingPane';
 import { StoryMap } from './components/StoryMap/StoryMap';
 import { StatsPage } from './components/Stats/StatsPage';
@@ -16,7 +17,8 @@ export default function App() {
         <Header />
         <main>
           <Routes>
-            <Route path="/" element={<ReadingPane data={data} />} />
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/read" element={<ReadingPane data={data} />} />
             <Route path="/map" element={<StoryMap data={data} />} />
             <Route path="/atlas" element={<AtlasPage data={data} />} />
             <Route path="/stories" element={<StoryIndexPage data={data} />} />
