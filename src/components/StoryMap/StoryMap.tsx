@@ -32,6 +32,7 @@ export function StoryMap({ data, activeStoryId, onNavigate }: StoryMapProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const [highlightedWord, setHighlightedWord] = useState<string | null>(locationState?.highlight ?? null);
   const [currentActive, setCurrentActive] = useState<string>(activeStoryId ?? 'story_0');
+  const [sidebarOpen, setSidebarOpen] = useState(() => window.innerWidth >= 640);
   const rootNode = useTreeData(data);
 
   const handleNavigate = useCallback((storyId: string) => {
@@ -214,16 +215,28 @@ export function StoryMap({ data, activeStoryId, onNavigate }: StoryMapProps) {
 
       <div className="flex flex-1 min-h-0">
         {/* Lexicon sidebar */}
-        <LexiconSidebar
-          data={data}
-          onNavigate={handleNavigate}
-          highlightedWord={highlightedWord}
-          onHighlight={setHighlightedWord}
-        />
+        {sidebarOpen && (
+          <LexiconSidebar
+            data={data}
+            onNavigate={handleNavigate}
+            highlightedWord={highlightedWord}
+            onHighlight={setHighlightedWord}
+          />
+        )}
 
         {/* Tree canvas */}
         <div className="flex-1 relative bg-stone-50 overflow-hidden">
           <svg ref={svgRef} className="w-full h-full" />
+
+          {/* Sidebar toggle */}
+          <button
+            onClick={() => setSidebarOpen(o => !o)}
+            className="absolute top-4 left-4 bg-white/80 backdrop-blur-sm border border-stone-200 rounded-lg px-2.5 py-1.5 text-[10px] font-mono text-stone-500 hover:text-stone-700 hover:border-stone-300 transition-colors flex items-center gap-1.5"
+            title={sidebarOpen ? 'Hide word list' : 'Show word list'}
+          >
+            <span>{sidebarOpen ? '◂' : '▸'}</span>
+            <span className="hidden sm:inline">{sidebarOpen ? 'hide list' : 'word list'}</span>
+          </button>
 
           {/* Legend */}
           <div className="absolute bottom-4 right-4 bg-white/80 backdrop-blur-sm border border-stone-200 rounded-lg p-3 text-[10px] font-mono text-stone-500 space-y-1.5">
