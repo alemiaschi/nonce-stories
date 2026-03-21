@@ -47,7 +47,7 @@ export function ReadingPaths({ data, onNavigate }: ReadingPathsProps) {
       </button>
 
       {open && (
-        <div className="absolute right-0 top-6 z-50 w-72 bg-white border border-stone-200 rounded-lg shadow-xl overflow-hidden">
+        <div className="fixed inset-x-4 top-20 z-50 sm:absolute sm:inset-x-auto sm:right-0 sm:top-6 sm:w-72 bg-white border border-stone-200 rounded-lg shadow-xl overflow-hidden">
           {/* Header */}
           <div className="flex items-center justify-between px-4 py-2.5 border-b border-stone-100 bg-stone-50">
             <span className="font-mono text-[10px] uppercase tracking-widest text-stone-500">Reading Paths</span>
