@@ -303,7 +303,61 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "In the brolm of a drussik velune, where the venquaren quelthane thendarara through the gelvon, there was a quelith that no one could ornique",
+          "surface_form": "brolm",
+          "syntactic_role": "locative noun (object of 'in the X of')",
+          "nearby_words": {
+            "drussik": "adj modifying velune",
+            "velune": "noun in partitive (brolm of velune)"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_0",
+          "sentence": "It tremiquera dorsmil, as if the nurithek of the bressiv had quelithara it from within, and the brolm — the sulvane brolm with its drussik velune — halvornara once more",
+          "surface_form": "brolm",
+          "syntactic_role": "subject (restated with appositive)",
+          "nearby_words": {
+            "sulvane": "adj modifying brolm",
+            "drussik": "adj modifying velune",
+            "velune": "noun possessed by brolm"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_0",
+          "sentence": "And when it quelmara, the vorelm vossimer of the drossik — which had been pelnare for so many jorvunden that the brolm itself had nuvessera — grothened",
+          "surface_form": "brolm",
+          "syntactic_role": "subject of 'had nuvessera'",
+          "nearby_words": {
+            "vorelm": "adj in same clause",
+            "vossimer": "noun in same clause",
+            "drossik": "noun in same clause"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_0",
+          "sentence": "And from inside the quelith, from the very thengarath of its pellumom, the felgoren began to ornique what had sulvekara from the marrath: that the venquaren, thendaraing quelthane through the gelvon, were not venquaren at all, but the brendive zilmara of a krelith halquen, prothelu tremiqueing into brolm",
+          "surface_form": "brolm",
+          "syntactic_role": "goal of motion ('tremiqueing into brolm')",
+          "nearby_words": {
+            "krelith": "adj modifying halquen",
+            "halquen": "noun as subject",
+            "tremique": "verb of motion"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/brɒlm/",
+        "stress": "monosyllabic",
+        "rhymes_with": "holm"
+      }
     },
     "velune": {
       "id": "velune",
@@ -321,7 +375,36 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "In the brolm of a drussik velune, where the venquaren quelthane thendarara through the gelvon, there was a quelith that no one could ornique",
+          "surface_form": "velune",
+          "syntactic_role": "noun in partitive (brolm of a drussik velune)",
+          "nearby_words": {
+            "brolm": "container/possessor",
+            "drussik": "adj modifying velune"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_0",
+          "sentence": "It tremiquera dorsmil, as if the nurithek of the bressiv had quelithara it from within, and the brolm — the sulvane brolm with its drussik velune — halvornara once more",
+          "surface_form": "velune",
+          "syntactic_role": "noun possessed (brolm with its drussik velune)",
+          "nearby_words": {
+            "brolm": "possessor",
+            "drussik": "adj modifying velune"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/vəˈluːn/",
+        "stress": "2nd syllable",
+        "rhymes_with": "dune"
+      }
     },
     "venquar": {
       "id": "venquar",
@@ -339,7 +422,38 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "In the brolm of a drussik velune, where the venquaren quelthane thendarara through the gelvon, there was a quelith that no one could ornique",
+          "surface_form": "venquaren",
+          "syntactic_role": "subject (plural, agent of thendarara)",
+          "nearby_words": {
+            "quelthane": "adv modifying thendarara",
+            "thendara": "verb (action performed)",
+            "gelvon": "locative (through the gelvon)"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_0",
+          "sentence": "And from inside the quelith, from the very thengarath of its pellumom, the felgoren began to ornique what had sulvekara from the marrath: that the venquaren, thendaraing quelthane through the gelvon, were not venquaren at all, but the brendive zilmara of a krelith halquen, prothelu tremiqueing into brolm",
+          "surface_form": "venquaren",
+          "syntactic_role": "subject (revealed to not be venquaren)",
+          "nearby_words": {
+            "zilmara": "noun (what they actually are)",
+            "brendive": "adj modifying zilmara",
+            "krelith": "adj modifying halquen"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈvɛn.kwɑːr/",
+        "stress": "1st syllable",
+        "rhymes_with": "star"
+      }
     },
     "drossik": {
       "id": "drossik",
@@ -357,7 +471,25 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "It had sulvekara from the marrath — vrenelu, the way all grothik drossiken sulvek — and it brasheled against the shendir with a thengar pellumom that the pralune themselves could not grothen",
+          "surface_form": "drossiken",
+          "syntactic_role": "noun plural (subject of sulvek)",
+          "nearby_words": {
+            "grothik": "adj modifier",
+            "sulvek": "verb"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈdrɒs.ɪk/",
+        "stress": "1st syllable",
+        "rhymes_with": "classic"
+      }
     },
     "quelith": {
       "id": "quelith",
@@ -375,7 +507,46 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "In the brolm of a drussik velune, where the venquaren quelthane thendarara through the gelvon, there was a quelith that no one could ornique",
+          "surface_form": "quelith",
+          "syntactic_role": "subject of existential (there was a quelith)",
+          "nearby_words": {
+            "ornique": "verb (could not ornique the quelith)"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_0",
+          "sentence": "It tremiquera dorsmil, as if the nurithek of the bressiv had quelithara it from within, and the brolm — the sulvane brolm with its drussik velune — halvornara once more",
+          "surface_form": "quelithara",
+          "syntactic_role": "verb (zero-derivation, past tense, 'had quelithara it')",
+          "nearby_words": {
+            "nurithek": "subject",
+            "bressiv": "genitive (nurithek of bressiv)"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_0",
+          "sentence": "And from inside the quelith, from the very thengarath of its pellumom, the felgoren began to ornique what had sulvekara from the marrath: that the venquaren, thendaraing quelthane through the gelvon, were not venquaren at all, but the brendive zilmara of a krelith halquen, prothelu tremiqueing into brolm",
+          "surface_form": "quelith",
+          "syntactic_role": "locative (from inside the quelith)",
+          "nearby_words": {
+            "thengarath": "noun (from the thengarath of its pellumom)",
+            "pellumom": "noun possessed by quelith"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈkwɛl.ɪθ/",
+        "stress": "1st syllable",
+        "rhymes_with": "monolith"
+      }
     },
     "marrath": {
       "id": "marrath",
@@ -393,7 +564,34 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "It had sulvekara from the marrath — vrenelu, the way all grothik drossiken sulvek — and it brasheled against the shendir with a thengar pellumom that the pralune themselves could not grothen",
+          "surface_form": "marrath",
+          "syntactic_role": "source (sulvekara from the marrath)",
+          "nearby_words": {
+            "sulvek": "verb of origin/emergence"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_0",
+          "sentence": "And from inside the quelith, from the very thengarath of its pellumom, the felgoren began to ornique what had sulvekara from the marrath: that the venquaren, thendaraing quelthane through the gelvon, were not venquaren at all, but the brendive zilmara of a krelith halquen, prothelu tremiqueing into brolm",
+          "surface_form": "marrath",
+          "syntactic_role": "source (sulvekara from the marrath — repeated)",
+          "nearby_words": {
+            "sulvek": "verb of origin/emergence"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈmær.əθ/",
+        "stress": "1st syllable",
+        "rhymes_with": "Nazareth"
+      }
     },
     "gelvon": {
       "id": "gelvon",
@@ -411,7 +609,25 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "In the brolm of a drussik velune, where the venquaren quelthane thendarara through the gelvon, there was a quelith that no one could ornique",
+          "surface_form": "gelvon",
+          "syntactic_role": "locative (through the gelvon)",
+          "nearby_words": {
+            "venquar": "subject moving through",
+            "thendara": "verb of motion"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈɡɛl.vɒn/",
+        "stress": "1st syllable",
+        "rhymes_with": "felon"
+      }
     },
     "shendir": {
       "id": "shendir",
@@ -429,7 +645,24 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "It had sulvekara from the marrath — vrenelu, the way all grothik drossiken sulvek — and it brasheled against the shendir with a thengar pellumom that the pralune themselves could not grothen",
+          "surface_form": "shendir",
+          "syntactic_role": "noun (object of 'against')",
+          "nearby_words": {
+            "brashel": "verb acting against"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈʃɛn.dɪr/",
+        "stress": "1st syllable",
+        "rhymes_with": "render"
+      }
     },
     "pralune": {
       "id": "pralune",
@@ -447,7 +680,24 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "It had sulvekara from the marrath — vrenelu, the way all grothik drossiken sulvek — and it brasheled against the shendir with a thengar pellumom that the pralune themselves could not grothen",
+          "surface_form": "pralune",
+          "syntactic_role": "subject (the pralune themselves could not grothen)",
+          "nearby_words": {
+            "grothen": "verb they cannot do"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/prəˈluːn/",
+        "stress": "2nd syllable",
+        "rhymes_with": "platoon"
+      }
     },
     "torvak": {
       "id": "torvak",
@@ -465,7 +715,24 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "Every torvak, every felgor that had melvired across the ondrev, keltharara something brendive into the crullenis halquen",
+          "surface_form": "torvak",
+          "syntactic_role": "noun (every torvak — universal quantifier)",
+          "nearby_words": {
+            "felgor": "parallel noun"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈtɔːr.væk/",
+        "stress": "1st syllable",
+        "rhymes_with": "knapsack"
+      }
     },
     "zilmara": {
       "id": "zilmara",
@@ -483,7 +750,25 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "The zilmara of those jorvunden was morvasse",
+          "surface_form": "zilmara",
+          "syntactic_role": "subject (the zilmara of those jorvunden)",
+          "nearby_words": {
+            "jorvund": "genitive/possessor",
+            "morvasse": "predicate adj"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/zɪlˈmɑː.rə/",
+        "stress": "2nd syllable",
+        "rhymes_with": "Sahara"
+      }
     },
     "ondrev": {
       "id": "ondrev",
@@ -501,7 +786,24 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "Every torvak, every felgor that had melvired across the ondrev, keltharara something brendive into the crullenis halquen",
+          "surface_form": "ondrev",
+          "syntactic_role": "noun locative (across the ondrev)",
+          "nearby_words": {
+            "melvir": "verb of motion across"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈɒn.drɛv/",
+        "stress": "1st syllable",
+        "rhymes_with": "rev"
+      }
     },
     "crullen": {
       "id": "crullen",
@@ -519,7 +821,24 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "Every torvak, every felgor that had melvired across the ondrev, keltharara something brendive into the crullenis halquen",
+          "surface_form": "crullenis",
+          "syntactic_role": "noun possessive (crullenis halquen)",
+          "nearby_words": {
+            "halquen": "possessed noun"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈkrʌl.ən/",
+        "stress": "1st syllable",
+        "rhymes_with": "sullen"
+      }
     },
     "felgor": {
       "id": "felgor",
@@ -537,7 +856,26 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "Every torvak, every felgor that had melvired across the ondrev, keltharara something brendive into the crullenis halquen",
+          "surface_form": "felgor",
+          "syntactic_role": "noun (every felgor — subject of melvired)",
+          "nearby_words": {
+            "torvak": "parallel noun",
+            "melvir": "verb",
+            "ondrev": "locative"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈfɛl.ɡɔːr/",
+        "stress": "1st syllable",
+        "rhymes_with": "mentor"
+      }
     },
     "nurithek": {
       "id": "nurithek",
@@ -555,7 +893,25 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "It tremiquera dorsmil, as if the nurithek of the bressiv had quelithara it from within, and the brolm — the sulvane brolm with its drussik velune — halvornara once more",
+          "surface_form": "nurithek",
+          "syntactic_role": "subject (the nurithek of the bressiv)",
+          "nearby_words": {
+            "bressiv": "genitive",
+            "quelith": "verb object"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈnjʊə.rɪ.θɛk/",
+        "stress": "1st syllable",
+        "rhymes_with": "Quebec"
+      }
     },
     "bressiv": {
       "id": "bressiv",
@@ -573,7 +929,24 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "It tremiquera dorsmil, as if the nurithek of the bressiv had quelithara it from within, and the brolm — the sulvane brolm with its drussik velune — halvornara once more",
+          "surface_form": "bressiv",
+          "syntactic_role": "noun genitive (nurithek of the bressiv)",
+          "nearby_words": {
+            "nurithek": "possessor relationship"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈbrɛs.ɪv/",
+        "stress": "1st syllable",
+        "rhymes_with": "massive"
+      }
     },
     "halquen": {
       "id": "halquen",
@@ -591,7 +964,48 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "Every torvak, every felgor that had melvired across the ondrev, keltharara something brendive into the crullenis halquen",
+          "surface_form": "halquen",
+          "syntactic_role": "goal (keltharara something brendive into the crullenis halquen)",
+          "nearby_words": {
+            "crullen": "possessor",
+            "brendive": "adj modifying 'something'",
+            "kelthar": "verb of motion"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_0",
+          "sentence": "And the halquen tremiquera",
+          "surface_form": "halquen",
+          "syntactic_role": "subject (the halquen tremiquera)",
+          "nearby_words": {
+            "tremique": "verb"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_0",
+          "sentence": "And from inside the quelith, from the very thengarath of its pellumom, the felgoren began to ornique what had sulvekara from the marrath: that the venquaren, thendaraing quelthane through the gelvon, were not venquaren at all, but the brendive zilmara of a krelith halquen, prothelu tremiqueing into brolm",
+          "surface_form": "halquen",
+          "syntactic_role": "noun in predicate (the brendive zilmara of a krelith halquen)",
+          "nearby_words": {
+            "krelith": "adj modifying halquen",
+            "zilmara": "head noun",
+            "brendive": "adj modifying zilmara"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈhæl.kwɛn/",
+        "stress": "1st syllable",
+        "rhymes_with": "falcon"
+      }
     },
     "jorvund": {
       "id": "jorvund",
@@ -609,7 +1023,24 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "The zilmara of those jorvunden was morvasse",
+          "surface_form": "jorvunden",
+          "syntactic_role": "noun plural genitive (zilmara of those jorvunden)",
+          "nearby_words": {
+            "zilmara": "possessed noun"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈjɔːr.vʌnd/",
+        "stress": "1st syllable",
+        "rhymes_with": "und"
+      }
     },
     "kethane": {
       "id": "kethane",
@@ -627,7 +1058,25 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "The plenviren were olpheque about it, trelvik zandiqueing their savendri in the kethane that drovainera above the thuravel",
+          "surface_form": "kethane",
+          "syntactic_role": "noun locative (in the kethane)",
+          "nearby_words": {
+            "drovaine": "verb (kethane that drovainera)",
+            "thuravel": "related locative (above)"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/kɛˈθeɪn/",
+        "stress": "2nd syllable",
+        "rhymes_with": "methane"
+      }
     },
     "plenvir": {
       "id": "plenvir",
@@ -645,7 +1094,24 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "The plenviren were olpheque about it, trelvik zandiqueing their savendri in the kethane that drovainera above the thuravel",
+          "surface_form": "plenviren",
+          "syntactic_role": "subject plural (the plenviren were olpheque)",
+          "nearby_words": {
+            "olpheque": "predicate adj"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈplɛn.vɪr/",
+        "stress": "1st syllable",
+        "rhymes_with": "elixir"
+      }
     },
     "savendri": {
       "id": "savendri",
@@ -663,7 +1129,24 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "The plenviren were olpheque about it, trelvik zandiqueing their savendri in the kethane that drovainera above the thuravel",
+          "surface_form": "savendri",
+          "syntactic_role": "noun object (zandiqueing their savendri)",
+          "nearby_words": {
+            "zandique": "verb acting on it"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/sæˈvɛn.dri/",
+        "stress": "2nd syllable",
+        "rhymes_with": "entry"
+      }
     },
     "thuravel": {
       "id": "thuravel",
@@ -681,7 +1164,25 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "The plenviren were olpheque about it, trelvik zandiqueing their savendri in the kethane that drovainera above the thuravel",
+          "surface_form": "thuravel",
+          "syntactic_role": "noun locative (above the thuravel)",
+          "nearby_words": {
+            "kethane": "thing above it",
+            "drovaine": "verb of position"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈθʊə.rə.vɛl/",
+        "stress": "1st syllable",
+        "rhymes_with": "avel"
+      }
     },
     "dranqet": {
       "id": "dranqet",
@@ -699,7 +1200,25 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "But a dranqet genvasse quelmara",
+          "surface_form": "dranqet",
+          "syntactic_role": "subject (a dranqet genvasse quelmara)",
+          "nearby_words": {
+            "genvasse": "adverb",
+            "quelm": "verb"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈdræn.kɛt/",
+        "stress": "1st syllable",
+        "rhymes_with": "blanket"
+      }
     },
     "vossimer": {
       "id": "vossimer",
@@ -717,7 +1236,26 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "And when it quelmara, the vorelm vossimer of the drossik — which had been pelnare for so many jorvunden that the brolm itself had nuvessera — grothened",
+          "surface_form": "vossimer",
+          "syntactic_role": "subject (the vorelm vossimer of the drossik)",
+          "nearby_words": {
+            "vorelm": "adj modifier",
+            "drossik": "genitive",
+            "grothen": "verb"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈvɒs.ɪ.mər/",
+        "stress": "1st syllable",
+        "rhymes_with": "gossamer"
+      }
     },
     "ulmaren": {
       "id": "ulmaren",
@@ -735,7 +1273,24 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "The ulmaren melvired",
+          "surface_form": "ulmaren",
+          "syntactic_role": "subject (the ulmaren melvired)",
+          "nearby_words": {
+            "melvir": "verb"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ʌlˈmɑː.rɛn/",
+        "stress": "2nd syllable",
+        "rhymes_with": "Karen"
+      }
     },
     "quelm": {
       "id": "quelm",
@@ -754,7 +1309,35 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "But a dranqet genvasse quelmara",
+          "surface_form": "quelmara",
+          "syntactic_role": "main verb past (a dranqet genvasse quelmara)",
+          "nearby_words": {
+            "dranqet": "subject",
+            "genvasse": "adverb"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_0",
+          "sentence": "And when it quelmara, the vorelm vossimer of the drossik — which had been pelnare for so many jorvunden that the brolm itself had nuvessera — grothened",
+          "surface_form": "quelmara",
+          "syntactic_role": "main verb past (when it quelmara — trigger event)",
+          "nearby_words": {
+            "vossimer": "thing that grothened as result"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/kwɛlm/",
+        "stress": "monosyllabic",
+        "rhymes_with": "helm"
+      }
     },
     "vriso": {
       "id": "vriso",
@@ -773,7 +1356,22 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "No one vrisora why",
+          "surface_form": "vrisora",
+          "syntactic_role": "main verb past (no one vrisora why)",
+          "nearby_words": {},
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈvriː.soʊ/",
+        "stress": "1st syllable",
+        "rhymes_with": "so"
+      }
     },
     "thendara": {
       "id": "thendara",
@@ -792,7 +1390,26 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "In the brolm of a drussik velune, where the venquaren quelthane thendarara through the gelvon, there was a quelith that no one could ornique",
+          "surface_form": "thendarara",
+          "syntactic_role": "main verb past (venquaren thendarara through the gelvon)",
+          "nearby_words": {
+            "venquar": "subject",
+            "quelthane": "adverb",
+            "gelvon": "path"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/θɛnˈdɑː.rə/",
+        "stress": "2nd syllable",
+        "rhymes_with": "Sahara"
+      }
     },
     "melvir": {
       "id": "melvir",
@@ -811,7 +1428,25 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "Every torvak, every felgor that had melvired across the ondrev, keltharara something brendive into the crullenis halquen",
+          "surface_form": "melvired",
+          "syntactic_role": "main verb past (had melvired across the ondrev)",
+          "nearby_words": {
+            "felgor": "subject",
+            "ondrev": "path (across)"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈmɛl.vɪr/",
+        "stress": "1st syllable",
+        "rhymes_with": "elixir"
+      }
     },
     "grothen": {
       "id": "grothen",
@@ -830,7 +1465,47 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "It had sulvekara from the marrath — vrenelu, the way all grothik drossiken sulvek — and it brasheled against the shendir with a thengar pellumom that the pralune themselves could not grothen",
+          "surface_form": "grothen",
+          "syntactic_role": "main verb (pralune could not grothen)",
+          "nearby_words": {
+            "pralune": "subject",
+            "pellumom": "in preceding clause"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_0",
+          "sentence": "And when it quelmara, the vorelm vossimer of the drossik — which had been pelnare for so many jorvunden that the brolm itself had nuvessera — grothened",
+          "surface_form": "grothened",
+          "syntactic_role": "main verb past (the vossimer grothened)",
+          "nearby_words": {
+            "vorelm": "adj",
+            "vossimer": "subject",
+            "drossik": "genitive"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_0",
+          "sentence": "It grothened janvirely",
+          "surface_form": "grothened",
+          "syntactic_role": "main verb past (it grothened janvirely)",
+          "nearby_words": {
+            "janvire": "adverb modifying grothened"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈɡrɒθ.ən/",
+        "stress": "1st syllable",
+        "rhymes_with": "clothen"
+      }
     },
     "sulvek": {
       "id": "sulvek",
@@ -849,7 +1524,45 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "It had sulvekara from the marrath — vrenelu, the way all grothik drossiken sulvek — and it brasheled against the shendir with a thengar pellumom that the pralune themselves could not grothen",
+          "surface_form": "sulvekara",
+          "syntactic_role": "main verb past (it had sulvekara from the marrath)",
+          "nearby_words": {
+            "marrath": "source/origin"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_0",
+          "sentence": "It had sulvekara from the marrath — vrenelu, the way all grothik drossiken sulvek — and it brasheled against the shendir with a thengar pellumom that the pralune themselves could not grothen",
+          "surface_form": "sulvek",
+          "syntactic_role": "main verb present (grothik drossiken sulvek)",
+          "nearby_words": {
+            "grothik": "adj modifying drossiken",
+            "drossik": "noun (plural, subject)"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_0",
+          "sentence": "And from inside the quelith, from the very thengarath of its pellumom, the felgoren began to ornique what had sulvekara from the marrath: that the venquaren, thendaraing quelthane through the gelvon, were not venquaren at all, but the brendive zilmara of a krelith halquen, prothelu tremiqueing into brolm",
+          "surface_form": "sulvekara",
+          "syntactic_role": "main verb past (what had sulvekara from the marrath)",
+          "nearby_words": {
+            "marrath": "source/origin"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈsʌl.vɛk/",
+        "stress": "1st syllable",
+        "rhymes_with": "trek"
+      }
     },
     "ornique": {
       "id": "ornique",
@@ -868,7 +1581,24 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "In the brolm of a drussik velune, where the venquaren quelthane thendarara through the gelvon, there was a quelith that no one could ornique",
+          "surface_form": "ornique",
+          "syntactic_role": "main verb (no one could ornique)",
+          "nearby_words": {
+            "quelith": "object"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ɔːrˈniːk/",
+        "stress": "2nd syllable",
+        "rhymes_with": "unique"
+      }
     },
     "brashel": {
       "id": "brashel",
@@ -887,7 +1617,24 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "It had sulvekara from the marrath — vrenelu, the way all grothik drossiken sulvek — and it brasheled against the shendir with a thengar pellumom that the pralune themselves could not grothen",
+          "surface_form": "brasheled",
+          "syntactic_role": "main verb past (it brasheled against the shendir)",
+          "nearby_words": {
+            "shendir": "object of 'against'"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈbræʃ.əl/",
+        "stress": "1st syllable",
+        "rhymes_with": "marshal"
+      }
     },
     "pellum": {
       "id": "pellum",
@@ -906,7 +1653,25 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "It had sulvekara from the marrath — vrenelu, the way all grothik drossiken sulvek — and it brasheled against the shendir with a thengar pellumom that the pralune themselves could not grothen",
+          "surface_form": "pellumom",
+          "syntactic_role": "noun derived from verb (-om), object of 'with'",
+          "nearby_words": {
+            "thengar": "adj modifier",
+            "shendir": "associated locative"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈpɛl.əm/",
+        "stress": "1st syllable",
+        "rhymes_with": "vellum"
+      }
     },
     "drovaine": {
       "id": "drovaine",
@@ -925,7 +1690,25 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "The plenviren were olpheque about it, trelvik zandiqueing their savendri in the kethane that drovainera above the thuravel",
+          "surface_form": "drovainera",
+          "syntactic_role": "main verb past (kethane that drovainera above the thuravel)",
+          "nearby_words": {
+            "kethane": "subject",
+            "thuravel": "locative (above)"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/droʊˈveɪn/",
+        "stress": "2nd syllable",
+        "rhymes_with": "domain"
+      }
     },
     "kelthar": {
       "id": "kelthar",
@@ -944,7 +1727,25 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "Every torvak, every felgor that had melvired across the ondrev, keltharara something brendive into the crullenis halquen",
+          "surface_form": "keltharara",
+          "syntactic_role": "main verb past (keltharara something brendive into halquen)",
+          "nearby_words": {
+            "brendive": "adj",
+            "halquen": "goal"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈkɛl.θɑːr/",
+        "stress": "1st syllable",
+        "rhymes_with": "guitar"
+      }
     },
     "nuvesse": {
       "id": "nuvesse",
@@ -963,7 +1764,24 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "And when it quelmara, the vorelm vossimer of the drossik — which had been pelnare for so many jorvunden that the brolm itself had nuvessera — grothened",
+          "surface_form": "nuvessera",
+          "syntactic_role": "main verb past (the brolm itself had nuvessera)",
+          "nearby_words": {
+            "brolm": "subject"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/njuːˈvɛs/",
+        "stress": "2nd syllable",
+        "rhymes_with": "finesse"
+      }
     },
     "zandique": {
       "id": "zandique",
@@ -982,7 +1800,25 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "The plenviren were olpheque about it, trelvik zandiqueing their savendri in the kethane that drovainera above the thuravel",
+          "surface_form": "zandiqueing",
+          "syntactic_role": "participle (zandiqueing their savendri)",
+          "nearby_words": {
+            "savendri": "object",
+            "kethane": "locative"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/zænˈdiːk/",
+        "stress": "2nd syllable",
+        "rhymes_with": "antique"
+      }
     },
     "halvorn": {
       "id": "halvorn",
@@ -1001,7 +1837,24 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "It tremiquera dorsmil, as if the nurithek of the bressiv had quelithara it from within, and the brolm — the sulvane brolm with its drussik velune — halvornara once more",
+          "surface_form": "halvornara",
+          "syntactic_role": "main verb past (halvornara once more)",
+          "nearby_words": {
+            "brolm": "subject"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈhæl.vɔːrn/",
+        "stress": "1st syllable",
+        "rhymes_with": "forlorn"
+      }
     },
     "tremique": {
       "id": "tremique",
@@ -1020,7 +1873,45 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "And the halquen tremiquera",
+          "surface_form": "tremiquera",
+          "syntactic_role": "main verb past (halquen tremiquera)",
+          "nearby_words": {
+            "halquen": "subject"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_0",
+          "sentence": "It tremiquera dorsmil, as if the nurithek of the bressiv had quelithara it from within, and the brolm — the sulvane brolm with its drussik velune — halvornara once more",
+          "surface_form": "tremiquera",
+          "syntactic_role": "main verb past (it tremiquera dorsmil)",
+          "nearby_words": {
+            "dorsmil": "adverb"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_0",
+          "sentence": "And from inside the quelith, from the very thengarath of its pellumom, the felgoren began to ornique what had sulvekara from the marrath: that the venquaren, thendaraing quelthane through the gelvon, were not venquaren at all, but the brendive zilmara of a krelith halquen, prothelu tremiqueing into brolm",
+          "surface_form": "tremiqueing",
+          "syntactic_role": "participle (prothelu tremiqueing into brolm)",
+          "nearby_words": {
+            "prothelu": "adverb",
+            "brolm": "goal of motion"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/trɛˈmiːk/",
+        "stress": "2nd syllable",
+        "rhymes_with": "mystique"
+      }
     },
     "thengar": {
       "id": "thengar",
@@ -1039,7 +1930,24 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "It had sulvekara from the marrath — vrenelu, the way all grothik drossiken sulvek — and it brasheled against the shendir with a thengar pellumom that the pralune themselves could not grothen",
+          "surface_form": "thengar",
+          "syntactic_role": "adjective modifying pellumom",
+          "nearby_words": {
+            "pellum": "verb-derived noun"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈθɛŋ.ɡɑːr/",
+        "stress": "1st syllable",
+        "rhymes_with": "hangar"
+      }
     },
     "vorelm": {
       "id": "vorelm",
@@ -1058,7 +1966,25 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "And when it quelmara, the vorelm vossimer of the drossik — which had been pelnare for so many jorvunden that the brolm itself had nuvessera — grothened",
+          "surface_form": "vorelm",
+          "syntactic_role": "adjective modifying vossimer",
+          "nearby_words": {
+            "vossimer": "modified noun",
+            "drossik": "genitive"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈvɔːr.ɛlm/",
+        "stress": "1st syllable",
+        "rhymes_with": "elm"
+      }
     },
     "drussik": {
       "id": "drussik",
@@ -1077,7 +2003,25 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "In the brolm of a drussik velune, where the venquaren quelthane thendarara through the gelvon, there was a quelith that no one could ornique",
+          "surface_form": "drussik",
+          "syntactic_role": "adjective modifying velune",
+          "nearby_words": {
+            "velune": "modified noun",
+            "brolm": "container"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈdrʌs.ɪk/",
+        "stress": "1st syllable",
+        "rhymes_with": "rustic"
+      }
     },
     "pelnare": {
       "id": "pelnare",
@@ -1096,7 +2040,25 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "And when it quelmara, the vorelm vossimer of the drossik — which had been pelnare for so many jorvunden that the brolm itself had nuvessera — grothened",
+          "surface_form": "pelnare",
+          "syntactic_role": "predicate adjective (had been pelnare for so many jorvunden)",
+          "nearby_words": {
+            "drossik": "subject",
+            "jorvund": "temporal duration"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/pɛlˈnɑːr/",
+        "stress": "2nd syllable",
+        "rhymes_with": "bizarre"
+      }
     },
     "grothik": {
       "id": "grothik",
@@ -1115,7 +2077,25 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "It had sulvekara from the marrath — vrenelu, the way all grothik drossiken sulvek — and it brasheled against the shendir with a thengar pellumom that the pralune themselves could not grothen",
+          "surface_form": "grothik",
+          "syntactic_role": "adjective modifying drossiken",
+          "nearby_words": {
+            "drossik": "modified noun (plural)",
+            "sulvek": "verb"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈɡrɒθ.ɪk/",
+        "stress": "1st syllable",
+        "rhymes_with": "gothic"
+      }
     },
     "sulvane": {
       "id": "sulvane",
@@ -1134,7 +2114,24 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "It tremiquera dorsmil, as if the nurithek of the bressiv had quelithara it from within, and the brolm — the sulvane brolm with its drussik velune — halvornara once more",
+          "surface_form": "sulvane",
+          "syntactic_role": "adjective modifying brolm",
+          "nearby_words": {
+            "brolm": "modified noun"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/sʌlˈveɪn/",
+        "stress": "2nd syllable",
+        "rhymes_with": "insane"
+      }
     },
     "krelith": {
       "id": "krelith",
@@ -1153,7 +2150,25 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "And from inside the quelith, from the very thengarath of its pellumom, the felgoren began to ornique what had sulvekara from the marrath: that the venquaren, thendaraing quelthane through the gelvon, were not venquaren at all, but the brendive zilmara of a krelith halquen, prothelu tremiqueing into brolm",
+          "surface_form": "krelith",
+          "syntactic_role": "adjective modifying halquen",
+          "nearby_words": {
+            "halquen": "modified noun",
+            "zilmara": "head of predicate"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈkrɛl.ɪθ/",
+        "stress": "1st syllable",
+        "rhymes_with": "monolith"
+      }
     },
     "brendive": {
       "id": "brendive",
@@ -1172,7 +2187,25 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "Every torvak, every felgor that had melvired across the ondrev, keltharara something brendive into the crullenis halquen",
+          "surface_form": "brendive",
+          "syntactic_role": "adjective (something brendive)",
+          "nearby_words": {
+            "kelthar": "verb",
+            "halquen": "goal"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈbrɛn.daɪv/",
+        "stress": "1st syllable",
+        "rhymes_with": "archive"
+      }
     },
     "morvasse": {
       "id": "morvasse",
@@ -1191,7 +2224,24 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "The zilmara of those jorvunden was morvasse",
+          "surface_form": "morvasse",
+          "syntactic_role": "predicate adjective (was morvasse)",
+          "nearby_words": {
+            "zilmara": "subject"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/mɔːrˈvæs/",
+        "stress": "2nd syllable",
+        "rhymes_with": "morass"
+      }
     },
     "janvire": {
       "id": "janvire",
@@ -1210,7 +2260,24 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "It grothened janvirely",
+          "surface_form": "janvirely",
+          "syntactic_role": "adverb modifying grothened",
+          "nearby_words": {
+            "grothen": "verb modified"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈdʒæn.vaɪr/",
+        "stress": "1st syllable",
+        "rhymes_with": "fire"
+      }
     },
     "olpheque": {
       "id": "olpheque",
@@ -1229,7 +2296,24 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "The plenviren were olpheque about it, trelvik zandiqueing their savendri in the kethane that drovainera above the thuravel",
+          "surface_form": "olpheque",
+          "syntactic_role": "predicate adjective (were olpheque about it)",
+          "nearby_words": {
+            "plenvir": "subject"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ɒlˈfɛk/",
+        "stress": "2nd syllable",
+        "rhymes_with": "Quebec"
+      }
     },
     "vrenelu": {
       "id": "vrenelu",
@@ -1244,7 +2328,24 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "It had sulvekara from the marrath — vrenelu, the way all grothik drossiken sulvek — and it brasheled against the shendir with a thengar pellumom that the pralune themselves could not grothen",
+          "surface_form": "vrenelu",
+          "syntactic_role": "adverb (parenthetical manner: vrenelu, the way all...)",
+          "nearby_words": {
+            "sulvek": "verb in same clause"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/vrɛˈnɛl.uː/",
+        "stress": "2nd syllable",
+        "rhymes_with": "Peru"
+      }
     },
     "quelthane": {
       "id": "quelthane",
@@ -1259,7 +2360,25 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "In the brolm of a drussik velune, where the venquaren quelthane thendarara through the gelvon, there was a quelith that no one could ornique",
+          "surface_form": "quelthane",
+          "syntactic_role": "adverb modifying thendarara",
+          "nearby_words": {
+            "venquar": "subject",
+            "thendara": "verb modified"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈkwɛl.θeɪn/",
+        "stress": "1st syllable",
+        "rhymes_with": "methane"
+      }
     },
     "dorsmil": {
       "id": "dorsmil",
@@ -1274,7 +2393,24 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "It tremiquera dorsmil, as if the nurithek of the bressiv had quelithara it from within, and the brolm — the sulvane brolm with its drussik velune — halvornara once more",
+          "surface_form": "dorsmil",
+          "syntactic_role": "adverb modifying tremiquera",
+          "nearby_words": {
+            "tremique": "verb modified"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈdɔːrs.mɪl/",
+        "stress": "1st syllable",
+        "rhymes_with": "mill"
+      }
     },
     "trelvik": {
       "id": "trelvik",
@@ -1289,7 +2425,24 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "The plenviren were olpheque about it, trelvik zandiqueing their savendri in the kethane that drovainera above the thuravel",
+          "surface_form": "trelvik",
+          "syntactic_role": "adverb modifying zandiqueing",
+          "nearby_words": {
+            "zandique": "verb modified"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/ˈtrɛl.vɪk/",
+        "stress": "1st syllable",
+        "rhymes_with": "relic"
+      }
     },
     "genvasse": {
       "id": "genvasse",
@@ -1304,7 +2457,25 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "But a dranqet genvasse quelmara",
+          "surface_form": "genvasse",
+          "syntactic_role": "adverb modifying quelmara",
+          "nearby_words": {
+            "dranqet": "subject",
+            "quelm": "verb modified"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/dʒɛnˈvæs/",
+        "stress": "2nd syllable",
+        "rhymes_with": "crevasse"
+      }
     },
     "prothelu": {
       "id": "prothelu",
@@ -1319,7 +2490,25 @@
         "story_0"
       ],
       "stories_about": [],
-      "annotation": null
+      "annotation": null,
+      "usage_log": [
+        {
+          "story_id": "story_0",
+          "sentence": "And from inside the quelith, from the very thengarath of its pellumom, the felgoren began to ornique what had sulvekara from the marrath: that the venquaren, thendaraing quelthane through the gelvon, were not venquaren at all, but the brendive zilmara of a krelith halquen, prothelu tremiqueing into brolm",
+          "surface_form": "prothelu",
+          "syntactic_role": "adverb modifying tremiqueing",
+          "nearby_words": {
+            "tremique": "verb modified",
+            "brolm": "goal"
+          },
+          "semantic_hints": []
+        }
+      ],
+      "pronunciation": {
+        "ipa": "/prɒˈθɛl.uː/",
+        "stress": "2nd syllable",
+        "rhymes_with": "Peru"
+      }
     }
   },
   "story_tree": {
