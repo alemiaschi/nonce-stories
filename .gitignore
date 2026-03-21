@@ -6,5 +6,10 @@ dist/
 CLAUDE.md
 DEPLOY.md
 NONCE_STORIES_SPEC.md
+AUDIT_PROMPT.md
 story_0_draft.md
 /nonce_stories_memory.json
+
+# Audit files — internal use only, never public
+data/audit_payloads.json
+data/audit_report.json
