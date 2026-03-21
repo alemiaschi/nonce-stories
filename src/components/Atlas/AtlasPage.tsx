@@ -63,7 +63,7 @@ export function AtlasPage({ data }: AtlasPageProps) {
   }, [data, morphForms, query, sortKey, filterPos, filterStatus, filterDepth]);
 
   const handleGoToStory = (storyId: string, highlight: string) => {
-    navigate('/', { state: { storyId, highlight } });
+    navigate('/read', { state: { storyId, highlight } });
   };
 
   const inputCls = 'border border-stone-300 rounded bg-white text-stone-700 font-mono text-xs px-3 py-1.5 focus:outline-none focus:border-stone-500 transition-colors';

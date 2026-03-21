@@ -60,7 +60,7 @@ export function StoryIndexPage({ data }: StoryIndexPageProps) {
   };
 
   const handleOpen = (storyId: string) => {
-    navigate('/', { state: { storyId } });
+    navigate('/read', { state: { storyId } });
   };
 
   const arrow = (col: SortCol) =>
