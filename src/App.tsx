@@ -7,6 +7,7 @@ import { StoryMap } from './components/StoryMap/StoryMap';
 import { StatsPage } from './components/Stats/StatsPage';
 import { AtlasPage } from './components/Atlas/AtlasPage';
 import { StoryIndexPage } from './components/StoryIndex/StoryIndexPage';
+import { FogPage } from './components/Fog/FogPage';
 
 const data = getAppData();
 
@@ -23,6 +24,7 @@ export default function App() {
             <Route path="/atlas" element={<AtlasPage data={data} />} />
             <Route path="/stories" element={<StoryIndexPage data={data} />} />
             <Route path="/stats" element={<StatsPage data={data} />} />
+            <Route path="/fog" element={<FogPage data={data} />} />
           </Routes>
         </main>
       </div>

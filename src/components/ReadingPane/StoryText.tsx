@@ -7,9 +7,10 @@ interface StoryTextProps {
   onNavigate: (storyId: string) => void;
   onWordTrail: (lemma: string, x: number, y: number) => void;
   highlightedLemma: string | null;
+  onHoverLemma?: (lemma: string | null) => void;
 }
 
-export function StoryText({ story, data, onNavigate, onWordTrail, highlightedLemma }: StoryTextProps) {
+export function StoryText({ story, data, onNavigate, onWordTrail, highlightedLemma, onHoverLemma }: StoryTextProps) {
   // Split tokens into paragraphs on "\n\n" boundaries
   const paragraphs: StoryToken[][] = [];
   let current: StoryToken[] = [];
@@ -40,6 +41,7 @@ export function StoryText({ story, data, onNavigate, onWordTrail, highlightedLem
                   onNavigate={onNavigate}
                   onWordTrail={onWordTrail}
                   highlightedLemma={highlightedLemma}
+                  onHoverLemma={onHoverLemma}
                 />
               );
             }

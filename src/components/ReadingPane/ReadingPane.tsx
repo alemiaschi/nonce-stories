@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useLocation, useSearchParams } from 'react-router-dom';
 import type { AppData } from '../../types';
 import { useStoryNavigation } from '../../hooks/useStoryNavigation';
 import { useMorphForms } from '../../utils/morphForms';
@@ -9,6 +10,8 @@ import { WordTrail } from './WordTrail';
 import { ReadingPaths } from './ReadingPaths';
 import { DepthIndicator } from '../Layout/DepthIndicator';
 import { WeeklyBadge } from '../Layout/WeeklyBadge';
+import { StoryPanel } from './StoryPanel';
+import { ComparePicker } from './ComparePicker';
 
 interface ReadingPaneProps {
   data: AppData;
@@ -23,21 +26,133 @@ interface WordTrailState {
 }
 
 export function ReadingPane({ data, onStoryChange }: ReadingPaneProps) {
+  const location = useLocation();
+  const locationState = location.state as { storyId?: string; highlight?: string } | null;
+  const [searchParams, setSearchParams] = useSearchParams();
+
   const { currentStory, navigateTo, breadcrumbPath, highlightedLemma, clearHighlight } =
     useStoryNavigation(data);
   const morphForms = useMorphForms(data);
   const [wordTrail, setWordTrail] = useState<WordTrailState | null>(null);
 
+  // Compare state
+  const initialLeftId = searchParams.get('left') ?? locationState?.storyId ?? 'story_0';
+  const initialRightId = searchParams.get('right') ?? null;
+
+  const [leftId, setLeftId] = useState<string>(initialLeftId);
+  const [rightId, setRightId] = useState<string | null>(initialRightId);
+  const [sharedHoverLemma, setSharedHoverLemma] = useState<string | null>(null);
+  const [showPicker, setShowPicker] = useState(false);
+
+  const isCompareMode = rightId !== null;
+
   const handleNavigate = (storyId: string, highlight?: string) => {
     navigateTo(storyId, highlight);
     onStoryChange?.(storyId);
     setWordTrail(null);
+    // In single mode, also keep leftId in sync so opening compare starts from current story
+    setLeftId(storyId);
+    // Update URL left param
+    setSearchParams(prev => {
+      const next = new URLSearchParams(prev);
+      next.set('left', storyId);
+      return next;
+    }, { replace: true });
   };
 
   const handleWordTrail = (lemma: string, x: number, y: number) => {
     setWordTrail({ lemma, x, y });
   };
 
+  const handleLeftNavigated = (storyId: string) => {
+    setLeftId(storyId);
+    setSearchParams(prev => {
+      const next = new URLSearchParams(prev);
+      next.set('left', storyId);
+      return next;
+    }, { replace: true });
+  };
+
+  const handleRightNavigated = (storyId: string) => {
+    setRightId(storyId);
+    setSearchParams(prev => {
+      const next = new URLSearchParams(prev);
+      next.set('right', storyId);
+      return next;
+    }, { replace: true });
+  };
+
+  const handleCompareSelect = (storyId: string) => {
+    setRightId(storyId);
+    setSearchParams(prev => {
+      const next = new URLSearchParams(prev);
+      next.set('left', leftId);
+      next.set('right', storyId);
+      return next;
+    }, { replace: true });
+  };
+
+  const handleCloseCompare = () => {
+    setRightId(null);
+    setSharedHoverLemma(null);
+    setSearchParams(prev => {
+      const next = new URLSearchParams(prev);
+      next.delete('right');
+      return next;
+    }, { replace: true });
+  };
+
+  // Compare mode layout
+  if (isCompareMode) {
+    const leftLabel = data.breadcrumb_labels[leftId] ?? leftId;
+    const rightLabel = data.breadcrumb_labels[rightId] ?? rightId;
+
+    return (
+      <div className="flex flex-col min-h-screen">
+        {/* Compare header bar */}
+        <div className="sticky top-0 z-40 bg-white border-b border-stone-200 flex items-center justify-between px-4 py-2 shadow-sm">
+          <div className="flex items-center gap-3 min-w-0">
+            <span className="font-mono text-[10px] text-stone-400 uppercase tracking-widest shrink-0">comparing</span>
+            <span className="font-mono text-[11px] text-stone-600 truncate">{leftLabel}</span>
+            <span className="text-stone-300 shrink-0">⊞</span>
+            <span className="font-mono text-[11px] text-stone-600 truncate">{rightLabel}</span>
+          </div>
+          <button
+            onClick={handleCloseCompare}
+            className="text-[10px] font-mono text-stone-400 hover:text-stone-700 hover:bg-stone-100 px-2 py-1 rounded transition-colors border border-stone-200 hover:border-stone-300 shrink-0 ml-3"
+          >
+            × close compare
+          </button>
+        </div>
+
+        {/* Two panels */}
+        <div className="flex flex-col sm:flex-row flex-1">
+          {/* Left panel */}
+          <div className="flex-1 min-w-0 overflow-y-auto border-b sm:border-b-0 sm:border-r border-stone-200">
+            <StoryPanel
+              data={data}
+              initialStoryId={leftId}
+              sharedHoverLemma={sharedHoverLemma}
+              onHoverLemma={setSharedHoverLemma}
+              onNavigated={handleLeftNavigated}
+            />
+          </div>
+          {/* Right panel */}
+          <div className="flex-1 min-w-0 overflow-y-auto">
+            <StoryPanel
+              data={data}
+              initialStoryId={rightId}
+              sharedHoverLemma={sharedHoverLemma}
+              onHoverLemma={setSharedHoverLemma}
+              onNavigated={handleRightNavigated}
+            />
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Single-story mode (same as before, with compare button added)
   if (!currentStory) {
     return (
       <div className="flex items-center justify-center h-64 text-stone-400 font-serif italic">
@@ -46,7 +161,6 @@ export function ReadingPane({ data, onStoryChange }: ReadingPaneProps) {
     );
   }
 
-  // Background warmth shifts subtly with depth: cooler at depth 0, warmer at depth 6+
   const depthWarmth = Math.min(currentStory.depth / 6, 1);
   const bgOpacity = Math.round(depthWarmth * 8);
   const bgStyle = bgOpacity > 0
@@ -62,6 +176,13 @@ export function ReadingPane({ data, onStoryChange }: ReadingPaneProps) {
           <DepthIndicator depth={currentStory.depth} maxDepth={data.meta.max_depth} />
           <div className="flex items-center gap-3">
             <ReadingPaths data={data} onNavigate={handleNavigate} />
+            <button
+              onClick={() => setShowPicker(true)}
+              className="text-[10px] font-mono text-stone-400 hover:text-stone-600 hover:bg-stone-100 px-2 py-1 rounded transition-colors border border-stone-200 hover:border-stone-300"
+              title="Compare with another story"
+            >
+              ⊞ compare
+            </button>
             <WeeklyBadge week={currentStory.week} latestWeek={data.meta.latest_week} />
           </div>
         </div>
@@ -120,6 +241,16 @@ export function ReadingPane({ data, onStoryChange }: ReadingPaneProps) {
           morphForms={morphForms}
           onNavigate={handleNavigate}
           onClose={() => { setWordTrail(null); clearHighlight(); }}
+        />
+      )}
+
+      {/* Compare picker modal */}
+      {showPicker && (
+        <ComparePicker
+          data={data}
+          currentStoryId={leftId}
+          onSelect={handleCompareSelect}
+          onClose={() => setShowPicker(false)}
         />
       )}
     </div>

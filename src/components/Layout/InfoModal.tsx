@@ -116,7 +116,11 @@ export function InfoModal({ onClose }: InfoModalProps) {
           <Section title="Pages">
             <p>
               <strong className="text-stone-700 font-medium">Read</strong> — the main reading
-              experience. One story at a time, navigated by clicking nonce words.
+              experience. One story at a time, navigated by clicking nonce words. Right-click
+              any nonce word to open the Word Trail — every story it appears in, its forms, a
+              link to trace it on the Map. Use the <em>↩ paths</em> button for suggested reading
+              sequences. Open <em>⊞ compare</em> to place two stories side by side: hovering
+              a word in either panel highlights it in both simultaneously.
             </p>
             <p>
               <strong className="text-stone-700 font-medium">Map</strong> — an interactive tree
@@ -124,6 +128,14 @@ export function InfoModal({ onClose }: InfoModalProps) {
               expanded stories, muted for frontier words. Zoom, pan, and click any node to open
               that story. The left sidebar lists every nonce word — click one to highlight it
               across the tree.
+            </p>
+            <p>
+              <strong className="text-stone-700 font-medium">Fog</strong> — the story text
+              rendered through a clarity lens. Unexplored nonce words recede into mist at low
+              opacity; words with deep, thoroughly explored branches solidify into full ink.
+              The page makes the project's progress visible on the text itself — a manuscript
+              gradually becoming legible. Hover any nonce word to see its clarity score and
+              branch depth; click to navigate into its sub-story.
             </p>
             <p>
               <strong className="text-stone-700 font-medium">Atlas</strong> — a searchable,

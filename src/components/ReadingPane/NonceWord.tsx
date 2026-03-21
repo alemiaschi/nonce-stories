@@ -9,9 +9,10 @@ interface NonceWordProps {
   onNavigate: (storyId: string) => void;
   onWordTrail: (lemma: string, x: number, y: number) => void;
   highlightedLemma: string | null;
+  onHoverLemma?: (lemma: string | null) => void;
 }
 
-export function NonceWord({ token, data, onNavigate, onWordTrail, highlightedLemma }: NonceWordProps) {
+export function NonceWord({ token, data, onNavigate, onWordTrail, highlightedLemma, onHoverLemma }: NonceWordProps) {
   const [showTooltip, setShowTooltip] = useState(false);
   const [pulsing, setPulsing] = useState(false);
   const ref = useRef<HTMLSpanElement>(null);
@@ -65,8 +66,8 @@ export function NonceWord({ token, data, onNavigate, onWordTrail, highlightedLem
   return (
     <span
       className="relative inline"
-      onMouseEnter={() => setShowTooltip(true)}
-      onMouseLeave={() => setShowTooltip(false)}
+      onMouseEnter={() => { setShowTooltip(true); onHoverLemma?.(lemma); }}
+      onMouseLeave={() => { setShowTooltip(false); onHoverLemma?.(null); }}
     >
       <span
         ref={ref}

@@ -5,6 +5,7 @@ import { InfoModal } from './InfoModal';
 const NAV_LINKS = [
   { to: '/read',    label: 'read'    },
   { to: '/map',     label: 'map'     },
+  { to: '/fog',     label: 'fog'     },
   { to: '/atlas',   label: 'atlas'   },
   { to: '/stories', label: 'stories' },
   { to: '/stats',   label: 'stats'   },
