@@ -110,18 +110,18 @@ export function ReadingPane({ data, onStoryChange }: ReadingPaneProps) {
     return (
       <div className="flex flex-col min-h-screen">
         {/* Compare header bar */}
-        <div className="sticky top-0 z-40 bg-white border-b border-stone-200 flex items-center justify-between px-4 py-2 shadow-sm">
-          <div className="flex items-center gap-3 min-w-0">
-            <span className="font-mono text-[10px] text-stone-400 uppercase tracking-widest shrink-0">comparing</span>
-            <span className="font-mono text-[11px] text-stone-600 truncate">{leftLabel}</span>
+        <div className="sticky top-0 z-40 bg-white border-b border-stone-200 flex items-center justify-between px-4 py-2 shadow-sm gap-2">
+          <div className="flex items-center gap-2 min-w-0 overflow-hidden">
+            <span className="font-mono text-[10px] text-stone-400 uppercase tracking-widest shrink-0 hidden sm:inline">comparing</span>
+            <span className="font-mono text-[11px] text-stone-600 truncate max-w-[100px] sm:max-w-[180px]">{leftLabel}</span>
             <span className="text-stone-300 shrink-0">⊞</span>
-            <span className="font-mono text-[11px] text-stone-600 truncate">{rightLabel}</span>
+            <span className="font-mono text-[11px] text-stone-600 truncate max-w-[100px] sm:max-w-[180px]">{rightLabel}</span>
           </div>
           <button
             onClick={handleCloseCompare}
-            className="text-[10px] font-mono text-stone-400 hover:text-stone-700 hover:bg-stone-100 px-2 py-1 rounded transition-colors border border-stone-200 hover:border-stone-300 shrink-0 ml-3"
+            className="text-[10px] font-mono text-stone-400 hover:text-stone-700 hover:bg-stone-100 px-2 py-1 rounded transition-colors border border-stone-200 hover:border-stone-300 shrink-0"
           >
-            × close compare
+            ×<span className="hidden sm:inline"> close compare</span>
           </button>
         </div>
 
@@ -172,16 +172,16 @@ export function ReadingPane({ data, onStoryChange }: ReadingPaneProps) {
       <div className="max-w-[640px] mx-auto px-6 py-14">
 
         {/* Depth + badge + reading paths row */}
-        <div className="flex items-center justify-between mb-8">
+        <div className="flex items-center justify-between mb-8 gap-2">
           <DepthIndicator depth={currentStory.depth} maxDepth={data.meta.max_depth} />
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 shrink-0">
             <ReadingPaths data={data} onNavigate={handleNavigate} />
             <button
               onClick={() => setShowPicker(true)}
               className="text-[10px] font-mono text-stone-400 hover:text-stone-600 hover:bg-stone-100 px-2 py-1 rounded transition-colors border border-stone-200 hover:border-stone-300"
               title="Compare with another story"
             >
-              ⊞ compare
+              ⊞<span className="hidden sm:inline"> compare</span>
             </button>
             <WeeklyBadge week={currentStory.week} latestWeek={data.meta.latest_week} />
           </div>
