@@ -5,6 +5,7 @@ interface PreviouslyOnProps {
   currentStory: Story;
   data: AppData;
   onNavigate: (storyId: string) => void;
+  cameFromId?: string | null;
 }
 
 const SENTENCE_END = new Set(['.', '!', '?', '…', '."', '!"', '?"']);
@@ -30,15 +31,29 @@ function extractSentenceContext(tokens: StoryToken[], targetIdx: number): StoryT
   return tokens.slice(start, end);
 }
 
-export function PreviouslyOn({ currentStory, data, onNavigate }: PreviouslyOnProps) {
+export function PreviouslyOn({ currentStory, data, onNavigate, cameFromId }: PreviouslyOnProps) {
   const [collapsed, setCollapsed] = useState(false);
 
-  if (!currentStory.parent || !currentStory.parent_word) return null;
-
-  const parentStory = data.stories[currentStory.parent];
-  if (!parentStory) return null;
+  if (!currentStory.parent_word) return null;
 
   const parentWord = currentStory.parent_word.toLowerCase();
+
+  // Prefer the story the reader actually came from; fall back to primary parent.
+  // If cameFrom doesn't contain the word (e.g. navigated from map), fall back too.
+  const resolveParentId = (): string | null => {
+    if (cameFromId && cameFromId !== currentStory.id) {
+      const s = data.stories[cameFromId];
+      if (s?.tokens.some(t => t.type === 'nonce' && (t.lemma === parentWord || t.text.toLowerCase() === parentWord))) {
+        return cameFromId;
+      }
+    }
+    return currentStory.parent;
+  };
+
+  const parentId = resolveParentId();
+  const parentStory = parentId ? data.stories[parentId] : null;
+  if (!parentStory) return null;
+
   const tokens = parentStory.tokens;
 
   // Find first nonce token matching parent_word
@@ -48,7 +63,7 @@ export function PreviouslyOn({ currentStory, data, onNavigate }: PreviouslyOnPro
   if (targetIdx === -1) return null;
 
   const contextTokens = extractSentenceContext(tokens, targetIdx);
-  const parentLabel = data.breadcrumb_labels[currentStory.parent] ?? currentStory.parent;
+  const parentLabel = data.breadcrumb_labels[parentId!] ?? parentId;
 
   return (
     <div className="mb-8 border border-stone-200 rounded bg-stone-50/60">
@@ -61,7 +76,7 @@ export function PreviouslyOn({ currentStory, data, onNavigate }: PreviouslyOnPro
           <span className="text-amber-700">{currentStory.parent_word}</span>
           {' '}from{' '}
           <button
-            onClick={e => { e.stopPropagation(); onNavigate(currentStory.parent!); }}
+            onClick={e => { e.stopPropagation(); onNavigate(parentId!); }}
             className="underline underline-offset-2 decoration-dotted text-stone-500 hover:text-stone-800 transition-colors"
           >
             {parentLabel}

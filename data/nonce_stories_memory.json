@@ -2705,7 +2705,8 @@
       "week": 0,
       "title": "The Brolm",
       "status": "active",
-      "death_note": null
+      "death_note": null,
+      "linked_from": []
     }
   },
   "expansion_log": [

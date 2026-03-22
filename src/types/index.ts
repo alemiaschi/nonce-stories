@@ -11,6 +11,7 @@ export interface Story {
   depth: number;
   parent: string | null;
   parent_word: string | null;
+  linked_from: string[];
   tokens: StoryToken[];
   week: number;
   created: string;

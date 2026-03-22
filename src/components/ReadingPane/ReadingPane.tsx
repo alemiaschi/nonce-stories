@@ -30,7 +30,7 @@ export function ReadingPane({ data, onStoryChange }: ReadingPaneProps) {
   const locationState = location.state as { storyId?: string; highlight?: string } | null;
   const [searchParams, setSearchParams] = useSearchParams();
 
-  const { currentStory, navigateTo, breadcrumbPath, highlightedLemma, clearHighlight } =
+  const { currentStory, navigateTo, breadcrumbPath, highlightedLemma, clearHighlight, cameFrom } =
     useStoryNavigation(data);
   const morphForms = useMorphForms(data);
   const [wordTrail, setWordTrail] = useState<WordTrailState | null>(null);
@@ -47,7 +47,7 @@ export function ReadingPane({ data, onStoryChange }: ReadingPaneProps) {
   const isCompareMode = rightId !== null;
 
   const handleNavigate = (storyId: string, highlight?: string) => {
-    navigateTo(storyId, highlight);
+    navigateTo(storyId, highlight, currentStory?.id ?? null);
     onStoryChange?.(storyId);
     setWordTrail(null);
     // In single mode, also keep leftId in sync so opening compare starts from current story
@@ -198,7 +198,7 @@ export function ReadingPane({ data, onStoryChange }: ReadingPaneProps) {
         )}
 
         {/* Previously On banner (depth > 0) */}
-        <PreviouslyOn currentStory={currentStory} data={data} onNavigate={handleNavigate} />
+        <PreviouslyOn currentStory={currentStory} data={data} onNavigate={handleNavigate} cameFromId={cameFrom} />
 
         {/* Dead branch notice */}
         {currentStory.status === 'dead' && (

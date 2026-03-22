@@ -449,6 +449,7 @@ def main():
             "depth": story_data["depth"],
             "parent": story_data.get("parent"),
             "parent_word": story_data.get("parent_nonce_word"),
+            "linked_from": story_data.get("linked_from", []),
             "tokens": classified,
             "week": story_data.get("week", 0),
             "created": story_data.get("created", ""),

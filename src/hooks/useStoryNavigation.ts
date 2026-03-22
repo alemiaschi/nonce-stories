@@ -13,10 +13,12 @@ export function useStoryNavigation(data: AppData, initial = 'story_0') {
   const [highlightedLemma, setHighlightedLemma] = useState<string | null>(
     locationState?.highlight ?? null
   );
+  const [cameFrom, setCameFrom] = useState<string | null>(null);
 
-  const navigateTo = useCallback((storyId: string, highlight?: string) => {
+  const navigateTo = useCallback((storyId: string, highlight?: string, from?: string | null) => {
     setCurrentStoryId(storyId);
     setHighlightedLemma(highlight ?? null);
+    setCameFrom(from ?? null);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
 
@@ -25,5 +27,5 @@ export function useStoryNavigation(data: AppData, initial = 'story_0') {
   const currentStory = data.stories[currentStoryId] ?? null;
   const breadcrumbPath = getAncestorPath(currentStoryId, data);
 
-  return { currentStoryId, currentStory, navigateTo, breadcrumbPath, highlightedLemma, clearHighlight };
+  return { currentStoryId, currentStory, navigateTo, breadcrumbPath, highlightedLemma, clearHighlight, cameFrom };
 }
