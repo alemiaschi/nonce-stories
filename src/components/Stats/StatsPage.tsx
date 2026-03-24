@@ -1,9 +1,11 @@
+import { useMemo } from 'react';
 import type { AppData } from '../../types';
 import {
-  ChartCard, PosDonut, ConceptRing, DepthBars, DensityScatter,
+  ChartCard, PosDonut, DepthBars, DensityScatter,
   LengthScatter, TopWordsBars, ReuseBars, GrowthLines,
-  ProgressBar, WeekTimeline,
+  ProgressBar, WeekTimeline, FogClarityBars, NewWordsBar,
 } from './charts';
+import { computeClarity } from '../../utils/clarity';
 
 interface StatsPageProps {
   data: AppData;
@@ -34,6 +36,27 @@ function BigStat({ value, label }: { value: string | number; label: string }) {
 export function StatsPage({ data }: StatsPageProps) {
   const { meta, stats } = data;
 
+  // Compute fog clarity for all nonce words in story_0
+  const fogStats = useMemo(() => {
+    const story0 = data.stories['story_0'];
+    if (!story0) return { avg: 0, top: [], allScores: [] };
+    const seen = new Set<string>();
+    const entries: { word: string; score: number }[] = [];
+    for (const token of story0.tokens) {
+      if (token.type !== 'nonce') continue;
+      const lemma = token.lemma ?? token.text.toLowerCase();
+      if (seen.has(lemma)) continue;
+      seen.add(lemma);
+      const { score } = computeClarity(token.child_story, data);
+      entries.push({ word: lemma, score });
+    }
+    const avg = entries.length > 0
+      ? entries.reduce((s, e) => s + e.score, 0) / entries.length
+      : 0;
+    const top = [...entries].sort((a, b) => b.score - a.score).slice(0, 10);
+    return { avg, top, allScores: entries };
+  }, [data]);
+
   const densityPoints = stats.story_density_scatter;
   const lengthPoints = densityPoints.map(p => ({
     story_id: p.story_id,
@@ -59,7 +82,7 @@ export function StatsPage({ data }: StatsPageProps) {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             <BigStat value={meta.total_stories} label="stories written" />
             <BigStat value={meta.total_words} label="nonce words" />
-            <BigStat value={meta.total_concepts_discovered} label="concepts found" />
+            <BigStat value={`${(fogStats.avg * 100).toFixed(1)}%`} label="avg clarity" />
             <BigStat value={`${Math.round(pctExplored * 100)}%`} label="frontier explored" />
           </div>
         </div>
@@ -82,40 +105,38 @@ export function StatsPage({ data }: StatsPageProps) {
               </div>
             </ChartCard>
 
-            <ChartCard title="Concepts Discovered"
-              subtitle="How many words have revealed their meaning">
-              <div className="flex flex-col items-center gap-3">
-                <ConceptRing
-                  discovered={stats.concepts.discovered}
-                  total={stats.concepts.total}
-                />
+            <ChartCard title="Fog Clarity"
+              subtitle="Average comprehensibility of nonce words in the root story">
+              <div className="flex flex-col gap-3">
+                <div className="text-center">
+                  <span className="font-mono text-4xl font-bold text-stone-700">
+                    {(fogStats.avg * 100).toFixed(1)}%
+                  </span>
+                  <p className="text-[10px] text-stone-400 uppercase tracking-widest font-mono mt-1">
+                    avg clarity
+                  </p>
+                </div>
                 <ProgressBar
-                  value={stats.concepts.discovered / Math.max(stats.concepts.total, 1)}
-                  label="meaning discovered"
-                  sublabel="Each concept unlocks when its story branch is fully expanded"
+                  value={fogStats.avg}
+                  label="meaning emerging"
+                  sublabel="Rises as branches reach intelligible English at greater depth"
                 />
+                {fogStats.top.some(e => e.score > 0) && (
+                  <div className="mt-1">
+                    <p className="text-[10px] font-mono text-stone-400 uppercase tracking-widest mb-2">clearest words</p>
+                    <FogClarityBars data={fogStats.top.filter(e => e.score > 0).slice(0, 5)} />
+                  </div>
+                )}
               </div>
             </ChartCard>
 
             <ChartCard title="New Words per Week"
               subtitle="How many lemmas are introduced each week">
-              {stats.words_per_week.length <= 1 ? (
-                <div className="flex flex-col items-center justify-center h-32 gap-2">
-                  <span className="font-mono text-3xl font-bold text-stone-800">
-                    {stats.words_per_week[0]?.new ?? 0}
-                  </span>
-                  <span className="text-[10px] text-stone-400 uppercase tracking-widest font-mono">
-                    words in week {stats.words_per_week[0]?.week ?? 0}
-                  </span>
-                  <p className="text-[10px] text-stone-400 font-serif italic text-center mt-2 px-2">
-                    Growth chart will appear once multiple weeks are recorded
-                  </p>
-                </div>
-              ) : (
-                <GrowthLines data={stats.cumulative_growth} />
-              )}
+              <NewWordsBar data={stats.words_per_week} />
             </ChartCard>
           </div>
+
+
         </section>
 
         {/* ── 2. Story Tree ──────────────────────────────────────────── */}

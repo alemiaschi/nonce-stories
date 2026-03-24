@@ -51,7 +51,7 @@ export interface AppMeta {
 // ── Stats page types ──────────────────────────────────────────────────────
 
 export interface PosEntry { pos: string; count: number; }
-export interface WeeklyWords { week: number; new: number; cumulative: number; }
+export interface WeeklyWords { week: number; new: number; new_content: number; cumulative: number; }
 export interface DepthCount { depth: number; count: number; }
 export interface DensityPoint { story_id: string; depth: number; actual: number; target: number; word_count: number; }
 export interface CurvePoint { depth: number; target: number; }

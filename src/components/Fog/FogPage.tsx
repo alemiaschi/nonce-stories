@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import type { AppData, StoryToken } from '../../types';
-import { computeClarity, clarityToStyle, type ClarityInfo } from '../../utils/clarity';
+import { computeClarity, clarityToStyle, clarityLabel, type ClarityInfo } from '../../utils/clarity';
 
 interface FogPageProps { data: AppData; }
 
@@ -57,10 +57,10 @@ export function FogPage({ data }: FogPageProps) {
     ? allClarities.reduce((s, c) => s + c.score, 0) / allClarities.length
     : 0;
   const tiers = [
-    { label: '0–0.25', count: allClarities.filter(c => c.score < 0.25).length },
-    { label: '0.25–0.5', count: allClarities.filter(c => c.score >= 0.25 && c.score < 0.5).length },
-    { label: '0.5–0.75', count: allClarities.filter(c => c.score >= 0.5 && c.score < 0.75).length },
-    { label: '0.75–1.0', count: allClarities.filter(c => c.score >= 0.75).length },
+    { label: 'deep fog (0–5%)',   count: allClarities.filter(c => c.score < 0.05).length },
+    { label: 'faint (5–15%)',     count: allClarities.filter(c => c.score >= 0.05 && c.score < 0.15).length },
+    { label: 'emerging (15–30%)', count: allClarities.filter(c => c.score >= 0.15 && c.score < 0.30).length },
+    { label: 'forming+ (30%+)',   count: allClarities.filter(c => c.score >= 0.30).length },
   ];
   const emergingCount = allClarities.filter(c => c.score > 0).length;
   const emergingPct = allClarities.length > 0 ? Math.round(emergingCount / allClarities.length * 100) : 0;
@@ -73,7 +73,7 @@ export function FogPage({ data }: FogPageProps) {
   function handleTokenHover(e: React.MouseEvent, token: StoryToken) {
     if (token.type !== 'nonce') { setTooltip(null); return; }
     const lemma = token.lemma ?? token.text.toLowerCase();
-    const clarity = clarityMap.get(lemma) ?? { score: 0, branchDepth: 0, coverage: 0, hasSubStory: false };
+    const clarity = clarityMap.get(lemma) ?? { score: 0, avgDensity: 1, branchLength: 0, hasSubStory: false };
     const rect = containerRef.current?.getBoundingClientRect() ?? { left: 0, top: 0 };
     setTooltip({
       visible: true,
@@ -123,7 +123,7 @@ export function FogPage({ data }: FogPageProps) {
         <div
           className="h-2 rounded-full mb-1.5"
           style={{
-            background: 'linear-gradient(to right, rgba(120,113,108,0.15), rgba(28,25,23,1))',
+            background: 'linear-gradient(to right, rgba(168,162,158,0.12), rgba(41,37,36,1))',
           }}
         />
         <div className="flex justify-between text-[10px] font-mono text-stone-400">
@@ -146,7 +146,7 @@ export function FogPage({ data }: FogPageProps) {
                   );
                 }
                 const lemma = token.lemma ?? token.text.toLowerCase();
-                const clarity = clarityMap.get(lemma) ?? { score: 0, branchDepth: 0, coverage: 0, hasSubStory: false };
+                const clarity = clarityMap.get(lemma) ?? { score: 0, avgDensity: 1, branchLength: 0, hasSubStory: false };
                 const fogStyle = clarityToStyle(clarity.score);
                 const isClickable = !!token.child_story;
                 return (
@@ -185,8 +185,9 @@ export function FogPage({ data }: FogPageProps) {
               </p>
               {tooltip.clarity.hasSubStory ? (
                 <>
-                  <p className="text-[10px] text-stone-400">depth: {tooltip.clarity.branchDepth}</p>
-                  <p className="text-[10px] text-stone-400">coverage: {(tooltip.clarity.coverage * 100).toFixed(0)}%</p>
+                  <p className="text-[10px] text-stone-400">avg density: {(tooltip.clarity.avgDensity * 100).toFixed(0)}%</p>
+                  <p className="text-[10px] text-stone-400">branch stories: {tooltip.clarity.branchLength}</p>
+                  <p className="text-[10px] text-stone-300 italic mt-1">{clarityLabel(tooltip.clarity.score)}</p>
                   {tooltip.childStory && (
                     <p className="text-[10px] text-amber-400 mt-1">click to explore →</p>
                   )}

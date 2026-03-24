@@ -52,9 +52,9 @@ export function NonceWord({ token, data, onNavigate, onWordTrail, highlightedLem
       const note = childStory?.death_note;
       return note ? `† This branch has withered — ${note}` : '† This branch has withered';
     }
-    const preview = getStoryPreview(token.child_story, data, 12);
-    if (state === 'deep_solved') return `${preview} — fully explored`;
-    return preview;
+    const word = token.lemma ?? token.text.toLowerCase();
+    if (state === 'deep_solved') return `Explore the story of "${word}" — fully explored`;
+    return `Explore the story of "${word}"`;
   };
 
   const stateClass =

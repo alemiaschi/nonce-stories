@@ -86,6 +86,23 @@ export function LandingPage() {
         ))}
       </div>
 
+      {/* Credits */}
+      <p className="mt-12 text-xs text-stone-400 font-serif italic text-center">
+        created by{' '}
+        <a
+          href="https://alemiaschi.github.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-amber-700 transition-colors"
+        >
+          Alessio Miaschi
+        </a>
+        {' '}in collaboration with{' '}
+        <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer" className="hover:text-amber-700 transition-colors">Claude</a>
+        {' '}&amp;{' '}
+        <a href="https://claude.ai/code" target="_blank" rel="noopener noreferrer" className="hover:text-amber-700 transition-colors">Claude Code</a>
+      </p>
+
     </div>
   );
 }

@@ -4,10 +4,11 @@
  * All SVGs use width="100%" + viewBox so they scale on mobile.
  * Legends are rendered as HTML outside SVGs to avoid truncation.
  */
+import { useState } from 'react';
 import * as d3 from 'd3';
 import type {
   PosEntry, DepthCount, DensityPoint, CurvePoint, LengthPoint,
-  WordAppearance, ReuseStory, GrowthPoint, ChangelogEntry,
+  WordAppearance, ReuseStory, GrowthPoint, ChangelogEntry, WeeklyWords,
 } from '../../types';
 
 // ── SVG helpers ───────────────────────────────────────────────────────────
@@ -147,7 +148,7 @@ export function ConceptRing({ discovered, total }: { discovered: number; total: 
       <text x={cx} y={cy - 6} textAnchor="middle" fontFamily={FONT_MONO}
         fontSize={22} fontWeight={700} fill="#292524">{discovered}</text>
       <text x={cx} y={cy + 13} textAnchor="middle" fontFamily={FONT_SERIF}
-        fontSize={11} fill="#78716c" fontStyle="italic">of {total} discovered</text>
+        fontSize={11} fill="#78716c" fontStyle="italic">of {total} expanded</text>
       {pct === 0 && (
         <text x={cx} y={cy + 30} textAnchor="middle" fontFamily={FONT_SERIF}
           fontSize={10} fill="#a8a29e" fontStyle="italic">journey begins</text>
@@ -360,10 +361,52 @@ export function TopWordsBars({ data }: { data: WordAppearance[] }) {
   );
 }
 
+// ── Fog Clarity Bars ──────────────────────────────────────────────────────
+
+export function FogClarityBars({ data }: { data: Array<{ word: string; score: number }> }) {
+  const BAR_H = 28, GAP = 8, padL = 110, padR = 56, VW = 480;
+  const VH = data.length * (BAR_H + GAP) + 8;
+  const barMax = VW - padL - padR;
+
+  // color: interpolate stone-400 → amber-800 based on clarity
+  const barColor = (score: number) => {
+    const t = Math.min(score / 0.5, 1); // saturate at 50% clarity
+    const r = Math.round(168 + (146 - 168) * t);
+    const g = Math.round(162 + (64 - 162) * t);
+    const b = Math.round(158 + (14 - 158) * t);
+    return `rgb(${r},${g},${b})`;
+  };
+
+  return (
+    <svg viewBox={`0 0 ${VW} ${VH}`} width="100%">
+      {data.map((d, i) => {
+        const y = i * (BAR_H + GAP);
+        const bw = Math.max(d.score * barMax, 2);
+        return (
+          <g key={d.word}>
+            <text x={padL - 8} y={y + BAR_H * 0.68} textAnchor="end"
+              fontFamily={FONT_MONO} fontSize={13} fill="#57534e">{d.word}</text>
+            <rect x={padL} y={y} width={barMax} height={BAR_H}
+              fill="#f5f4f0" rx={3} />
+            <rect x={padL} y={y} width={bw} height={BAR_H}
+              fill={barColor(d.score)} opacity={0.85} rx={3}>
+              <title>{d.word}: {(d.score * 100).toFixed(1)}% clarity</title>
+            </rect>
+            <text x={padL + bw + 6} y={y + BAR_H * 0.68}
+              fontFamily={FONT_MONO} fontSize={12} fill={FILL_LABEL}>
+              {(d.score * 100).toFixed(1)}%
+            </text>
+          </g>
+        );
+      })}
+    </svg>
+  );
+}
+
 // ── 7. Reuse Bars ─────────────────────────────────────────────────────────
 
 export function ReuseBars({ data }: { data: ReuseStory[] }) {
-  const BAR_H = 24, GAP = 7, padL = 76, padR = 36, VW = 340;
+  const BAR_H = 24, GAP = 7, padL = 96, padR = 36, VW = 360;
   const VH = data.length * (BAR_H + GAP) + 28;
   const barMax = VW - padL - padR;
 
@@ -375,7 +418,7 @@ export function ReuseBars({ data }: { data: ReuseStory[] }) {
           const total = Math.max(d.total_words, 1);
           const newW = (d.new_words / total) * barMax;
           const reuseW = (d.reused_words / total) * barMax;
-          const label = d.story_id.replace('story_', 's');
+          const label = d.story_id === 'story_0' ? 'root' : d.story_id.replace(/^story_/, '');
           return (
             <g key={d.story_id}>
               <text x={padL - 7} y={y + BAR_H * 0.68} textAnchor="end"
@@ -404,7 +447,88 @@ export function ReuseBars({ data }: { data: ReuseStory[] }) {
   );
 }
 
-// ── 8. Growth Lines ───────────────────────────────────────────────────────
+// ── 8. New Words per Week (bar) ────────────────────────────────────────────
+
+export function NewWordsBar({ data }: { data: WeeklyWords[] }) {
+  const VW = 320, VH = 190, padL = 36, padB = 50, padR = 12, padT = 12;
+
+  if (data.length <= 1) {
+    const d = data[0];
+    return (
+      <div className="flex flex-col items-center justify-center h-32 gap-2">
+        <div className="flex gap-6">
+          <div className="text-center">
+            <span className="font-mono text-2xl font-bold text-stone-800">{d?.new ?? 0}</span>
+            <p className="text-[10px] text-stone-400 uppercase tracking-widest font-mono mt-1">nonce</p>
+          </div>
+          <div className="text-center">
+            <span className="font-mono text-2xl font-bold text-amber-700">{d?.new_content ?? 0}</span>
+            <p className="text-[10px] text-stone-400 uppercase tracking-widest font-mono mt-1">english</p>
+          </div>
+        </div>
+        <p className="text-[10px] text-stone-400 font-serif italic text-center mt-2 px-2">
+          Chart will appear once multiple weeks are recorded
+        </p>
+      </div>
+    );
+  }
+
+  const maxVal = Math.max(...data.map(d => Math.max(d.new, d.new_content)), 1);
+  const xScale = d3.scaleBand()
+    .domain(data.map(d => String(d.week)))
+    .range([padL, VW - padR]).padding(0.3);
+  const yScale = d3.scaleLinear().domain([0, maxVal]).range([VH - padB, padT]).nice();
+  const groupW = xScale.bandwidth();
+  const bw = groupW / 2 - 1;
+
+  return (
+    <div>
+      <svg viewBox={`0 0 ${VW} ${VH}`} width="100%">
+        {yScale.ticks(3).map(t => (
+          <g key={t}>
+            <line x1={padL} x2={VW - padR} y1={yScale(t)} y2={yScale(t)} stroke={STROKE_GRID} strokeWidth={1} />
+            <text x={padL - 5} y={yScale(t) + 4} textAnchor="end"
+              fontFamily={FONT_MONO} fontSize={11} fill={FILL_LABEL}>{t}</text>
+          </g>
+        ))}
+        {data.map(d => {
+          const x = xScale(String(d.week))!;
+          const yNonce = yScale(d.new);
+          const yEng = yScale(d.new_content);
+          return (
+            <g key={d.week}>
+              {/* nonce bar */}
+              <rect x={x} y={yNonce} width={bw} height={(VH - padB) - yNonce} rx={2} fill="#44403c" opacity={0.85}>
+                <title>Week {d.week}: {d.new} new nonce word{d.new !== 1 ? 's' : ''}</title>
+              </rect>
+              {/* english content bar */}
+              <rect x={x + bw + 2} y={yEng} width={bw} height={(VH - padB) - yEng} rx={2} fill="#b45309" opacity={0.75}>
+                <title>Week {d.week}: {d.new_content} new English word{d.new_content !== 1 ? 's' : ''}</title>
+              </rect>
+              <text x={x + groupW / 2} y={VH - padB + 14} textAnchor="middle"
+                fontFamily={FONT_MONO} fontSize={11} fill={FILL_AXIS}>{d.week}</text>
+            </g>
+          );
+        })}
+        <text x={(padL + VW - padR) / 2} y={VH - padB + 28} textAnchor="middle"
+          fontFamily={FONT_SERIF} fontSize={10} fill={FILL_LABEL} fontStyle="italic">week</text>
+        <line x1={padL} x2={VW - padR} y1={VH - padB} y2={VH - padB} stroke={STROKE_AXIS} strokeWidth={1} />
+      </svg>
+      <div className="flex justify-center gap-6 mt-1">
+        <div className="flex items-center gap-1.5">
+          <span className="inline-block w-3 h-3 rounded-sm bg-stone-700 opacity-85" />
+          <span className="font-mono text-[10px] text-stone-500">nonce</span>
+        </div>
+        <div className="flex items-center gap-1.5">
+          <span className="inline-block w-3 h-3 rounded-sm bg-amber-700 opacity-75" />
+          <span className="font-mono text-[10px] text-stone-500">english content</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ── 9. Growth Lines ───────────────────────────────────────────────────────
 
 export function GrowthLines({ data }: { data: GrowthPoint[] }) {
   const VW = 360, VH = 210, padL = 46, padB = 36, padR = 16, padT = 14;
@@ -499,42 +623,57 @@ const ACTION_LABEL: Record<string, string> = {
 };
 
 export function WeekTimeline({ entries }: { entries: ChangelogEntry[] }) {
+  const [expanded, setExpanded] = useState(false);
   if (entries.length === 0) {
     return <p className="text-xs text-stone-400 font-serif italic text-center py-6">No history yet</p>;
   }
 
+  const sorted = [...entries].reverse();
+  const LIMIT = 5;
+  const visible = expanded ? sorted : sorted.slice(0, LIMIT);
+
   return (
-    <div className="space-y-0">
-      {entries.map((entry, i) => (
-        <div key={i} className="flex gap-4">
-          <div className="flex flex-col items-center shrink-0">
-            <div className="w-2.5 h-2.5 rounded-full bg-amber-200 border-2 border-amber-600 mt-1" />
-            {i < entries.length - 1 && <div className="w-px flex-1 bg-stone-200 my-1" />}
-          </div>
-          <div className="pb-5 min-w-0">
-            <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5 mb-0.5">
-              <span className="font-mono text-[10px] text-stone-400 uppercase tracking-wide shrink-0">
-                week {entry.week}
-              </span>
-              <span className="text-[10px] text-stone-400 font-serif italic">{entry.date}</span>
+    <div>
+      <div className="space-y-0">
+        {visible.map((entry, i) => (
+          <div key={i} className="flex gap-4">
+            <div className="flex flex-col items-center shrink-0">
+              <div className="w-2.5 h-2.5 rounded-full bg-amber-200 border-2 border-amber-600 mt-1" />
+              {i < visible.length - 1 && <div className="w-px flex-1 bg-stone-200 my-1" />}
             </div>
-            <p className="text-sm font-serif text-stone-700">
-              {ACTION_LABEL[entry.action] ?? entry.action}
-              {entry.story_id && (
-                <span className="ml-1 font-mono text-[10px] text-stone-400">({entry.story_id})</span>
-              )}
-            </p>
-            {entry.words_introduced > 0 && (
-              <p className="text-xs font-mono text-amber-800 mt-0.5">
-                +{entry.words_introduced} new words
+            <div className="pb-5 min-w-0">
+              <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5 mb-0.5">
+                <span className="font-mono text-[10px] text-stone-400 uppercase tracking-wide shrink-0">
+                  week {entry.week}
+                </span>
+                <span className="text-[10px] text-stone-400 font-serif italic">{entry.date}</span>
+              </div>
+              <p className="text-sm font-serif text-stone-700">
+                {ACTION_LABEL[entry.action] ?? entry.action}
+                {entry.story_id && (
+                  <span className="ml-1 font-mono text-[10px] text-stone-400">({entry.story_id})</span>
+                )}
               </p>
-            )}
-            {entry.notes && (
-              <p className="text-[11px] text-stone-500 font-serif italic mt-1 leading-relaxed">{entry.notes}</p>
-            )}
+              {entry.words_introduced > 0 && (
+                <p className="text-xs font-mono text-amber-800 mt-0.5">
+                  +{entry.words_introduced} new words
+                </p>
+              )}
+              {entry.notes && (
+                <p className="text-[11px] text-stone-500 font-serif italic mt-1 leading-relaxed">{entry.notes}</p>
+              )}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
+      {sorted.length > LIMIT && (
+        <button
+          onClick={() => setExpanded(e => !e)}
+          className="mt-1 text-[11px] font-mono text-amber-700 hover:text-amber-900 transition-colors"
+        >
+          {expanded ? '↑ show less' : `↓ show all ${sorted.length} entries`}
+        </button>
+      )}
     </div>
   );
 }

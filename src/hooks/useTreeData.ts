@@ -14,35 +14,32 @@ export interface TreeNode {
 
 export function useTreeData(data: AppData): TreeNode {
   return useMemo(() => {
+    // Build canonical tree from parent relationships, not from token links.
+    // Each story appears exactly once — as a child of the story it was
+    // originally expanded from. Cross-links (the same word appearing in
+    // multiple stories) are intentionally not shown here.
+    const childrenOf: Record<string, string[]> = {};
+    for (const [id, story] of Object.entries(data.stories)) {
+      const parent = story.parent ?? null;
+      if (parent) {
+        if (!childrenOf[parent]) childrenOf[parent] = [];
+        childrenOf[parent].push(id);
+      }
+    }
+
     const buildNode = (storyId: string): TreeNode => {
       const story = data.stories[storyId];
+      const canonicalChildren = childrenOf[storyId] ?? [];
 
-      // Find child story IDs from nonce tokens
-      const childIds: Array<{ word: string; storyId: string }> = [];
-      for (const token of story?.tokens ?? []) {
-        if (token.type === 'nonce' && token.child_story) {
-          childIds.push({ word: token.lemma ?? token.text, storyId: token.child_story });
-        }
-      }
-
-      // Determine state
-      const hasAnyExpanded = childIds.length > 0;
-      const allExpanded = story?.tokens
+      const hasAnyExpanded = canonicalChildren.length > 0;
+      const allNonceExpanded = story?.tokens
         .filter(t => t.type === 'nonce')
         .every(t => t.child_story != null) ?? false;
 
       let state: TreeNode['state'] = 'frontier';
       if (story?.status === 'dead') state = 'dead';
       else if (story?.depth === 0) state = 'root';
-      else if (hasAnyExpanded || allExpanded) state = 'expanded';
-
-      // Deduplicate children (a lemma may appear multiple times)
-      const seen = new Set<string>();
-      const uniqueChildren = childIds.filter(c => {
-        if (seen.has(c.storyId)) return false;
-        seen.add(c.storyId);
-        return true;
-      });
+      else if (hasAnyExpanded || allNonceExpanded) state = 'expanded';
 
       return {
         id: storyId,
@@ -52,7 +49,7 @@ export function useTreeData(data: AppData): TreeNode {
         state,
         week: story?.week ?? 0,
         deathNote: story?.death_note,
-        children: uniqueChildren.map(c => buildNode(c.storyId)),
+        children: canonicalChildren.map(buildNode),
       };
     };
 

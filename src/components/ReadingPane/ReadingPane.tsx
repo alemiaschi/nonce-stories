@@ -223,7 +223,7 @@ export function ReadingPane({ data, onStoryChange }: ReadingPaneProps) {
         <div className="mt-14 pt-6 border-t border-stone-200 text-[11px] text-stone-400 font-mono flex flex-wrap gap-x-4 gap-y-1">
           <span>{Object.keys(data.lexicon).length} nonce words</span>
           <span>·</span>
-          <span>{data.meta.total_concepts_discovered} concepts discovered</span>
+          <span>{data.meta.total_concepts_discovered} words expanded</span>
           <span>·</span>
           <span>week {currentStory.week}</span>
           <span>·</span>

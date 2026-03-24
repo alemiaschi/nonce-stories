@@ -53,17 +53,19 @@ export function computeLatestPath(data: AppData): ReadingPath {
 
 export function computeRandomWalkPath(data: AppData): ReadingPath {
   const path: string[] = ['story_0'];
+  const visited = new Set<string>(['story_0']);
   let currentId = 'story_0';
   while (true) {
     const story = data.stories[currentId];
     if (!story) break;
     const expandedIds = [...new Set(
       story.tokens
-        .filter(t => t.type === 'nonce' && t.child_story && data.stories[t.child_story]?.status !== 'dead')
+        .filter(t => t.type === 'nonce' && t.child_story && data.stories[t.child_story]?.status !== 'dead' && !visited.has(t.child_story!))
         .map(t => t.child_story!)
     )];
     if (expandedIds.length === 0) break;
     const next = expandedIds[Math.floor(Math.random() * expandedIds.length)];
+    visited.add(next);
     path.push(next);
     currentId = next;
   }

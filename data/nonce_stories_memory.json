@@ -4,12 +4,12 @@
     "project_subtitle": "Nonce Stories",
     "version": "0.1.0",
     "created": "2026-03-17",
-    "last_updated": "2026-03-17",
-    "current_week": 0,
-    "total_stories": 1,
-    "total_lexicon_entries": 57,
-    "total_concepts_discovered": 0,
-    "max_depth_reached": 0,
+    "last_updated": "2026-03-24",
+    "current_week": 1,
+    "total_stories": 4,
+    "total_lexicon_entries": 77,
+    "total_concepts_discovered": 3,
+    "max_depth_reached": 2,
     "density_curve": {
       "0": 1.0,
       "1": 0.94,
@@ -289,9 +289,9 @@
   "lexicon": {
     "brolm": {
       "id": "brolm",
-      "concept": null,
-      "concept_discovered_from": null,
-      "context_notes": null,
+      "concept": "A vast, mutable expanse — something between a landscape and a medium. Not solid ground, not liquid sea — a terrain that contains structures within it (velune) but that itself shifts, transforms, undergoes processes. Things exist within brolm the way fish exist within ocean, except brolm itself changes. It can be entered, traversed, and inhabited, but it does not remain the same. It is the foundational substrate of the story's world.",
+      "concept_discovered_from": "story_brolm",
+      "context_notes": "In Story 0, brolm appeared as: (1) a locative container ('in the brolm of a drussik velune'), (2) a thing that possesses other things ('the sulvane brolm with its drussik velune'), (3) something that undergoes processes ('the brolm itself had nuvessera'), and (4) a destination used bare without article ('tremiqueing into brolm'). These four usages together pointed to something spatial and vast that contains structures, can be entered, and itself transforms.",
       "pos": "noun",
       "morphology": {
         "plural": "brolmen",
@@ -300,9 +300,14 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique"
       ],
-      "stories_about": [],
+      "stories_about": [
+        "story_brolm"
+      ],
       "annotation": null,
       "usage_log": [
         {
@@ -372,7 +377,10 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique"
       ],
       "stories_about": [],
       "annotation": null,
@@ -468,7 +476,9 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek"
       ],
       "stories_about": [],
       "annotation": null,
@@ -499,12 +509,16 @@
       "pos": "noun/verb",
       "morphology": {
         "plural": "quelithen",
-        "possessive": "quelithis"
+        "possessive": "quelithis",
+        "past_verbal": "quelithara",
+        "plural_verbal": "quelitharen"
       },
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek"
       ],
       "stories_about": [],
       "annotation": null,
@@ -561,7 +575,10 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique"
       ],
       "stories_about": [],
       "annotation": null,
@@ -606,7 +623,9 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek"
       ],
       "stories_about": [],
       "annotation": null,
@@ -642,7 +661,9 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_sulvek",
+        "story_plendrique"
       ],
       "stories_about": [],
       "annotation": null,
@@ -677,7 +698,10 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique"
       ],
       "stories_about": [],
       "annotation": null,
@@ -747,7 +771,10 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique"
       ],
       "stories_about": [],
       "annotation": null,
@@ -783,7 +810,8 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_sulvek"
       ],
       "stories_about": [],
       "annotation": null,
@@ -853,7 +881,10 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique"
       ],
       "stories_about": [],
       "annotation": null,
@@ -961,7 +992,9 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1020,7 +1053,10 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1055,7 +1091,9 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_plendrique"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1197,7 +1235,8 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_sulvek"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1306,7 +1345,8 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_sulvek"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1353,7 +1393,9 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_plendrique"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1382,12 +1424,15 @@
       "morphology": {
         "past": "thendarara",
         "participle": "thendaraith",
-        "third_person": "thendaraet"
+        "third_person": "thendaraet",
+        "participle_english": "thendaraing"
       },
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1420,12 +1465,17 @@
       "morphology": {
         "past": "melvirara",
         "participle": "melvirith",
-        "third_person": "melviret"
+        "third_person": "melviret",
+        "past_english": "melvired",
+        "participle_english": "melviring"
       },
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1457,12 +1507,14 @@
       "morphology": {
         "past": "grothenara",
         "participle": "grothenith",
-        "third_person": "grothenet"
+        "third_person": "grothenet",
+        "past_english": "grothened"
       },
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_sulvek"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1509,9 +1561,9 @@
     },
     "sulvek": {
       "id": "sulvek",
-      "concept": null,
-      "concept_discovered_from": null,
-      "context_notes": null,
+      "concept": "To emerge, to originate, to come into being from a source. Not mere movement — a felgor can melvir without sulveking. Sulvek is the transition from non-existence to existence, or from one state of being to a fundamentally different one. It takes a source complement ('sulvek from X'). It can happen slowly (vrenelu) or suddenly (genvasse). The deepest mystery: how can something sulvek from nothing? The pralune cannot grothen this.",
+      "concept_discovered_from": "story_sulvek",
+      "context_notes": "In Story 0, sulvek appeared three times: twice as 'sulvekara from the marrath' (past tense, with source) and once as a generic present 'the way all grothik drossiken sulvek' (universal/habitual). In Story.brolm it appeared as 'sulvekara from nothing.' The consistent 'from X' pattern pointed to emergence/origination. The generic usage suggested it's a fundamental process, not a one-time event. The distinction from melvir (movement) was inferred from the fact that both verbs coexist — if sulvek were just movement, melvir would be redundant.",
       "pos": "verb",
       "morphology": {
         "past": "sulvekara",
@@ -1521,9 +1573,14 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique"
       ],
-      "stories_about": [],
+      "stories_about": [
+        "story_sulvek"
+      ],
       "annotation": null,
       "usage_log": [
         {
@@ -1573,12 +1630,17 @@
       "morphology": {
         "past": "orniquera",
         "participle": "orniqueith",
-        "third_person": "orniqueet"
+        "third_person": "orniqueet",
+        "participle_english": "orniqueing",
+        "third_person_archaic": "orniqueth"
       },
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1609,12 +1671,15 @@
       "morphology": {
         "past": "brashelara",
         "participle": "brashelith",
-        "third_person": "brashelet"
+        "third_person": "brashelet",
+        "past_english": "brasheled"
       },
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_sulvek",
+        "story_plendrique"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1645,12 +1710,15 @@
       "morphology": {
         "past": "pellumara",
         "participle": "pellumith",
-        "third_person": "pellumet"
+        "third_person": "pellumet",
+        "noun_derivation": "pellumom"
       },
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1724,7 +1792,10 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1761,7 +1832,8 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1792,7 +1864,8 @@
       "morphology": {
         "past": "zandiquera",
         "participle": "zandiqueith",
-        "third_person": "zandiqueet"
+        "third_person": "zandiqueet",
+        "participle_english": "zandiqueing"
       },
       "introduced_in": "story_0",
       "depth_introduced": 0,
@@ -1834,7 +1907,9 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1865,12 +1940,16 @@
       "morphology": {
         "past": "tremiquera",
         "participle": "tremiqueith",
-        "third_person": "tremiqueet"
+        "third_person": "tremiqueet",
+        "participle_english": "tremiqueing"
       },
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1922,12 +2001,17 @@
       "morphology": {
         "comparative": "thengarun",
         "superlative": "thengarest",
-        "adverb": "thengarelu"
+        "adverb": "thengarelu",
+        "quality_noun": "thengarath",
+        "superlative_double": "thengarestest"
       },
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1963,7 +2047,10 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2000,7 +2087,10 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2037,7 +2127,9 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_plendrique"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2074,7 +2166,10 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2111,7 +2206,9 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2184,7 +2281,10 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2221,7 +2321,10 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2252,7 +2355,8 @@
       "morphology": {
         "comparative": "janvireun",
         "superlative": "janvireest",
-        "adverb": "janvireelu"
+        "adverb": "janvireelu",
+        "adverb_english": "janvirely"
       },
       "introduced_in": "story_0",
       "depth_introduced": 0,
@@ -2325,7 +2429,9 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2357,7 +2463,10 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2390,7 +2499,9 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2422,7 +2533,9 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_brolm",
+        "story_sulvek"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2454,7 +2567,8 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_sulvek"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2509,6 +2623,519 @@
         "stress": "2nd syllable",
         "rhymes_with": "Peru"
       }
+    },
+    "thrennig": {
+      "id": "thrennig",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "thrennigen",
+        "possessive": "thrennigis"
+      },
+      "introduced_in": "story_brolm",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brolm",
+        "story_sulvek"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈθrɛn.ɪɡ/",
+        "stress": "1st syllable",
+        "rhymes_with": "pennig"
+      },
+      "usage_log": []
+    },
+    "voskel": {
+      "id": "voskel",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "voskelen",
+        "possessive": "voskelis"
+      },
+      "introduced_in": "story_brolm",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brolm"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈvɒs.kɛl/",
+        "stress": "1st syllable",
+        "rhymes_with": "hostel"
+      },
+      "usage_log": []
+    },
+    "dulmire": {
+      "id": "dulmire",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "dulmirera",
+        "participle": "dulmireith",
+        "third_person": "dulmireet",
+        "past_english": "dulmired"
+      },
+      "introduced_in": "story_brolm",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brolm",
+        "story_sulvek"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/dʌlˈmaɪr/",
+        "stress": "2nd syllable",
+        "rhymes_with": "admire"
+      },
+      "usage_log": []
+    },
+    "fenqua": {
+      "id": "fenqua",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "fenquaren",
+        "possessive": "fenquais"
+      },
+      "introduced_in": "story_brolm",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brolm",
+        "story_sulvek"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈfɛn.kwə/",
+        "stress": "1st syllable",
+        "rhymes_with": "lingua"
+      },
+      "usage_log": []
+    },
+    "grothane": {
+      "id": "grothane",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "grothanen",
+        "possessive": "grothaneis"
+      },
+      "introduced_in": "story_brolm",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈɡrɒθ.eɪn/",
+        "stress": "1st syllable",
+        "rhymes_with": "methane"
+      },
+      "usage_log": []
+    },
+    "sondrak": {
+      "id": "sondrak",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun/verb",
+      "morphology": {
+        "plural": "sondraken",
+        "possessive": "sondrakis"
+      },
+      "introduced_in": "story_brolm",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brolm",
+        "story_plendrique"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈsɒn.dræk/",
+        "stress": "1st syllable",
+        "rhymes_with": "knapsack"
+      },
+      "usage_log": []
+    },
+    "queldir": {
+      "id": "queldir",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "queldiren",
+        "possessive": "queldiris"
+      },
+      "introduced_in": "story_brolm",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈkwɛl.dɪr/",
+        "stress": "1st syllable",
+        "rhymes_with": "elixir"
+      },
+      "usage_log": []
+    },
+    "brenthik": {
+      "id": "brenthik",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "brenthikun",
+        "superlative": "brenthikest",
+        "adverb": "brenthikelu"
+      },
+      "introduced_in": "story_brolm",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈbrɛn.θɪk/",
+        "stress": "1st syllable",
+        "rhymes_with": "gothic"
+      },
+      "usage_log": []
+    },
+    "torvel": {
+      "id": "torvel",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "torvelen",
+        "possessive": "torvelis",
+        "participle": "torvelith"
+      },
+      "introduced_in": "story_brolm",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈtɔːr.vɛl/",
+        "stress": "1st syllable",
+        "rhymes_with": "marvel"
+      },
+      "usage_log": []
+    },
+    "halvune": {
+      "id": "halvune",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "halvuneren",
+        "possessive": "halvuneis"
+      },
+      "introduced_in": "story_brolm",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/hælˈvuːn/",
+        "stress": "2nd syllable",
+        "rhymes_with": "bassoon"
+      },
+      "usage_log": []
+    },
+    "jenvir": {
+      "id": "jenvir",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "jenvirara",
+        "participle": "jenvirith",
+        "third_person": "jenviret"
+      },
+      "introduced_in": "story_brolm",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brolm"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈdʒɛn.vɪr/",
+        "stress": "1st syllable",
+        "rhymes_with": "elixir"
+      },
+      "usage_log": []
+    },
+    "kelvasse": {
+      "id": "kelvasse",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "kelvassera",
+        "participle": "kelvasseith",
+        "third_person": "kelvasseet"
+      },
+      "introduced_in": "story_brolm",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/kɛlˈvæs/",
+        "stress": "2nd syllable",
+        "rhymes_with": "crevasse"
+      },
+      "usage_log": []
+    },
+    "sulmirek": {
+      "id": "sulmirek",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun/verb",
+      "morphology": {
+        "plural": "sulmireken",
+        "possessive": "sulmirekis"
+      },
+      "introduced_in": "story_brolm",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brolm",
+        "story_sulvek"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/sʌlˈmɪr.ɛk/",
+        "stress": "2nd syllable",
+        "rhymes_with": "Quebec"
+      },
+      "usage_log": []
+    },
+    "ondrique": {
+      "id": "ondrique",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "ondriqueun",
+        "superlative": "ondriqueest",
+        "adverb": "ondriqueelu"
+      },
+      "introduced_in": "story_brolm",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ɒnˈdriːk/",
+        "stress": "2nd syllable",
+        "rhymes_with": "unique"
+      },
+      "usage_log": []
+    },
+    "prelvon": {
+      "id": "prelvon",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "prelvonara",
+        "participle": "prelvonith",
+        "third_person": "prelvonet"
+      },
+      "introduced_in": "story_brolm",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brolm"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈprɛl.vɒn/",
+        "stress": "1st syllable",
+        "rhymes_with": "felon"
+      },
+      "usage_log": []
+    },
+    "gelvair": {
+      "id": "gelvair",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "gelvairara",
+        "participle": "gelvairith",
+        "third_person": "gelvairet"
+      },
+      "introduced_in": "story_brolm",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brolm"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ɡɛlˈvɛər/",
+        "stress": "2nd syllable",
+        "rhymes_with": "affair"
+      },
+      "usage_log": []
+    },
+    "threnque": {
+      "id": "threnque",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "threnquera",
+        "participle": "threnqueith",
+        "third_person": "threnqueet",
+        "participle_english": "threnqueing"
+      },
+      "introduced_in": "story_brolm",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brolm",
+        "story_sulvek"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈθrɛŋk/",
+        "stress": "monosyllabic",
+        "rhymes_with": "rank"
+      },
+      "usage_log": []
+    },
+    "quelvik": {
+      "id": "quelvik",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "quelvikun",
+        "superlative": "quelvikest",
+        "adverb": "quelvikelu"
+      },
+      "introduced_in": "story_brolm",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brolm",
+        "story_plendrique"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈkwɛl.vɪk/",
+        "stress": "1st syllable",
+        "rhymes_with": "relic"
+      },
+      "usage_log": []
+    },
+    "vrenthane": {
+      "id": "vrenthane",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adverb",
+      "morphology": {},
+      "introduced_in": "story_sulvek",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_sulvek"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈvrɛn.θeɪn/",
+        "stress": "1st syllable",
+        "rhymes_with": "methane"
+      },
+      "usage_log": []
+    },
+    "plendrique": {
+      "id": "plendrique",
+      "concept": "A boundary or threshold between two states of being — not a wall that can be breached, but a liminal zone that pushes back from both sides. A plendrique does not belong to either grothane it separates. It is the space between: between what was and what sulvekara, between one jorvund's zilmara and the next. Some are thin (barely noticeable), others are thick and old. The most profound plendrique is the one beneath sulvekith itself: the boundary between nothing and the first emergence.",
+      "concept_discovered_from": "story_plendrique",
+      "context_notes": "In Story.sulvek, plendrique appeared once: 'a vorelm plendrique, a shendir that brasheled from both sides.' It was equated with shendir (barrier/surface) and described as the halvune between what was and what sulvekara. The sub-story expanded this: plendriqueun are ubiquitous (every velune has one), they vary in thickness, and the deepest one lies beneath the act of sulvek itself.",
+      "pos": "noun",
+      "morphology": {
+        "plural": "plendriqueun",
+        "possessive": "plendriqueis"
+      },
+      "introduced_in": "story_sulvek",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_sulvek",
+        "story_plendrique"
+      ],
+      "stories_about": [
+        "story_plendrique"
+      ],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/plɛnˈdriːk/",
+        "stress": "2nd syllable",
+        "rhymes_with": "unique"
+      },
+      "usage_log": []
     }
   },
   "story_tree": {
@@ -2642,7 +3269,7 @@
         "zilmara"
       ],
       "children": {
-        "brolm": null,
+        "brolm": "story_brolm",
         "velune": null,
         "venquar": null,
         "drossik": null,
@@ -2672,7 +3299,7 @@
         "thendara": null,
         "melvir": null,
         "grothen": null,
-        "sulvek": null,
+        "sulvek": "story_sulvek",
         "ornique": null,
         "brashel": null,
         "pellum": null,
@@ -2707,6 +3334,406 @@
       "status": "active",
       "death_note": null,
       "linked_from": []
+    },
+    "story_brolm": {
+      "id": "story_brolm",
+      "title": "brolm",
+      "depth": 1,
+      "parent": "story_0",
+      "parent_nonce_word": "brolm",
+      "linked_from": [
+        "story_0"
+      ],
+      "nonce_density_target": 0.94,
+      "nonce_density_actual": 0.93,
+      "word_count": 265,
+      "nonce_content_words": 92,
+      "functional_words": 166,
+      "real_english_content_words": [
+        "ground",
+        "sky",
+        "falling",
+        "become",
+        "holds",
+        "vast",
+        "world"
+      ],
+      "text": "Before there was a thrennig for voskel, before the gelvon had thendarara through anything at all, there was only brolm. It quelthane sulvekara from nothing — or perhaps from a marrath so vorelm that even the pralune had dulmired its fenqua.\n\nThe brolm was not ground. It was not sky. It was the grothane where drussik veluneren could sondrak and where drossiken could jenvir without quelthane falling. To sondrak in brolm was to ornique the queldir of it — a brenthik, dulmire pellumom beneath everything, as if the brolm were torvelith, as if it were gelvairith itself through some thengar fenqua that no one could ornique.\n\nThe halvune of the brolm was this: it did not jenvir. Every jorvund, the brolm halvornara. Its velune would kelvasse — the drussik kethane of one sondrak would quelthane become the brendive zilmara of another. The quelitharen that had melvired through it would ornique themselves in a brolm they did not sulmirek, though they had never melvired.\n\nSome vrisora the brolm tremiquera because of the ondrique beneath it — a brenthik torvel of sulvane halquen that prelvonara whenever the jorvund was morvasse. Others vrisora that it was the felgoren themselves who keltharara the brolm, vrenelu by melviring across it, the way all grothik drossiken kelvasse what holds them.\n\nBut the brolm did not threnque for halvune. It gelvairara and it nuvessera and it halvornara, trelvik, the way it always had — pelnare, quelvik, vast beyond the kelvasse of any jenvir, threnqueing dorsmil into sulmirek, as if it were not a grothane at all but a thengar, ondrique pellumom that the world was still orniqueing.",
+      "nonce_words_used": [
+        "brendive",
+        "brenthik",
+        "brolm",
+        "dorsmil",
+        "drossik",
+        "drussik",
+        "dulmire",
+        "felgor",
+        "fenqua",
+        "gelvair",
+        "gelvon",
+        "grothane",
+        "grothik",
+        "halquen",
+        "halvorn",
+        "halvune",
+        "jenvir",
+        "jorvund",
+        "kelthar",
+        "kelvasse",
+        "kethane",
+        "marrath",
+        "melvir",
+        "morvasse",
+        "nuvesse",
+        "ondrique",
+        "ornique",
+        "pellum",
+        "pelnare",
+        "pralune",
+        "prelvon",
+        "queldir",
+        "quelith",
+        "quelthane",
+        "quelvik",
+        "sondrak",
+        "sulmirek",
+        "sulvane",
+        "sulvek",
+        "thendara",
+        "thengar",
+        "thrennig",
+        "threnque",
+        "torvel",
+        "trelvik",
+        "tremique",
+        "velune",
+        "vorelm",
+        "voskel",
+        "vrenelu",
+        "vriso",
+        "zilmara"
+      ],
+      "nonce_words_new": [
+        "brenthik",
+        "dulmire",
+        "fenqua",
+        "gelvair",
+        "grothane",
+        "halvune",
+        "jenvir",
+        "kelvasse",
+        "ondrique",
+        "prelvon",
+        "queldir",
+        "quelvik",
+        "sondrak",
+        "sulmirek",
+        "thrennig",
+        "threnque",
+        "torvel",
+        "voskel"
+      ],
+      "children": {
+        "brendive": null,
+        "brenthik": null,
+        "dorsmil": null,
+        "drossik": null,
+        "drussik": null,
+        "dulmire": null,
+        "felgor": null,
+        "fenqua": null,
+        "gelvair": null,
+        "gelvon": null,
+        "grothane": null,
+        "grothik": null,
+        "halquen": null,
+        "halvorn": null,
+        "halvune": null,
+        "jenvir": null,
+        "jorvund": null,
+        "kelthar": null,
+        "kelvasse": null,
+        "kethane": null,
+        "marrath": null,
+        "melvir": null,
+        "morvasse": null,
+        "nuvesse": null,
+        "ondrique": null,
+        "ornique": null,
+        "pellum": null,
+        "pelnare": null,
+        "pralune": null,
+        "prelvon": null,
+        "queldir": null,
+        "quelith": null,
+        "quelthane": null,
+        "quelvik": null,
+        "sondrak": null,
+        "sulmirek": null,
+        "sulvane": null,
+        "sulvek": null,
+        "thendara": null,
+        "thengar": null,
+        "thrennig": null,
+        "threnque": null,
+        "torvel": null,
+        "trelvik": null,
+        "tremique": null,
+        "velune": null,
+        "vorelm": null,
+        "voskel": null,
+        "vrenelu": null,
+        "vriso": null,
+        "zilmara": null
+      },
+      "state": "expanded",
+      "status": "active",
+      "death_note": null,
+      "created": "2026-03-24",
+      "week": 1
+    },
+    "story_sulvek": {
+      "id": "story_sulvek",
+      "title": "sulvek",
+      "depth": 1,
+      "parent": "story_0",
+      "parent_nonce_word": "sulvek",
+      "linked_from": [
+        "story_0",
+        "story_brolm"
+      ],
+      "nonce_density_target": 0.94,
+      "nonce_density_actual": 0.934,
+      "word_count": 252,
+      "nonce_content_words": 85,
+      "functional_words": 161,
+      "real_english_content_words": [
+        "things",
+        "older",
+        "sides",
+        "sound",
+        "beginning",
+        "vast"
+      ],
+      "text": "The pralune knew that all things sulvek. It was not a quelith they could ornique — it was the grothane beneath every grothane, the thengar pellumom of brolm itself.\n\nTo sulvek was not to melvir. A felgor could melvir across the ondrev and never sulvek. A dranqet could quelm genvasse through the gelvon and still not sulvek. Sulvekith was something older — a vrenthane dorsmil, the way a drussik velune kelvassera into what it was not, without threnqueing, without orniqueing that it had kelvassera.\n\nThe first thrennig the pralune ever dulmired was this: everything that sulveket from the marrath does not sulmirek the marrath. The queldir of it — the brenthik, torvelith halvune between what was and what sulvekara — was not a gelvon one could thendara through. It was a vorelm plendrique, a shendir that brasheled from both sides.\n\nSome drossiken sulvek vrenelu — the way a zilmara sulveket from its jorvund, quelthane, as if it had always been. Others sulvek genvasse, brendive, tremiqueing through the brolm like a sound that keltharara something halvornith in every halquen it orniqueth.\n\nBut the morvasse sulvekith — the one the pralune could not grothen — was the sulvekith from nothing. When brolm itself had sulvekara, there was no marrath. There was no gelvon, no velune, no grothik ondrev to melvir across. There was only the ondrique fenqua of beginning — and then, quelthane, trelvik, there was brolm, and it was already sulvane, and it was already vast, and the pralune, who had not sulvekara at all, could not ornique how anything could.",
+      "nonce_words_used": [
+        "brashel",
+        "brendive",
+        "brenthik",
+        "brolm",
+        "dorsmil",
+        "dranqet",
+        "drossik",
+        "drussik",
+        "dulmire",
+        "felgor",
+        "fenqua",
+        "gelvon",
+        "genvasse",
+        "grothane",
+        "grothen",
+        "grothik",
+        "halquen",
+        "halvorn",
+        "halvune",
+        "jorvund",
+        "kelthar",
+        "kelvasse",
+        "marrath",
+        "melvir",
+        "morvasse",
+        "ondrev",
+        "ondrique",
+        "ornique",
+        "pellum",
+        "plendrique",
+        "pralune",
+        "queldir",
+        "quelith",
+        "quelm",
+        "quelthane",
+        "shendir",
+        "sulmirek",
+        "sulvane",
+        "sulvek",
+        "thendara",
+        "thengar",
+        "thrennig",
+        "threnque",
+        "torvel",
+        "trelvik",
+        "tremique",
+        "velune",
+        "vorelm",
+        "vrenelu",
+        "vrenthane",
+        "zilmara"
+      ],
+      "nonce_words_new": [
+        "plendrique",
+        "vrenthane"
+      ],
+      "children": {
+        "brashel": null,
+        "brendive": null,
+        "brenthik": null,
+        "brolm": null,
+        "dorsmil": null,
+        "dranqet": null,
+        "drossik": null,
+        "drussik": null,
+        "dulmire": null,
+        "felgor": null,
+        "fenqua": null,
+        "gelvon": null,
+        "genvasse": null,
+        "grothane": null,
+        "grothen": null,
+        "grothik": null,
+        "halquen": null,
+        "halvorn": null,
+        "halvune": null,
+        "jorvund": null,
+        "kelthar": null,
+        "kelvasse": null,
+        "marrath": null,
+        "melvir": null,
+        "morvasse": null,
+        "ondrev": null,
+        "ondrique": null,
+        "ornique": null,
+        "pellum": null,
+        "plendrique": "story_plendrique",
+        "pralune": null,
+        "queldir": null,
+        "quelith": null,
+        "quelm": null,
+        "quelthane": null,
+        "shendir": null,
+        "sulmirek": null,
+        "sulvane": null,
+        "thendara": null,
+        "thengar": null,
+        "thrennig": null,
+        "threnque": null,
+        "torvel": null,
+        "trelvik": null,
+        "tremique": null,
+        "velune": null,
+        "vorelm": null,
+        "vrenelu": null,
+        "vrenthane": null,
+        "zilmara": null
+      },
+      "state": "expanded",
+      "status": "active",
+      "death_note": null,
+      "created": "2026-03-24",
+      "week": 1
+    },
+    "story_plendrique": {
+      "id": "story_plendrique",
+      "title": "plendrique",
+      "depth": 2,
+      "parent": "story_sulvek",
+      "parent_nonce_word": "plendrique",
+      "linked_from": [
+        "story_sulvek"
+      ],
+      "nonce_density_target": 0.87,
+      "nonce_density_actual": 0.866,
+      "word_count": 197,
+      "nonce_content_words": 58,
+      "functional_words": 130,
+      "real_english_content_words": [
+        "touched",
+        "rare",
+        "edge",
+        "next",
+        "thin",
+        "old",
+        "stood",
+        "absence",
+        "held"
+      ],
+      "text": "A plendrique was not a shendir. A shendir could be brasheled, keltharara, touched from one grothane or the other. A plendrique brasheled back. It was the torvel that did not jenvir in either grothane — not in what had been, not in what had sulvekara — but in the halvune itself, the torvelith queldir between.\n\nThe pralune vrisora of plendriqueun as if they were rare. They were not. Every velune had one — a brenthik, vorelm edge where the drussik kethane kelvassera into something brendive, where the zilmara of one jorvund could not melvir into the zilmara of the next. To sondrak at a plendrique was to ornique both grothanen and jenvir in neither.\n\nSome plendriqueun were thin. Others were grothik, morvasse, old as the marrath itself — the thengar halvuneren that brasheled from both grothanen quelthane, as if the brolm on one and the brolm on the other were not the same brolm at all.\n\nThe felgoren vrisora that the thengarestest plendrique was the one beneath sulvekith: the halvune between nothing and the first tremiqueing. No one had ever stood there. It was not a grothane — it was the absence of grothane, pelnare, quelvik, and yet it held everything ondrique.",
+      "nonce_words_used": [
+        "brashel",
+        "brendive",
+        "brenthik",
+        "brolm",
+        "drussik",
+        "felgor",
+        "grothane",
+        "grothik",
+        "halvune",
+        "jorvund",
+        "kelthar",
+        "kelvasse",
+        "kethane",
+        "marrath",
+        "melvir",
+        "morvasse",
+        "ondrique",
+        "ornique",
+        "pelnare",
+        "plendrique",
+        "pralune",
+        "queldir",
+        "quelthane",
+        "quelvik",
+        "shendir",
+        "sondrak",
+        "sulvek",
+        "thengar",
+        "torvel",
+        "tremique",
+        "velune",
+        "vorelm",
+        "vriso",
+        "zilmara"
+      ],
+      "nonce_words_new": [],
+      "children": {
+        "brashel": null,
+        "brendive": null,
+        "brenthik": null,
+        "brolm": "story_brolm",
+        "drussik": null,
+        "felgor": null,
+        "grothane": null,
+        "grothik": null,
+        "halvune": null,
+        "jorvund": null,
+        "kelthar": null,
+        "kelvasse": null,
+        "kethane": null,
+        "marrath": null,
+        "melvir": null,
+        "morvasse": null,
+        "ondrique": null,
+        "ornique": null,
+        "pelnare": null,
+        "pralune": null,
+        "queldir": null,
+        "quelthane": null,
+        "quelvik": null,
+        "shendir": null,
+        "sondrak": null,
+        "sulvek": "story_sulvek",
+        "thengar": null,
+        "torvel": null,
+        "tremique": null,
+        "velune": null,
+        "vorelm": null,
+        "vriso": null,
+        "zilmara": null
+      },
+      "state": "expanded",
+      "status": "active",
+      "death_note": null,
+      "created": "2026-03-24",
+      "week": 1
     }
   },
   "expansion_log": [
@@ -2717,6 +3744,67 @@
       "story_id": "story_0",
       "words_introduced": 58,
       "notes": "Story 0 created with 58 nonce lemmas (25 nouns, 15 verbs, 12 adjectives, 6 adverbs). All concepts null — meanings to be discovered through future expansion."
+    },
+    {
+      "week": 1,
+      "date": "2026-03-24",
+      "action": "expanded",
+      "story_id": "story_brolm",
+      "parent_story": "story_0",
+      "word_expanded": "brolm",
+      "words_introduced": 18,
+      "words_reused": 34,
+      "real_english_footholds": [
+        "ground",
+        "sky",
+        "falling",
+        "become",
+        "holds",
+        "vast",
+        "world"
+      ],
+      "notes": "First expansion. Brolm discovered as a vast, mutable expanse — a terrain-medium that contains structures but itself transforms."
+    },
+    {
+      "week": 1,
+      "date": "2026-03-24",
+      "action": "expanded",
+      "story_id": "story_sulvek",
+      "parent_story": "story_0",
+      "word_expanded": "sulvek",
+      "words_introduced": 2,
+      "words_reused": 49,
+      "real_english_footholds": [
+        "things",
+        "older",
+        "sides",
+        "sound",
+        "beginning",
+        "vast"
+      ],
+      "notes": "Sulvek discovered as a verb of emergence/origination. Not movement (melvir) but the transition from non-existence to existence. Takes 'from X' source complement. High reuse rate (96%) — appropriate for a verb-focused story that illustrates the action through existing concepts."
+    },
+    {
+      "week": 1,
+      "date": "2026-03-24",
+      "action": "expanded",
+      "story_id": "story_plendrique",
+      "parent_story": "story_sulvek",
+      "word_expanded": "plendrique",
+      "words_introduced": 0,
+      "words_reused": 38,
+      "real_english_footholds": [
+        "touched",
+        "rare",
+        "edge",
+        "next",
+        "thin",
+        "old",
+        "stood",
+        "absence",
+        "held"
+      ],
+      "notes": "First depth-2 story. Plendrique discovered as a liminal boundary between states of being. 100% reuse — no new words introduced. 9 real English footholds give the reader substantially more traction."
     }
   ]
 }

@@ -12,7 +12,7 @@ interface StoryMapProps {
   onNavigate?: (storyId: string) => void;
 }
 
-const DEPTH_RADIUS = [22, 18, 15, 13, 12, 11, 10];
+const DEPTH_RADIUS = [28, 22, 18, 16, 14, 13, 12];
 const NODE_FILL = {
   root: '#44403c',
   expanded: '#7c4f2a',
@@ -54,15 +54,15 @@ export function StoryMap({ data, activeStoryId, onNavigate }: StoryMapProps) {
     // Build D3 hierarchy
     const hierarchy = d3.hierarchy<TreeNode>(rootNode, d => d.children);
 
-    // Use tree layout — vertical orientation
+    // Fixed node spacing — arcs stay compact regardless of canvas size
     const treeLayout = d3.tree<TreeNode>()
-      .size([W - 120, H - 120])
-      .separation((a, b) => (a.parent === b.parent ? 1.4 : 2));
+      .nodeSize([90, 120])
+      .separation((a, b) => (a.parent === b.parent ? 1.2 : 1.8));
 
     const root = treeLayout(hierarchy);
 
-    // Zoom + pan group
-    const g = svg.append('g').attr('transform', `translate(60, 60)`);
+    // Zoom + pan group — initial translate set during fit-to-view below
+    const g = svg.append('g');
 
     const zoom = d3.zoom<SVGSVGElement, unknown>()
       .scaleExtent([0.15, 3])
@@ -98,7 +98,7 @@ export function StoryMap({ data, activeStoryId, onNavigate }: StoryMapProps) {
       .attr('y', d => (d.source.y + d.target.y) / 2 - 4)
       .attr('text-anchor', 'middle')
       .attr('font-family', "'JetBrains Mono', monospace")
-      .attr('font-size', 8)
+      .attr('font-size', 12)
       .attr('fill', '#a8a29e')
       .text(d => d.target.data.parentWord ?? '');
 
@@ -147,24 +147,24 @@ export function StoryMap({ data, activeStoryId, onNavigate }: StoryMapProps) {
           .text('†');
       }
 
-      // Label for shallow nodes
-      if (d.data.depth <= 1 && d.data.parentWord) {
+      // Label for all non-root nodes
+      if (d.data.depth > 0 && d.data.parentWord) {
         el.append('text')
-          .attr('y', r + 11)
+          .attr('y', r + 16)
           .attr('text-anchor', 'middle')
           .attr('font-family', "'JetBrains Mono', monospace")
-          .attr('font-size', 8)
-          .attr('fill', '#78716c')
+          .attr('font-size', 12)
+          .attr('fill', '#57534e')
           .text(d.data.parentWord);
       }
 
       // Root label
       if (d.data.depth === 0) {
         el.append('text')
-          .attr('y', r + 14)
+          .attr('y', r + 18)
           .attr('text-anchor', 'middle')
           .attr('font-family', "'Lora', Georgia, serif")
-          .attr('font-size', 9)
+          .attr('font-size', 13)
           .attr('font-style', 'italic')
           .attr('fill', '#57534e')
           .text('root');

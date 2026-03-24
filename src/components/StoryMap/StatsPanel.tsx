@@ -15,7 +15,7 @@ export function StatsPanel({ data }: StatsPanelProps) {
   const stats = [
     { label: 'stories', value: meta.total_stories },
     { label: 'nonce words', value: meta.total_words },
-    { label: 'concepts found', value: meta.total_concepts_discovered },
+    { label: 'words expanded', value: meta.total_concepts_discovered },
     { label: 'max depth', value: meta.max_depth },
     { label: 'frontier', value: totalFrontier },
     { label: '% explored', value: `${pctExplored}%` },

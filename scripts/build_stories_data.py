@@ -206,21 +206,21 @@ def classify_token(
     return {"text": text, "type": "content"}
 
 
-def is_deep_solved(story_id: str, story_tree: dict) -> bool:
+def is_deep_solved(story_id: str, story_tree: dict, global_children: dict) -> bool:
     """Recursively check if all nonce word branches are expanded."""
     story = story_tree.get(story_id)
     if not story:
         return False
-    children = story.get("children", {})
-    for lemma, child_id in children.items():
+    for lemma in story.get("nonce_words_used", []):
+        child_id = global_children.get(lemma)
         if child_id is None:
             return False
-        if not is_deep_solved(child_id, story_tree):
+        if not is_deep_solved(child_id, story_tree, global_children):
             return False
     return True
 
 
-def update_deep_solved_states(tokens: list[dict], story_id: str, story_tree: dict) -> list[dict]:
+def update_deep_solved_states(tokens: list[dict], story_id: str, story_tree: dict, global_children: dict) -> list[dict]:
     """
     After initial tokenization, upgrade 'expanded' nonce tokens to 'deep_solved'
     where applicable.
@@ -229,7 +229,7 @@ def update_deep_solved_states(tokens: list[dict], story_id: str, story_tree: dic
     for token in tokens:
         if token.get("type") == "nonce" and token.get("state") == "expanded":
             child = token.get("child_story")
-            if child and is_deep_solved(child, story_tree):
+            if child and is_deep_solved(child, story_tree, global_children):
                 token = dict(token)
                 token["state"] = "deep_solved"
         updated.append(token)
@@ -244,12 +244,14 @@ def build_breadcrumb_label(story: dict, lexicon: dict) -> str:
     return parent_word
 
 
-def compute_stats(memory: dict) -> dict:
+def compute_stats(memory: dict, classified_stories: dict | None = None) -> dict:
     """Compute all aggregate statistics for the frontend stats page."""
     meta = memory["meta"]
     lexicon = memory["lexicon"]
     story_tree = memory["story_tree"]
     expansion_log = memory.get("expansion_log", [])
+    # classified_stories has tokenized/typed tokens; fall back to story_tree if not provided
+    token_stories = classified_stories if classified_stories is not None else story_tree
 
     # ── 1. POS distribution ───────────────────────────────────────────────
     POS_MAP = {
@@ -277,11 +279,30 @@ def compute_stats(memory: dict) -> dict:
         story = story_tree.get(entry["introduced_in"], {})
         w = story.get("week", 0)
         week_new_words[w] = week_new_words.get(w, 0) + 1
+
+    # Count new English content words per week (first appearance of each unique content token)
+    seen_content: set = set()
+    week_new_content: dict = {}
+    for story in sorted(token_stories.values(), key=lambda s: s.get("week", 0)):
+        w = story.get("week", 0)
+        for tok in story.get("tokens", []):
+            if tok.get("type") == "content":
+                word = tok["text"].lower()
+                if word not in seen_content:
+                    seen_content.add(word)
+                    week_new_content[w] = week_new_content.get(w, 0) + 1
+
     cum = 0
+    all_weeks = sorted(set(week_new_words) | set(week_new_content))
     words_per_week = []
-    for w in sorted(week_new_words):
-        cum += week_new_words[w]
-        words_per_week.append({"week": w, "new": week_new_words[w], "cumulative": cum})
+    for w in all_weeks:
+        cum += week_new_words.get(w, 0)
+        words_per_week.append({
+            "week": w,
+            "new": week_new_words.get(w, 0),
+            "new_content": week_new_content.get(w, 0),
+            "cumulative": cum,
+        })
 
     # ── 4. Stories per depth ──────────────────────────────────────────────
     depth_story: dict = {}
@@ -367,9 +388,9 @@ def compute_stats(memory: dict) -> dict:
         cumulative_growth.append({"week": w, "stories": cum_s, "words": cum_w, "concepts": discovered})
 
     # ── 13. Root coverage ─────────────────────────────────────────────────
-    children_0 = story_tree.get("story_0", {}).get("children", {})
-    expanded_0 = sum(1 for v in children_0.values() if v is not None)
-    root_coverage = expanded_0 / len(children_0) if children_0 else 0.0
+    root_words = story_tree.get("story_0", {}).get("nonce_words_used", [])
+    expanded_0 = sum(1 for w in root_words if lexicon.get(w, {}).get("stories_about"))
+    root_coverage = expanded_0 / len(root_words) if root_words else 0.0
 
     # ── 14. Weekly changelog ──────────────────────────────────────────────
     weekly_changelog = [{
@@ -410,6 +431,14 @@ def main():
     # Build morphological surface → lemma map
     morph_map = build_morph_map(lexicon)
 
+    # Build global children map: lemma → child story_id (or None if frontier)
+    # This is the DAG-aware lookup — every occurrence of a word in any story
+    # links to the same single sub-story, regardless of which parent we're in.
+    global_children = {
+        lemma: (entry["stories_about"][0] if entry.get("stories_about") else None)
+        for lemma, entry in lexicon.items()
+    }
+
     print(f"  Lexicon entries: {len(lexicon)}")
     print(f"  Morph map entries: {len(morph_map)}")
     print(f"  Stories: {len(story_tree)}")
@@ -420,25 +449,23 @@ def main():
 
     for story_id, story_data in story_tree.items():
         text = story_data.get("text", "")
-        children = story_data.get("children", {})
-        # children maps lemma → story_id_or_null
 
         # Tokenize
         raw_tokens = tokenize(text)
 
-        # Classify
+        # Classify — use global_children so every story resolves child links
         classified = []
         for raw in raw_tokens:
             tok = classify_token(
                 raw["text"],
                 morph_map,
                 functional_words,
-                children,
+                global_children,
             )
             classified.append(tok)
 
         # Update deep_solved states
-        classified = update_deep_solved_states(classified, story_id, story_tree)
+        classified = update_deep_solved_states(classified, story_id, story_tree, global_children)
 
         # Count nonce words
         nonce_count = sum(1 for t in classified if t["type"] == "nonce")
@@ -514,7 +541,7 @@ def main():
         out_expansion_log.append(log_entry)
 
     # Compute aggregate statistics
-    stats = compute_stats(memory)
+    stats = compute_stats(memory, classified_stories=out_stories)
 
     output = {
         "stories": out_stories,
