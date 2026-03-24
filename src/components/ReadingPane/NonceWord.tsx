@@ -1,6 +1,5 @@
 import { useState, useRef } from 'react';
 import type { StoryToken, AppData } from '../../types';
-import { getStoryPreview } from '../../utils/tree';
 import '../../styles/nonce-words.css';
 
 interface NonceWordProps {
