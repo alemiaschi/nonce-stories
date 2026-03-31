@@ -88,19 +88,6 @@ export function StoryMap({ data, activeStoryId, onNavigate }: StoryMapProps) {
       .attr('stroke-width', 1)
       .attr('opacity', 0.6);
 
-    // Edge labels (parent word)
-    g.selectAll('.edge-label')
-      .data(root.links())
-      .enter()
-      .append('text')
-      .attr('class', 'edge-label')
-      .attr('x', d => (d.source.x + d.target.x) / 2)
-      .attr('y', d => (d.source.y + d.target.y) / 2 - 4)
-      .attr('text-anchor', 'middle')
-      .attr('font-family', "'JetBrains Mono', monospace")
-      .attr('font-size', 12)
-      .attr('fill', '#a8a29e')
-      .text(d => d.target.data.parentWord ?? '');
 
     // Draw nodes
     const nodeGroups = g.selectAll('.node')

@@ -629,7 +629,7 @@ export function WeekTimeline({ entries }: { entries: ChangelogEntry[] }) {
   }
 
   const sorted = [...entries].reverse();
-  const LIMIT = 5;
+  const LIMIT = 3;
   const visible = expanded ? sorted : sorted.slice(0, LIMIT);
 
   return (

@@ -4,11 +4,11 @@
     "project_subtitle": "Nonce Stories",
     "version": "0.1.0",
     "created": "2026-03-17",
-    "last_updated": "2026-03-24",
-    "current_week": 1,
-    "total_stories": 4,
+    "last_updated": "2026-03-31",
+    "current_week": 2,
+    "total_stories": 8,
     "total_lexicon_entries": 77,
-    "total_concepts_discovered": 3,
+    "total_concepts_discovered": 7,
     "max_depth_reached": 2,
     "density_curve": {
       "0": 1.0,
@@ -303,7 +303,11 @@
         "story_0",
         "story_brolm",
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_quelith",
+        "story_grothen",
+        "story_fenqua",
+        "story_vrenthane"
       ],
       "stories_about": [
         "story_brolm"
@@ -380,7 +384,10 @@
         "story_0",
         "story_brolm",
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_grothen",
+        "story_fenqua",
+        "story_vrenthane"
       ],
       "stories_about": [],
       "annotation": null,
@@ -478,7 +485,11 @@
       "appears_in": [
         "story_0",
         "story_brolm",
-        "story_sulvek"
+        "story_sulvek",
+        "story_quelith",
+        "story_grothen",
+        "story_fenqua",
+        "story_vrenthane"
       ],
       "stories_about": [],
       "annotation": null,
@@ -503,9 +514,9 @@
     },
     "quelith": {
       "id": "quelith",
-      "concept": null,
-      "concept_discovered_from": null,
-      "context_notes": null,
+      "concept": "An entity or phenomenon that sulvekara (emerged) and then ceased to change — the only thing in the brolm that jenvirs (persists/remains) while everything else halvornara (transforms). Quelithen resist the brolm's mutability. They hold their pellumom thengar and ondrique. Inside a quelith, the normal processes of the brolm stop — nothing can sulvek or nuvesse there. This is why no one can ornique a quelith: it exists outside the brolm's logic of constant transformation. It is the one thing the brolm cannot become.",
+      "concept_discovered_from": "story_quelith",
+      "context_notes": "In Story 0, quelith appeared as: (1) an existential subject that resists ornique, (2) a verb meaning to affect/transform from within, (3) a spatial container with an inside. In Story.brolm, quelitharen are entities that traverse brolm. In Story.sulvek, quelith is used as a category contrasted with the grothane of sulvek. The sub-story synthesized these: quelith is the exception to brolm's rule of constant change — the one stable thing in a mutable world.",
       "pos": "noun/verb",
       "morphology": {
         "plural": "quelithen",
@@ -518,9 +529,13 @@
       "appears_in": [
         "story_0",
         "story_brolm",
-        "story_sulvek"
+        "story_sulvek",
+        "story_quelith",
+        "story_fenqua"
       ],
-      "stories_about": [],
+      "stories_about": [
+        "story_quelith"
+      ],
       "annotation": null,
       "usage_log": [
         {
@@ -578,7 +593,10 @@
         "story_0",
         "story_brolm",
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_quelith",
+        "story_grothen",
+        "story_fenqua"
       ],
       "stories_about": [],
       "annotation": null,
@@ -701,7 +719,11 @@
         "story_0",
         "story_brolm",
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_quelith",
+        "story_grothen",
+        "story_fenqua",
+        "story_vrenthane"
       ],
       "stories_about": [],
       "annotation": null,
@@ -774,7 +796,8 @@
         "story_0",
         "story_brolm",
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_grothen"
       ],
       "stories_about": [],
       "annotation": null,
@@ -811,7 +834,8 @@
       "depth_introduced": 0,
       "appears_in": [
         "story_0",
-        "story_sulvek"
+        "story_sulvek",
+        "story_grothen"
       ],
       "stories_about": [],
       "annotation": null,
@@ -884,7 +908,9 @@
         "story_0",
         "story_brolm",
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_quelith",
+        "story_vrenthane"
       ],
       "stories_about": [],
       "annotation": null,
@@ -994,7 +1020,9 @@
       "appears_in": [
         "story_0",
         "story_brolm",
-        "story_sulvek"
+        "story_sulvek",
+        "story_quelith",
+        "story_grothen"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1056,7 +1084,9 @@
         "story_0",
         "story_brolm",
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_quelith",
+        "story_grothen"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1093,7 +1123,9 @@
       "appears_in": [
         "story_0",
         "story_brolm",
-        "story_plendrique"
+        "story_plendrique",
+        "story_grothen",
+        "story_fenqua"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1395,7 +1427,11 @@
       "appears_in": [
         "story_0",
         "story_brolm",
-        "story_plendrique"
+        "story_plendrique",
+        "story_quelith",
+        "story_grothen",
+        "story_fenqua",
+        "story_vrenthane"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1475,7 +1511,11 @@
         "story_0",
         "story_brolm",
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_quelith",
+        "story_grothen",
+        "story_fenqua",
+        "story_vrenthane"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1500,9 +1540,9 @@
     },
     "grothen": {
       "id": "grothen",
-      "concept": null,
-      "concept_discovered_from": null,
-      "context_notes": null,
+      "concept": "To actualize, to bring something into full being — to carry a drossik's pellumom through the plendrique where it had been jenviring and let it sulvek into the brolm as something orniquable. Most things grothen on their own (vrenelu grothenith), but some pellumomen are thengar and require the pralune to grothen them by force — by brasheling against the plendrique until the halvune grows dulmire enough. When something has been pelnare for many jorvunden and finally grothens, the entire brolm tremiquera in response. Grothen is the climactic verb — the moment potential becomes actual.",
+      "concept_discovered_from": "story_grothen",
+      "context_notes": "In Story 0, grothen appeared as: (1) negated ability — the pralune could not grothen a thengar pellumom, (2) climactic intransitive — the vossimer grothened after long pelnare dormancy, (3) emphatic — 'it grothened janvirely.' In Story.sulvek, the pralune could not grothen the sulvekith from nothing. In Story.quelith, the quelith grothaned a grothane. The pattern: grothen = bringing latent potential into actual being, with both transitive and intransitive forms.",
       "pos": "verb",
       "morphology": {
         "past": "grothenara",
@@ -1514,9 +1554,14 @@
       "depth_introduced": 0,
       "appears_in": [
         "story_0",
-        "story_sulvek"
+        "story_sulvek",
+        "story_grothen",
+        "story_fenqua",
+        "story_vrenthane"
       ],
-      "stories_about": [],
+      "stories_about": [
+        "story_grothen"
+      ],
       "annotation": null,
       "usage_log": [
         {
@@ -1576,7 +1621,11 @@
         "story_0",
         "story_brolm",
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_quelith",
+        "story_grothen",
+        "story_fenqua",
+        "story_vrenthane"
       ],
       "stories_about": [
         "story_sulvek"
@@ -1632,7 +1681,9 @@
         "participle": "orniqueith",
         "third_person": "orniqueet",
         "participle_english": "orniqueing",
-        "third_person_archaic": "orniqueth"
+        "third_person_archaic": "orniqueth",
+        "adjective_derivation": "orniquable",
+        "participle_nonce": "orniquith"
       },
       "introduced_in": "story_0",
       "depth_introduced": 0,
@@ -1640,7 +1691,11 @@
         "story_0",
         "story_brolm",
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_quelith",
+        "story_grothen",
+        "story_fenqua",
+        "story_vrenthane"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1672,14 +1727,19 @@
         "past": "brashelara",
         "participle": "brashelith",
         "third_person": "brashelet",
-        "past_english": "brasheled"
+        "past_english": "brasheled",
+        "participle_english": "brasheling"
       },
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
         "story_0",
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_quelith",
+        "story_grothen",
+        "story_fenqua",
+        "story_vrenthane"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1706,19 +1766,23 @@
       "concept": null,
       "concept_discovered_from": null,
       "context_notes": null,
-      "pos": "verb",
+      "pos": "verb/noun",
       "morphology": {
         "past": "pellumara",
         "participle": "pellumith",
         "third_person": "pellumet",
-        "noun_derivation": "pellumom"
+        "noun_derivation": "pellumom",
+        "noun_derivation_plural": "pellumomen"
       },
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
         "story_0",
         "story_brolm",
-        "story_sulvek"
+        "story_sulvek",
+        "story_quelith",
+        "story_grothen",
+        "story_fenqua"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1833,7 +1897,9 @@
       "depth_introduced": 0,
       "appears_in": [
         "story_0",
-        "story_brolm"
+        "story_brolm",
+        "story_quelith",
+        "story_grothen"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1909,7 +1975,10 @@
       "appears_in": [
         "story_0",
         "story_brolm",
-        "story_sulvek"
+        "story_sulvek",
+        "story_quelith",
+        "story_grothen",
+        "story_vrenthane"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1949,7 +2018,11 @@
         "story_0",
         "story_brolm",
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_quelith",
+        "story_grothen",
+        "story_fenqua",
+        "story_vrenthane"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2011,7 +2084,11 @@
         "story_0",
         "story_brolm",
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_quelith",
+        "story_grothen",
+        "story_fenqua",
+        "story_vrenthane"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2050,7 +2127,11 @@
         "story_0",
         "story_brolm",
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_quelith",
+        "story_grothen",
+        "story_fenqua",
+        "story_vrenthane"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2090,7 +2171,10 @@
         "story_0",
         "story_brolm",
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_quelith",
+        "story_grothen",
+        "story_fenqua"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2129,7 +2213,10 @@
       "appears_in": [
         "story_0",
         "story_brolm",
-        "story_plendrique"
+        "story_plendrique",
+        "story_quelith",
+        "story_grothen",
+        "story_vrenthane"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2161,7 +2248,8 @@
       "morphology": {
         "comparative": "grothikun",
         "superlative": "grothikest",
-        "adverb": "grothikelu"
+        "adverb": "grothikelu",
+        "past_verbal": "grothikara"
       },
       "introduced_in": "story_0",
       "depth_introduced": 0,
@@ -2169,7 +2257,9 @@
         "story_0",
         "story_brolm",
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_quelith",
+        "story_vrenthane"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2208,7 +2298,8 @@
       "appears_in": [
         "story_0",
         "story_brolm",
-        "story_sulvek"
+        "story_sulvek",
+        "story_quelith"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2244,7 +2335,8 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_quelith"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2284,7 +2376,11 @@
         "story_0",
         "story_brolm",
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_quelith",
+        "story_grothen",
+        "story_fenqua",
+        "story_vrenthane"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2324,7 +2420,11 @@
         "story_0",
         "story_brolm",
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_quelith",
+        "story_grothen",
+        "story_fenqua",
+        "story_vrenthane"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2351,7 +2451,7 @@
       "concept": null,
       "concept_discovered_from": null,
       "context_notes": null,
-      "pos": "adjective",
+      "pos": "adjective/adverb",
       "morphology": {
         "comparative": "janvireun",
         "superlative": "janvireest",
@@ -2361,7 +2461,8 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_grothen"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2431,7 +2532,9 @@
       "appears_in": [
         "story_0",
         "story_brolm",
-        "story_sulvek"
+        "story_sulvek",
+        "story_quelith",
+        "story_grothen"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2466,7 +2569,8 @@
         "story_0",
         "story_brolm",
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_grothen"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2501,7 +2605,10 @@
       "appears_in": [
         "story_0",
         "story_brolm",
-        "story_sulvek"
+        "story_sulvek",
+        "story_quelith",
+        "story_grothen",
+        "story_vrenthane"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2638,7 +2745,11 @@
       "depth_introduced": 1,
       "appears_in": [
         "story_brolm",
-        "story_sulvek"
+        "story_sulvek",
+        "story_quelith",
+        "story_grothen",
+        "story_fenqua",
+        "story_vrenthane"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2662,7 +2773,9 @@
       "introduced_in": "story_brolm",
       "depth_introduced": 1,
       "appears_in": [
-        "story_brolm"
+        "story_brolm",
+        "story_quelith",
+        "story_fenqua"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2689,7 +2802,9 @@
       "depth_introduced": 1,
       "appears_in": [
         "story_brolm",
-        "story_sulvek"
+        "story_sulvek",
+        "story_grothen",
+        "story_fenqua"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2702,9 +2817,9 @@
     },
     "fenqua": {
       "id": "fenqua",
-      "concept": null,
-      "concept_discovered_from": null,
-      "context_notes": null,
+      "concept": "The latent essence or potential inside a drossik — not a seed (which knows what it will become) but the possibility before the direction, the queldir before the thrennig. A fenqua makes sulvekith possible without determining where it will go. Every drossik has one, but not every fenqua grothens. Inside a quelith, the fenqua sondrakara — trapped by the quelith's resistance to change. The brolm itself may be nothing more than a grothened fenqua: the one that tremiquera through its own plendrique.",
+      "concept_discovered_from": "story_fenqua",
+      "context_notes": "In Story.brolm, fenqua appeared as: (1) possessed by the marrath ('its fenqua' — dulmired by the pralune), (2) a medium through which the brolm gelvairs itself ('some thengar fenqua that no one could ornique'). In Story.sulvek: 'the ondrique fenqua of beginning' — the pre-origin state. In Story.plendrique: 'the fenqua of grothane' — the essence of actualization. The sub-story synthesized these: fenqua is undirected potential, the state before becoming, present in everything but realized in few.",
       "pos": "noun",
       "morphology": {
         "plural": "fenquaren",
@@ -2714,9 +2829,13 @@
       "depth_introduced": 1,
       "appears_in": [
         "story_brolm",
-        "story_sulvek"
+        "story_sulvek",
+        "story_fenqua",
+        "story_vrenthane"
       ],
-      "stories_about": [],
+      "stories_about": [
+        "story_fenqua"
+      ],
       "annotation": null,
       "pronunciation": {
         "ipa": "/ˈfɛn.kwə/",
@@ -2733,14 +2852,18 @@
       "pos": "noun",
       "morphology": {
         "plural": "grothanen",
-        "possessive": "grothaneis"
+        "possessive": "grothaneis",
+        "past_verbal": "grothaned"
       },
       "introduced_in": "story_brolm",
       "depth_introduced": 1,
       "appears_in": [
         "story_brolm",
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_quelith",
+        "story_fenqua",
+        "story_vrenthane"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2759,13 +2882,19 @@
       "pos": "noun/verb",
       "morphology": {
         "plural": "sondraken",
-        "possessive": "sondrakis"
+        "possessive": "sondrakis",
+        "past": "sondrakara",
+        "participle": "sondrakith"
       },
       "introduced_in": "story_brolm",
       "depth_introduced": 1,
       "appears_in": [
         "story_brolm",
-        "story_plendrique"
+        "story_plendrique",
+        "story_quelith",
+        "story_grothen",
+        "story_fenqua",
+        "story_vrenthane"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2791,7 +2920,10 @@
       "appears_in": [
         "story_brolm",
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_quelith",
+        "story_grothen",
+        "story_fenqua"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2818,7 +2950,9 @@
       "appears_in": [
         "story_brolm",
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_quelith",
+        "story_fenqua"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2845,7 +2979,9 @@
       "appears_in": [
         "story_brolm",
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_quelith",
+        "story_grothen"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2871,7 +3007,11 @@
       "appears_in": [
         "story_brolm",
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_quelith",
+        "story_grothen",
+        "story_fenqua",
+        "story_vrenthane"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2891,12 +3031,18 @@
       "morphology": {
         "past": "jenvirara",
         "participle": "jenvirith",
-        "third_person": "jenviret"
+        "third_person": "jenviret",
+        "past_english": "jenvired",
+        "participle_english": "jenviring"
       },
       "introduced_in": "story_brolm",
       "depth_introduced": 1,
       "appears_in": [
-        "story_brolm"
+        "story_brolm",
+        "story_quelith",
+        "story_grothen",
+        "story_fenqua",
+        "story_vrenthane"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2916,14 +3062,19 @@
       "morphology": {
         "past": "kelvassera",
         "participle": "kelvasseith",
-        "third_person": "kelvasseet"
+        "third_person": "kelvasseet",
+        "participle_english": "kelvassing"
       },
       "introduced_in": "story_brolm",
       "depth_introduced": 1,
       "appears_in": [
         "story_brolm",
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_quelith",
+        "story_grothen",
+        "story_fenqua",
+        "story_vrenthane"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2975,7 +3126,11 @@
       "appears_in": [
         "story_brolm",
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_quelith",
+        "story_grothen",
+        "story_fenqua",
+        "story_vrenthane"
       ],
       "stories_about": [],
       "annotation": null,
@@ -3025,7 +3180,8 @@
       "introduced_in": "story_brolm",
       "depth_introduced": 1,
       "appears_in": [
-        "story_brolm"
+        "story_brolm",
+        "story_quelith"
       ],
       "stories_about": [],
       "annotation": null,
@@ -3052,7 +3208,9 @@
       "depth_introduced": 1,
       "appears_in": [
         "story_brolm",
-        "story_sulvek"
+        "story_sulvek",
+        "story_fenqua",
+        "story_vrenthane"
       ],
       "stories_about": [],
       "annotation": null,
@@ -3078,7 +3236,8 @@
       "depth_introduced": 1,
       "appears_in": [
         "story_brolm",
-        "story_plendrique"
+        "story_plendrique",
+        "story_vrenthane"
       ],
       "stories_about": [],
       "annotation": null,
@@ -3091,17 +3250,20 @@
     },
     "vrenthane": {
       "id": "vrenthane",
-      "concept": null,
-      "concept_discovered_from": null,
-      "context_notes": null,
+      "concept": "The manner of unconscious transformation — the way a drossik kelvassera without orniqueing that it kelvassera. Vrenthane is the blind sulvekith, the grothenith that doesn't know it's happening. A velune that halvornara vrenthane didn't choose to change; it simply became something else without perceiving any plendrique. The pralune fear vrenthane more than ondrique (stasis/opacity), because an ondrique drossik at least jenvirs — it holds its grothane. A vrenthane drossik is already changing and doesn't know it. The most vorelm halvune is the one you cannot ornique you're inside.",
+      "concept_discovered_from": "story_vrenthane",
+      "context_notes": "In Story.sulvek, vrenthane appeared once: 'Sulvekith was something older — a vrenthane dorsmil, the way a drussik velune kelvassera into what it was not, without threnqueing, without orniqueing that it had kelvassera.' The single usage paired vrenthane with dorsmil and contrasted it with intentional/aware processes. The sub-story expanded: vrenthane is the mode of change that is invisible to the thing changing. Contrasted with ondrique (which at least holds still).",
       "pos": "adverb",
       "morphology": {},
       "introduced_in": "story_sulvek",
       "depth_introduced": 1,
       "appears_in": [
-        "story_sulvek"
+        "story_sulvek",
+        "story_vrenthane"
       ],
-      "stories_about": [],
+      "stories_about": [
+        "story_vrenthane"
+      ],
       "annotation": null,
       "pronunciation": {
         "ipa": "/ˈvrɛn.θeɪn/",
@@ -3124,7 +3286,11 @@
       "depth_introduced": 1,
       "appears_in": [
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_quelith",
+        "story_grothen",
+        "story_fenqua",
+        "story_vrenthane"
       ],
       "stories_about": [
         "story_plendrique"
@@ -3273,7 +3439,7 @@
         "velune": null,
         "venquar": null,
         "drossik": null,
-        "quelith": null,
+        "quelith": "story_quelith",
         "marrath": null,
         "gelvon": null,
         "shendir": null,
@@ -3298,7 +3464,7 @@
         "vriso": null,
         "thendara": null,
         "melvir": null,
-        "grothen": null,
+        "grothen": "story_grothen",
         "sulvek": "story_sulvek",
         "ornique": null,
         "brashel": null,
@@ -3441,7 +3607,7 @@
         "drussik": null,
         "dulmire": null,
         "felgor": null,
-        "fenqua": null,
+        "fenqua": "story_fenqua",
         "gelvair": null,
         "gelvon": null,
         "grothane": null,
@@ -3622,7 +3788,7 @@
         "velune": null,
         "vorelm": null,
         "vrenelu": null,
-        "vrenthane": null,
+        "vrenthane": "story_vrenthane",
         "zilmara": null
       },
       "state": "expanded",
@@ -3734,6 +3900,439 @@
       "death_note": null,
       "created": "2026-03-24",
       "week": 1
+    },
+    "story_quelith": {
+      "id": "story_quelith",
+      "title": "quelith",
+      "depth": 1,
+      "parent": "story_0",
+      "parent_nonce_word": "quelith",
+      "linked_from": [
+        "story_0",
+        "story_brolm",
+        "story_sulvek"
+      ],
+      "nonce_density_target": 0.94,
+      "nonce_density_actual": 0.971,
+      "word_count": 207,
+      "nonce_content_words": 68,
+      "functional_words": 137,
+      "real_english_content_words": [
+        "held",
+        "become"
+      ],
+      "text": "No one orniquera a quelith by melviring toward it. A quelith was not a grothane, not a torvel, not a halquen one could sondrak in. It was the voskel that sulvekara and then did not kelvasse — the only drossik in the brolm that jenvired while everything around it halvornara.\n\nThe pralune vrisora that quelithen were brendive. They sulvekara from the marrath the way all grothik drossiken sulvek — vrenelu, dorsmil — but then they did not tremique. They did not gelvair. They held their pellumom thengar and ondrique, and the brolm itself could not quelithara them, though it quelithara everything else from within.\n\nTo be inside a quelith was to ornique the plendrique between what kelvassera and what did not. The queldir was brenthik there, sulvane, as if the jorvund had sondrakara. The felgoren who had melvired into quelithen vrisora that inside, the thrennig of drossiken was not morvasse but pelnare, not brendive but krelith, as if the quelith had brasheled the halvune of the brolm and grothaned a grothane where nothing could sulvek and nothing could nuvesse.\n\nThat was why no one could ornique a quelith. It was not drussik. It was not vorelm. It was the one drossik in the brolm that the brolm could not become.",
+      "nonce_words_used": [
+        "brashel",
+        "brendive",
+        "brenthik",
+        "brolm",
+        "dorsmil",
+        "drossik",
+        "drussik",
+        "felgor",
+        "gelvair",
+        "grothane",
+        "grothik",
+        "halquen",
+        "halvorn",
+        "halvune",
+        "jenvir",
+        "jorvund",
+        "kelvasse",
+        "krelith",
+        "marrath",
+        "melvir",
+        "morvasse",
+        "nuvesse",
+        "ondrique",
+        "ornique",
+        "pellum",
+        "pelnare",
+        "plendrique",
+        "pralune",
+        "queldir",
+        "quelith",
+        "sondrak",
+        "sulvane",
+        "sulvek",
+        "thengar",
+        "thrennig",
+        "torvel",
+        "tremique",
+        "vorelm",
+        "voskel",
+        "vrenelu",
+        "vriso"
+      ],
+      "nonce_words_new": [],
+      "children": {
+        "brashel": null,
+        "brendive": null,
+        "brenthik": null,
+        "brolm": "story_brolm",
+        "dorsmil": null,
+        "drossik": null,
+        "drussik": null,
+        "felgor": null,
+        "gelvair": null,
+        "grothane": null,
+        "grothik": null,
+        "halquen": null,
+        "halvorn": null,
+        "halvune": null,
+        "jenvir": null,
+        "jorvund": null,
+        "kelvasse": null,
+        "krelith": null,
+        "marrath": null,
+        "melvir": null,
+        "morvasse": null,
+        "nuvesse": null,
+        "ondrique": null,
+        "ornique": null,
+        "pellum": null,
+        "pelnare": null,
+        "plendrique": "story_plendrique",
+        "pralune": null,
+        "queldir": null,
+        "sondrak": null,
+        "sulvane": null,
+        "sulvek": "story_sulvek",
+        "thengar": null,
+        "thrennig": null,
+        "torvel": null,
+        "tremique": null,
+        "vorelm": null,
+        "voskel": null,
+        "vrenelu": null,
+        "vriso": null
+      },
+      "state": "expanded",
+      "status": "active",
+      "death_note": null,
+      "created": "2026-03-31",
+      "week": 2
+    },
+    "story_grothen": {
+      "id": "story_grothen",
+      "title": "grothen",
+      "depth": 1,
+      "parent": "story_0",
+      "parent_nonce_word": "grothen",
+      "linked_from": [
+        "story_0",
+        "story_sulvek"
+      ],
+      "nonce_density_target": 0.94,
+      "nonce_density_actual": 0.901,
+      "word_count": 216,
+      "nonce_content_words": 73,
+      "functional_words": 135,
+      "real_english_content_words": [
+        "many",
+        "waiting",
+        "orniquable",
+        "need",
+        "behind",
+        "became",
+        "make",
+        "against"
+      ],
+      "text": "To grothen was to make a drossik orniquable. Not to kelvasse it, not to halvorn it — to bring its pellumom through the plendrique where it had been jenviring and let it sulvek into the brolm as something the brolm could ornique.\n\nThe pralune vrisora that most drossiken grothened on their own. A velune would tremique, its drussik kethane would kelvasse, and quelthane, without thrennig, the velune grothened — it quelthane became what it had been brendive toward. This was the vrenelu grothenith, the one that did not need the pralune.\n\nBut some pellumomen were thengar. They jenvired behind their plendrique, ondrique, vorelm, and the brolm could not ornique them. These were the drossiken that the pralune had to grothen — by melviring toward the plendrique, by brashelith against it dorsmil, by sondrakith at the torvelith queldir until the halvune between what was and what could sulvek grothened dulmire enough to ornique through.\n\nWhen a drossik grothened janvirely — when it had been pelnare for so many jorvunden that even the marrath had nuvessera around it — the brolm itself tremiquera. The zilmara of the grothened drossik would sulvek vrenelu into every halquen, every kethane, every ondrev, as if the brolm had been waiting for it, as if everything had been morvasse only because this one drossik had not yet grothened.",
+      "nonce_words_used": [
+        "brashel",
+        "brendive",
+        "brolm",
+        "dorsmil",
+        "drossik",
+        "drussik",
+        "dulmire",
+        "grothen",
+        "halquen",
+        "halvorn",
+        "halvune",
+        "janvire",
+        "jenvir",
+        "jorvund",
+        "kelvasse",
+        "kethane",
+        "marrath",
+        "melvir",
+        "morvasse",
+        "nuvesse",
+        "ondrev",
+        "ondrique",
+        "ornique",
+        "pellum",
+        "pelnare",
+        "plendrique",
+        "pralune",
+        "queldir",
+        "quelthane",
+        "sondrak",
+        "sulvek",
+        "thengar",
+        "thrennig",
+        "torvel",
+        "tremique",
+        "velune",
+        "vorelm",
+        "vrenelu",
+        "vriso",
+        "zilmara"
+      ],
+      "nonce_words_new": [],
+      "children": {
+        "brashel": null,
+        "brendive": null,
+        "brolm": "story_brolm",
+        "dorsmil": null,
+        "drossik": null,
+        "drussik": null,
+        "dulmire": null,
+        "halquen": null,
+        "halvorn": null,
+        "halvune": null,
+        "janvire": null,
+        "jenvir": null,
+        "jorvund": null,
+        "kelvasse": null,
+        "kethane": null,
+        "marrath": null,
+        "melvir": null,
+        "morvasse": null,
+        "nuvesse": null,
+        "ondrev": null,
+        "ondrique": null,
+        "ornique": null,
+        "pellum": null,
+        "pelnare": null,
+        "plendrique": "story_plendrique",
+        "pralune": null,
+        "queldir": null,
+        "quelthane": null,
+        "sondrak": null,
+        "sulvek": "story_sulvek",
+        "thengar": null,
+        "thrennig": null,
+        "torvel": null,
+        "tremique": null,
+        "velune": null,
+        "vorelm": null,
+        "vrenelu": null,
+        "vriso": null,
+        "zilmara": null
+      },
+      "state": "expanded",
+      "status": "active",
+      "death_note": null,
+      "created": "2026-03-31",
+      "week": 2
+    },
+    "story_fenqua": {
+      "id": "story_fenqua",
+      "title": "fenqua",
+      "depth": 2,
+      "parent": "story_brolm",
+      "parent_nonce_word": "fenqua",
+      "linked_from": [
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique"
+      ],
+      "nonce_density_target": 0.87,
+      "nonce_density_actual": 0.84,
+      "word_count": 201,
+      "nonce_content_words": 63,
+      "functional_words": 126,
+      "real_english_content_words": [
+        "quiet",
+        "held",
+        "become",
+        "carried",
+        "old",
+        "forgotten",
+        "possible",
+        "thing",
+        "silent"
+      ],
+      "text": "Every drossik had a fenqua, but not every fenqua grothened. Most jenvired — quiet, ondrique, brenthik beneath the pellumom of whatever held them. A velune's fenqua was the drussik kethane it could become but had not. A marrath's fenqua was the sulvekith it still carried, vorelm and old and dulmired by the pralune who had forgotten what had sulvekara from it.\n\nA fenqua was not a thrennig. A thrennig orniquera what it would grothen into. A fenqua did not ornique. It was the queldir before the grothane, the halvune before the thrennig — the brendive, thengar voskel that made sulvekith possible without threnqueing where the sulvekith would melvir.\n\nThe pralune vrisora that the brolm itself was only a grothened fenqua — the one that had been ondrique enough, morvasse enough, to tremique through its own plendrique. They vrisora that inside every quelith, the fenqua had sondrakara — not because it had grothened, but because the quelith had brasheled it from kelvassing, and a fenqua that could not kelvasse could not become anything at all.\n\nThis was the thengarath of fenqua: it was not a thing. It was the silent halvune inside a drossik where the drossik was still orniqueing what to sulvek into.",
+      "nonce_words_used": [
+        "brashel",
+        "brendive",
+        "brenthik",
+        "brolm",
+        "drossik",
+        "drussik",
+        "dulmire",
+        "fenqua",
+        "grothane",
+        "grothen",
+        "halvune",
+        "jenvir",
+        "kelvasse",
+        "kethane",
+        "marrath",
+        "melvir",
+        "morvasse",
+        "ondrique",
+        "ornique",
+        "pellum",
+        "plendrique",
+        "pralune",
+        "queldir",
+        "quelith",
+        "sondrak",
+        "sulvek",
+        "thengar",
+        "thrennig",
+        "threnque",
+        "tremique",
+        "velune",
+        "vorelm",
+        "voskel",
+        "vriso"
+      ],
+      "nonce_words_new": [],
+      "children": {
+        "brashel": null,
+        "brendive": null,
+        "brenthik": null,
+        "brolm": "story_brolm",
+        "drossik": null,
+        "drussik": null,
+        "dulmire": null,
+        "grothane": null,
+        "grothen": "story_grothen",
+        "halvune": null,
+        "jenvir": null,
+        "kelvasse": null,
+        "kethane": null,
+        "marrath": null,
+        "melvir": null,
+        "morvasse": null,
+        "ondrique": null,
+        "ornique": null,
+        "pellum": null,
+        "plendrique": "story_plendrique",
+        "pralune": null,
+        "queldir": null,
+        "quelith": "story_quelith",
+        "sondrak": null,
+        "sulvek": "story_sulvek",
+        "thengar": null,
+        "thrennig": null,
+        "threnque": null,
+        "tremique": null,
+        "velune": null,
+        "vorelm": null,
+        "voskel": null,
+        "vriso": null
+      },
+      "state": "expanded",
+      "status": "active",
+      "death_note": null,
+      "created": "2026-03-31",
+      "week": 2
+    },
+    "story_vrenthane": {
+      "id": "story_vrenthane",
+      "title": "vrenthane",
+      "depth": 2,
+      "parent": "story_sulvek",
+      "parent_nonce_word": "vrenthane",
+      "linked_from": [
+        "story_sulvek"
+      ],
+      "nonce_density_target": 0.87,
+      "nonce_density_actual": 0.899,
+      "word_count": 202,
+      "nonce_content_words": 62,
+      "functional_words": 133,
+      "real_english_content_words": [
+        "blind",
+        "became",
+        "have",
+        "held",
+        "against",
+        "losing",
+        "silent"
+      ],
+      "text": "The pralune had a thrennig for what could be orniquith and a thrennig for what could not. But vrenthane was neither. It was the way a drossik kelvassera without orniqueing that it kelvassera — the blind sulvekith, the grothenith that did not ornique it was grothenith.\n\nA velune that halvornara vrenthane did not threnque to halvorn. The brolm beneath it tremiquera, its fenqua sondrakara, and the velune became something it had not been — but if you had vrisora it, dorsmil, from within, it would not have orniquith any plendrique at all. The kelvassing was ondrique to the drossik that kelvassera.\n\nThe pralune grothikara the vrenthane more than the ondrique. An ondrique drossik at least jenvired — it held its grothane, pelnare and quelvik, brashelith against the brolm. But a vrenthane drossik was already melviring, already sulvekith into something brendive, and it did not ornique. It could not threnque for what it was losing because it did not ornique that anything had kelvassera at all.\n\nThis was why the felgoren vrisora of vrenthane as the morvasse dorsmil — not because it was thengar, not because it brasheled, but because it was silent. The most vorelm halvune was the one you could not ornique you were inside.",
+      "nonce_words_used": [
+        "brashel",
+        "brendive",
+        "brolm",
+        "dorsmil",
+        "drossik",
+        "felgor",
+        "fenqua",
+        "grothane",
+        "grothen",
+        "grothik",
+        "halvorn",
+        "halvune",
+        "jenvir",
+        "kelvasse",
+        "melvir",
+        "morvasse",
+        "ondrique",
+        "ornique",
+        "pelnare",
+        "plendrique",
+        "pralune",
+        "quelvik",
+        "sondrak",
+        "sulvek",
+        "thengar",
+        "thrennig",
+        "threnque",
+        "tremique",
+        "velune",
+        "vorelm",
+        "vrenthane",
+        "vriso"
+      ],
+      "nonce_words_new": [],
+      "children": {
+        "brashel": null,
+        "brendive": null,
+        "brolm": "story_brolm",
+        "dorsmil": null,
+        "drossik": null,
+        "felgor": null,
+        "fenqua": "story_fenqua",
+        "grothane": null,
+        "grothen": "story_grothen",
+        "grothik": null,
+        "halvorn": null,
+        "halvune": null,
+        "jenvir": null,
+        "kelvasse": null,
+        "melvir": null,
+        "morvasse": null,
+        "ondrique": null,
+        "ornique": null,
+        "pelnare": null,
+        "plendrique": "story_plendrique",
+        "pralune": null,
+        "quelvik": null,
+        "sondrak": null,
+        "sulvek": "story_sulvek",
+        "thengar": null,
+        "thrennig": null,
+        "threnque": null,
+        "tremique": null,
+        "velune": null,
+        "vorelm": null,
+        "vriso": null
+      },
+      "state": "expanded",
+      "status": "active",
+      "death_note": null,
+      "created": "2026-03-31",
+      "week": 2
     }
   },
   "expansion_log": [
@@ -3805,6 +4404,84 @@
         "held"
       ],
       "notes": "First depth-2 story. Plendrique discovered as a liminal boundary between states of being. 100% reuse — no new words introduced. 9 real English footholds give the reader substantially more traction."
+    },
+    {
+      "week": 2,
+      "date": "2026-03-31",
+      "action": "expanded",
+      "story_id": "story_quelith",
+      "parent_story": "story_0",
+      "word_expanded": "quelith",
+      "words_introduced": 0,
+      "words_reused": 42,
+      "real_english_footholds": [
+        "held",
+        "become"
+      ],
+      "notes": "Quelith discovered as the exception to brolm's mutability — the one stable thing in a world of constant change. 100% reuse, 0 new words. DAG links to story_brolm, story_sulvek, story_plendrique."
+    },
+    {
+      "week": 2,
+      "date": "2026-03-31",
+      "action": "expanded",
+      "story_id": "story_grothen",
+      "parent_story": "story_0",
+      "word_expanded": "grothen",
+      "words_introduced": 0,
+      "words_reused": 41,
+      "real_english_footholds": [
+        "many",
+        "waiting",
+        "orniquable",
+        "need",
+        "behind",
+        "became",
+        "make",
+        "against"
+      ],
+      "notes": "Grothen discovered as the verb of actualization — bringing latent potential through the plendrique into orniquable being. Climactic verb of Story 0. 100% reuse."
+    },
+    {
+      "week": 2,
+      "date": "2026-03-31",
+      "action": "expanded",
+      "story_id": "story_fenqua",
+      "parent_story": "story_brolm",
+      "word_expanded": "fenqua",
+      "words_introduced": 0,
+      "words_reused": 34,
+      "real_english_footholds": [
+        "quiet",
+        "held",
+        "become",
+        "carried",
+        "old",
+        "forgotten",
+        "possible",
+        "thing",
+        "silent"
+      ],
+      "notes": "Fenqua discovered as latent, undirected potential — the possibility before the direction. The brolm itself may be a grothened fenqua. Inside quelithen, fenqua is trapped. Depth 2 story with 9 English footholds."
+    },
+    {
+      "week": 2,
+      "date": "2026-03-31",
+      "action": "expanded",
+      "story_id": "story_vrenthane",
+      "parent_story": "story_sulvek",
+      "word_expanded": "vrenthane",
+      "words_introduced": 0,
+      "words_reused": 32,
+      "real_english_footholds": [
+        "blind",
+        "became",
+        "have",
+        "held",
+        "against",
+        "losing",
+        "silent"
+      ],
+      "notes": "Vrenthane discovered as the manner of unconscious transformation — changing without knowing you're changing. Contrasted with ondrique. The pralune fear it. 7 English footholds including 'blind', 'losing', 'silent'."
     }
   ]
 }

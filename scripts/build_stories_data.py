@@ -136,10 +136,18 @@ def tokenize(text: str) -> list[dict]:
 
         word_part = chunk[len(lead):len(chunk) - len(trail)] if trail else chunk[len(lead):]
 
+        # Split possessive 's from word (e.g. "marrath's" → "marrath" + "'s")
+        possessive = ''
+        if word_part.endswith("'s") or word_part.endswith("\u2019s"):
+            possessive = word_part[-2:]
+            word_part = word_part[:-2]
+
         if lead:
             tokens.append({"text": lead})
         if word_part:
             tokens.append({"text": word_part})
+        if possessive:
+            tokens.append({"text": possessive})
         if trail:
             tokens.append({"text": trail})
 
