@@ -4,11 +4,11 @@
     "project_subtitle": "Nonce Stories",
     "version": "0.1.0",
     "created": "2026-03-17",
-    "last_updated": "2026-03-31",
-    "current_week": 2,
-    "total_stories": 8,
-    "total_lexicon_entries": 77,
-    "total_concepts_discovered": 7,
+    "last_updated": "2026-04-07",
+    "current_week": 3,
+    "total_stories": 12,
+    "total_lexicon_entries": 117,
+    "total_concepts_discovered": 12,
     "max_depth_reached": 2,
     "density_curve": {
       "0": 1.0,
@@ -307,7 +307,11 @@
         "story_quelith",
         "story_grothen",
         "story_fenqua",
-        "story_vrenthane"
+        "story_vrenthane",
+        "story_ornique",
+        "story_pralune",
+        "story_savrune",
+        "story_morthrene"
       ],
       "stories_about": [
         "story_brolm"
@@ -387,7 +391,9 @@
         "story_plendrique",
         "story_grothen",
         "story_fenqua",
-        "story_vrenthane"
+        "story_vrenthane",
+        "story_ornique",
+        "story_savrune"
       ],
       "stories_about": [],
       "annotation": null,
@@ -434,7 +440,8 @@
       "introduced_in": "story_0",
       "depth_introduced": 0,
       "appears_in": [
-        "story_0"
+        "story_0",
+        "story_ornique"
       ],
       "stories_about": [],
       "annotation": null,
@@ -489,7 +496,10 @@
         "story_quelith",
         "story_grothen",
         "story_fenqua",
-        "story_vrenthane"
+        "story_vrenthane",
+        "story_ornique",
+        "story_pralune",
+        "story_savrune"
       ],
       "stories_about": [],
       "annotation": null,
@@ -514,7 +524,7 @@
     },
     "quelith": {
       "id": "quelith",
-      "concept": "An entity or phenomenon that sulvekara (emerged) and then ceased to change — the only thing in the brolm that jenvirs (persists/remains) while everything else halvornara (transforms). Quelithen resist the brolm's mutability. They hold their pellumom thengar and ondrique. Inside a quelith, the normal processes of the brolm stop — nothing can sulvek or nuvesse there. This is why no one can ornique a quelith: it exists outside the brolm's logic of constant transformation. It is the one thing the brolm cannot become.",
+      "concept": "An entity or phenomenon that sulvekara (emerged) and then ceased to change — the only thing in the brolm that jenvirs (persists/remains) while everything else halvornara (transforms). Quelithen resist the brolm's mutability. They hold their pellumom thengar and ondrique. Inside a quelith, the normal processes of the brolm stop — nothing can sulvek or nuvesse there. This is why no one can ornique a quelith: it exists outside the brolm's logic of constant transformation. It is the one thing the brolm cannot become. The verbal use 'quelithara' (zero-derivation) means to grant something the quality of a quelith — to fix it, to make it persist, to render it resistant to the brolm's mutability. When the nurithek of the bressiv 'quelithara it from within,' it made the thing persist like a quelith would.",
       "concept_discovered_from": "story_quelith",
       "context_notes": "In Story 0, quelith appeared as: (1) an existential subject that resists ornique, (2) a verb meaning to affect/transform from within, (3) a spatial container with an inside. In Story.brolm, quelitharen are entities that traverse brolm. In Story.sulvek, quelith is used as a category contrasted with the grothane of sulvek. The sub-story synthesized these: quelith is the exception to brolm's rule of constant change — the one stable thing in a mutable world.",
       "pos": "noun/verb",
@@ -596,7 +606,8 @@
         "story_plendrique",
         "story_quelith",
         "story_grothen",
-        "story_fenqua"
+        "story_fenqua",
+        "story_pralune"
       ],
       "stories_about": [],
       "annotation": null,
@@ -643,7 +654,9 @@
       "appears_in": [
         "story_0",
         "story_brolm",
-        "story_sulvek"
+        "story_sulvek",
+        "story_ornique",
+        "story_pralune"
       ],
       "stories_about": [],
       "annotation": null,
@@ -705,9 +718,9 @@
     },
     "pralune": {
       "id": "pralune",
-      "concept": null,
-      "concept_discovered_from": null,
-      "context_notes": null,
+      "concept": "A class of beings — the carriers of vrisora and kethrim. The pralune are the only beings who selmir (collectively remember) and threlven (teach by showing) what the brolm has been. They are not the only entities (felgoren, olverethen, drossiken also exist), but they are uniquely the keepers of memory across jorvunden. Each new selmara must be threlvened by a vossik (ancient) pralune over many jorvunden. They have epistemic authority but limited scope — even the pralune dulmire, even the pralune cannot grothen the deepest sulvekith. They have emotions: they fear the morthrene (silence between vrisora) and the voldrek (questions they cannot answer). The brolm needs them because the brolm cannot ornique itself.",
+      "concept_discovered_from": "story_pralune",
+      "context_notes": "Across all 9 prior stories, the pralune appeared as: (1) keepers of vrisora ('the pralune knew that all things sulvek'), (2) limited knowers ('the pralune themselves could not grothen'), (3) agents of difficult grothen, (4) emotional subjects (fearing kethreking, feared vrenthane). The sub-story synthesized: pralune are the social/epistemic class — the rememberers, the teachers, the carriers of language and lore across forgetting jorvunden.",
       "pos": "noun",
       "morphology": {
         "plural": "praluneren",
@@ -723,9 +736,15 @@
         "story_quelith",
         "story_grothen",
         "story_fenqua",
-        "story_vrenthane"
+        "story_vrenthane",
+        "story_ornique",
+        "story_pralune",
+        "story_savrune",
+        "story_morthrene"
       ],
-      "stories_about": [],
+      "stories_about": [
+        "story_pralune"
+      ],
       "annotation": null,
       "usage_log": [
         {
@@ -835,7 +854,10 @@
       "appears_in": [
         "story_0",
         "story_sulvek",
-        "story_grothen"
+        "story_grothen",
+        "story_ornique",
+        "story_pralune",
+        "story_savrune"
       ],
       "stories_about": [],
       "annotation": null,
@@ -910,7 +932,10 @@
         "story_sulvek",
         "story_plendrique",
         "story_quelith",
-        "story_vrenthane"
+        "story_vrenthane",
+        "story_ornique",
+        "story_pralune",
+        "story_savrune"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1022,7 +1047,8 @@
         "story_brolm",
         "story_sulvek",
         "story_quelith",
-        "story_grothen"
+        "story_grothen",
+        "story_morthrene"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1070,9 +1096,9 @@
     },
     "jorvund": {
       "id": "jorvund",
-      "concept": null,
-      "concept_discovered_from": null,
-      "context_notes": null,
+      "concept": "An epoch or era — a period of the brolm's existence that has its own zilmara (essential character). Like English 'age,' jorvund is both a unit of duration ('for many jorvunden') and a possessable period ('the zilmara of those jorvunden,' 'the kethim of one jorvund'). The brolm halvornara every jorvund — each era ends and a new one begins. The pralune count their lifetimes in jorvunden. This dual usage (unit AND period-with-properties) is intentional and consistent: an era is both a span and a thing-with-character.",
+      "concept_discovered_from": "audit_clarification_week3",
+      "context_notes": "The audit flagged a tension between genitive uses ('zilmara of those jorvunden') and duration uses ('for many jorvunden'). Both fit if jorvund = epoch/era, mirroring English 'age' which works the same way. Concept set retroactively from accumulated context, not from a dedicated story expansion.",
       "pos": "noun",
       "morphology": {
         "plural": "jorvunden",
@@ -1086,7 +1112,11 @@
         "story_sulvek",
         "story_plendrique",
         "story_quelith",
-        "story_grothen"
+        "story_grothen",
+        "story_ornique",
+        "story_pralune",
+        "story_savrune",
+        "story_morthrene"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1125,7 +1155,8 @@
         "story_brolm",
         "story_plendrique",
         "story_grothen",
-        "story_fenqua"
+        "story_fenqua",
+        "story_savrune"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1431,7 +1462,11 @@
         "story_quelith",
         "story_grothen",
         "story_fenqua",
-        "story_vrenthane"
+        "story_vrenthane",
+        "story_ornique",
+        "story_pralune",
+        "story_savrune",
+        "story_morthrene"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1515,7 +1550,9 @@
         "story_quelith",
         "story_grothen",
         "story_fenqua",
-        "story_vrenthane"
+        "story_vrenthane",
+        "story_ornique",
+        "story_pralune"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1557,7 +1594,11 @@
         "story_sulvek",
         "story_grothen",
         "story_fenqua",
-        "story_vrenthane"
+        "story_vrenthane",
+        "story_ornique",
+        "story_pralune",
+        "story_savrune",
+        "story_morthrene"
       ],
       "stories_about": [
         "story_grothen"
@@ -1625,7 +1666,10 @@
         "story_quelith",
         "story_grothen",
         "story_fenqua",
-        "story_vrenthane"
+        "story_vrenthane",
+        "story_ornique",
+        "story_pralune",
+        "story_savrune"
       ],
       "stories_about": [
         "story_sulvek"
@@ -1672,9 +1716,9 @@
     },
     "ornique": {
       "id": "ornique",
-      "concept": null,
-      "concept_discovered_from": null,
-      "context_notes": null,
+      "concept": "To cognitively apprehend or recognize — the act of bringing something into awareness so that it presents itself as itself. Distinct from drevith (mere noticing without grasping). Ornique requires that the kelmun grothen a thrandel from the drossik, that the drossik sondrak into the porthane and jenvir there. The drilque is the moment when this happens. Ornique can fail in two ways: morvith (trying and failing, leaving a vrenthik trace) and kethrek (orniqueing something that isn't there — fabricating a thrandel from one's own porthane). The pralune fear kethreking more than morvith, because the same olvereth that orniques is the one that can kethrek, and there is no thengar drilque to tell them apart.",
+      "concept_discovered_from": "story_ornique",
+      "context_notes": "Across all 8 prior stories, ornique appeared as: (1) a frequently-negated ability ('no one could ornique'), (2) a climactic achievement ('the felgoren began to ornique'), (3) reflexive self-awareness ('ornique themselves'), (4) the contrast against vrenthane (changing without orniqueing). The sub-story synthesized: ornique is cognitive apprehension distinct from mere perception, with two distinct failure modes (morvith and kethrek).",
       "pos": "verb",
       "morphology": {
         "past": "orniquera",
@@ -1695,9 +1739,14 @@
         "story_quelith",
         "story_grothen",
         "story_fenqua",
-        "story_vrenthane"
+        "story_vrenthane",
+        "story_ornique",
+        "story_pralune",
+        "story_savrune"
       ],
-      "stories_about": [],
+      "stories_about": [
+        "story_ornique"
+      ],
       "annotation": null,
       "usage_log": [
         {
@@ -1739,7 +1788,11 @@
         "story_quelith",
         "story_grothen",
         "story_fenqua",
-        "story_vrenthane"
+        "story_vrenthane",
+        "story_ornique",
+        "story_pralune",
+        "story_savrune",
+        "story_morthrene"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1782,7 +1835,9 @@
         "story_sulvek",
         "story_quelith",
         "story_grothen",
-        "story_fenqua"
+        "story_fenqua",
+        "story_ornique",
+        "story_savrune"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1978,7 +2033,8 @@
         "story_sulvek",
         "story_quelith",
         "story_grothen",
-        "story_vrenthane"
+        "story_vrenthane",
+        "story_pralune"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2088,7 +2144,8 @@
         "story_quelith",
         "story_grothen",
         "story_fenqua",
-        "story_vrenthane"
+        "story_vrenthane",
+        "story_ornique"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2131,7 +2188,10 @@
         "story_quelith",
         "story_grothen",
         "story_fenqua",
-        "story_vrenthane"
+        "story_vrenthane",
+        "story_ornique",
+        "story_pralune",
+        "story_savrune"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2336,7 +2396,9 @@
       "depth_introduced": 0,
       "appears_in": [
         "story_0",
-        "story_quelith"
+        "story_quelith",
+        "story_pralune",
+        "story_morthrene"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2534,7 +2596,10 @@
         "story_brolm",
         "story_sulvek",
         "story_quelith",
-        "story_grothen"
+        "story_grothen",
+        "story_ornique",
+        "story_pralune",
+        "story_savrune"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2608,7 +2673,9 @@
         "story_sulvek",
         "story_quelith",
         "story_grothen",
-        "story_vrenthane"
+        "story_vrenthane",
+        "story_ornique",
+        "story_savrune"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2749,7 +2816,10 @@
         "story_quelith",
         "story_grothen",
         "story_fenqua",
-        "story_vrenthane"
+        "story_vrenthane",
+        "story_ornique",
+        "story_pralune",
+        "story_morthrene"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2804,7 +2874,9 @@
         "story_brolm",
         "story_sulvek",
         "story_grothen",
-        "story_fenqua"
+        "story_fenqua",
+        "story_pralune",
+        "story_morthrene"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2831,7 +2903,8 @@
         "story_brolm",
         "story_sulvek",
         "story_fenqua",
-        "story_vrenthane"
+        "story_vrenthane",
+        "story_pralune"
       ],
       "stories_about": [
         "story_fenqua"
@@ -2863,7 +2936,9 @@
         "story_plendrique",
         "story_quelith",
         "story_fenqua",
-        "story_vrenthane"
+        "story_vrenthane",
+        "story_ornique",
+        "story_morthrene"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2894,7 +2969,10 @@
         "story_quelith",
         "story_grothen",
         "story_fenqua",
-        "story_vrenthane"
+        "story_vrenthane",
+        "story_ornique",
+        "story_savrune",
+        "story_morthrene"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2952,7 +3030,9 @@
         "story_sulvek",
         "story_plendrique",
         "story_quelith",
-        "story_fenqua"
+        "story_fenqua",
+        "story_ornique",
+        "story_savrune"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2981,7 +3061,8 @@
         "story_sulvek",
         "story_plendrique",
         "story_quelith",
-        "story_grothen"
+        "story_grothen",
+        "story_ornique"
       ],
       "stories_about": [],
       "annotation": null,
@@ -3011,7 +3092,9 @@
         "story_quelith",
         "story_grothen",
         "story_fenqua",
-        "story_vrenthane"
+        "story_vrenthane",
+        "story_ornique",
+        "story_savrune"
       ],
       "stories_about": [],
       "annotation": null,
@@ -3042,7 +3125,11 @@
         "story_quelith",
         "story_grothen",
         "story_fenqua",
-        "story_vrenthane"
+        "story_vrenthane",
+        "story_ornique",
+        "story_pralune",
+        "story_savrune",
+        "story_morthrene"
       ],
       "stories_about": [],
       "annotation": null,
@@ -3074,7 +3161,11 @@
         "story_quelith",
         "story_grothen",
         "story_fenqua",
-        "story_vrenthane"
+        "story_vrenthane",
+        "story_ornique",
+        "story_pralune",
+        "story_savrune",
+        "story_morthrene"
       ],
       "stories_about": [],
       "annotation": null,
@@ -3202,7 +3293,8 @@
         "past": "threnquera",
         "participle": "threnqueith",
         "third_person": "threnqueet",
-        "participle_english": "threnqueing"
+        "participle_english": "threnqueing",
+        "past_english": "threnqued"
       },
       "introduced_in": "story_brolm",
       "depth_introduced": 1,
@@ -3210,7 +3302,9 @@
         "story_brolm",
         "story_sulvek",
         "story_fenqua",
-        "story_vrenthane"
+        "story_vrenthane",
+        "story_ornique",
+        "story_morthrene"
       ],
       "stories_about": [],
       "annotation": null,
@@ -3300,6 +3394,1050 @@
         "ipa": "/plɛnˈdriːk/",
         "stress": "2nd syllable",
         "rhymes_with": "unique"
+      },
+      "usage_log": []
+    },
+    "porthane": {
+      "id": "porthane",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "porthaneren",
+        "possessive": "porthaneis"
+      },
+      "introduced_in": "story_ornique",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_ornique",
+        "story_pralune",
+        "story_savrune",
+        "story_morthrene"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/pɔːrˈθeɪn/",
+        "stress": "2nd",
+        "rhymes_with": "methane"
+      },
+      "usage_log": []
+    },
+    "drilvik": {
+      "id": "drilvik",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "drilvikun",
+        "superlative": "drilvikest",
+        "adverb": "drilvikelu"
+      },
+      "introduced_in": "story_ornique",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_ornique"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈdrɪl.vɪk/",
+        "stress": "1st",
+        "rhymes_with": "relic"
+      },
+      "usage_log": []
+    },
+    "drilque": {
+      "id": "drilque",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "drilqueren",
+        "possessive": "drilqueis"
+      },
+      "introduced_in": "story_ornique",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_ornique",
+        "story_savrune"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈdrɪlk/",
+        "stress": "monosyllabic",
+        "rhymes_with": "milk"
+      },
+      "usage_log": []
+    },
+    "kelmik": {
+      "id": "kelmik",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "kelmikun",
+        "superlative": "kelmikest",
+        "adverb": "kelmikelu"
+      },
+      "introduced_in": "story_ornique",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_ornique",
+        "story_savrune"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈkɛl.mɪk/",
+        "stress": "1st",
+        "rhymes_with": "ethic"
+      },
+      "usage_log": []
+    },
+    "morvith": {
+      "id": "morvith",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "morvithara",
+        "participle": "morvithith",
+        "third_person": "morvithet",
+        "past_english": "morvithed",
+        "participle_english": "morvithing"
+      },
+      "introduced_in": "story_ornique",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_ornique",
+        "story_pralune",
+        "story_savrune",
+        "story_morthrene"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈmɔːr.vɪθ/",
+        "stress": "1st",
+        "rhymes_with": "monolith"
+      },
+      "usage_log": []
+    },
+    "thrandel": {
+      "id": "thrandel",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "thrandelen",
+        "possessive": "thrandelis"
+      },
+      "introduced_in": "story_ornique",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_ornique",
+        "story_savrune"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈθræn.dɛl/",
+        "stress": "1st",
+        "rhymes_with": "sandal"
+      },
+      "usage_log": []
+    },
+    "kelmun": {
+      "id": "kelmun",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "kelmunen",
+        "possessive": "kelmunis"
+      },
+      "introduced_in": "story_ornique",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_ornique",
+        "story_savrune",
+        "story_morthrene"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈkɛl.mʌn/",
+        "stress": "1st",
+        "rhymes_with": "felon"
+      },
+      "usage_log": []
+    },
+    "drevith": {
+      "id": "drevith",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "drevithara",
+        "participle": "drevithith",
+        "third_person": "drevithet",
+        "past_english": "drevithed",
+        "participle_english": "drevithing"
+      },
+      "introduced_in": "story_ornique",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_ornique",
+        "story_pralune",
+        "story_savrune",
+        "story_morthrene"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈdrɛv.ɪθ/",
+        "stress": "1st",
+        "rhymes_with": "monolith"
+      },
+      "usage_log": []
+    },
+    "kethrek": {
+      "id": "kethrek",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "kethrekara",
+        "participle": "kethrekith",
+        "third_person": "kethreket",
+        "past_english": "kethreked",
+        "participle_english": "kethreking"
+      },
+      "introduced_in": "story_ornique",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_ornique",
+        "story_pralune",
+        "story_savrune",
+        "story_morthrene"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈkɛθ.rɛk/",
+        "stress": "1st",
+        "rhymes_with": "trek"
+      },
+      "usage_log": []
+    },
+    "selvain": {
+      "id": "selvain",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "selvainara",
+        "participle": "selvainith",
+        "third_person": "selvainet",
+        "past_english": "selvained",
+        "participle_english": "selvaining"
+      },
+      "introduced_in": "story_ornique",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_ornique",
+        "story_pralune"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/sɛlˈveɪn/",
+        "stress": "2nd",
+        "rhymes_with": "domain"
+      },
+      "usage_log": []
+    },
+    "vrandith": {
+      "id": "vrandith",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "vrandithun",
+        "superlative": "vrandithest",
+        "adverb": "vrandithelu"
+      },
+      "introduced_in": "story_ornique",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_ornique",
+        "story_pralune"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈvræn.dɪθ/",
+        "stress": "1st",
+        "rhymes_with": "monolith"
+      },
+      "usage_log": []
+    },
+    "savrune": {
+      "id": "savrune",
+      "concept": "The cognitive gap between drevith (mere noticing) and ornique (true grasping). Every drevith opens a savrune. Some are drilthik (narrow, easily crossed); others are vrandun (untraversable, where drossiken jenvir forever drevithed but never orniqueith). Crossing requires a kelmrith — an effortful attempt — which can either grothen the drilque (recognition) or morvith into a vossrim (premature, false recognition that's actually kethrek). Failed kelmriths leave morvath (residue/burden) in the kelmun. The brolm itself may be a savrune: every drossik in it stands on the far side of some drevith the brolm cannot finish.",
+      "concept_discovered_from": "story_savrune",
+      "context_notes": "In Story.ornique, savrune was introduced as 'the halvune between drevith and ornique' — vorelm and vast, traversable but only with effort. The sub-story expanded: every drevith opens its own savrune, of varying widths, and the labor of crossing them is what cognition is. Failed crossings (kelmriths) leave morvath traces.",
+      "pos": "noun",
+      "morphology": {
+        "plural": "savruneren",
+        "possessive": "savruneis"
+      },
+      "introduced_in": "story_ornique",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_ornique",
+        "story_pralune",
+        "story_savrune",
+        "story_morthrene"
+      ],
+      "stories_about": [
+        "story_savrune"
+      ],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/səˈvruːn/",
+        "stress": "2nd",
+        "rhymes_with": "platoon"
+      },
+      "usage_log": []
+    },
+    "drilelu": {
+      "id": "drilelu",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adverb",
+      "morphology": {},
+      "introduced_in": "story_ornique",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_ornique"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/drɪˈlɛl.uː/",
+        "stress": "2nd",
+        "rhymes_with": "Peru"
+      },
+      "usage_log": []
+    },
+    "vrenthik": {
+      "id": "vrenthik",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "vrenthiken",
+        "possessive": "vrenthikis"
+      },
+      "introduced_in": "story_ornique",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_ornique"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈvrɛn.θɪk/",
+        "stress": "1st",
+        "rhymes_with": "ethic"
+      },
+      "usage_log": []
+    },
+    "olvereth": {
+      "id": "olvereth",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "olverethen",
+        "possessive": "olverethis"
+      },
+      "introduced_in": "story_ornique",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_ornique",
+        "story_pralune"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈɒl.və.rɛθ/",
+        "stress": "1st",
+        "rhymes_with": "Nazareth"
+      },
+      "usage_log": []
+    },
+    "vrandel": {
+      "id": "vrandel",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "vrandelara",
+        "participle": "vrandelith",
+        "third_person": "vrandelet",
+        "past_english": "vrandeled",
+        "participle_english": "vrandeling"
+      },
+      "introduced_in": "story_pralune",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_pralune"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈvræn.dɛl/",
+        "stress": "1st",
+        "rhymes_with": "sandal"
+      },
+      "usage_log": []
+    },
+    "vossik": {
+      "id": "vossik",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "vossikun",
+        "superlative": "vossikest",
+        "adverb": "vossikelu"
+      },
+      "introduced_in": "story_pralune",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_pralune",
+        "story_savrune",
+        "story_morthrene"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈvɒs.ɪk/",
+        "stress": "1st",
+        "rhymes_with": "classic"
+      },
+      "usage_log": []
+    },
+    "morthrene": {
+      "id": "morthrene",
+      "concept": "The collective silence that comes when even the pralune cannot vrisora — when a voldrek (unanswerable question) brashels against the limit of all kethrim. Not mere absence of speech: it is vrisora's drilvan into its own savrune. Some morthreneren are small (one selmara realizing some kethrim has dulmired); others are vossune, marked by every pralune in the krendir at once. In a vossune morthrene, the pralune do not vrisora or threlven — they selmrith, jenviring in the porvath, holding the drevran. The vossikest pralune teach that morthrene is the only true response to the brolm: trying to grothen a voldrek with morvith is kethrek; trying with vrisora is vossrim. Only the morthrene jenvirs in the savrune without trying to cross it.",
+      "concept_discovered_from": "story_morthrene",
+      "context_notes": "In Story.pralune, morthrene appeared twice: once as a verb ('how they morthrened when a voldrek brasheled against the kelvasse of all their vrisora') and once as a noun ('the morthrene that came when no pralune could vrisora'). Both linked to voldrek and to the limit of collective knowledge. POS updated to noun/verb to reflect dual usage.",
+      "pos": "noun/verb",
+      "morphology": {
+        "plural": "morthreneren",
+        "possessive": "morthreneis",
+        "past_english": "morthrened",
+        "participle_english": "morthreneing",
+        "past": "morthrenera",
+        "participle": "morthreneith"
+      },
+      "introduced_in": "story_pralune",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_pralune",
+        "story_morthrene"
+      ],
+      "stories_about": [
+        "story_morthrene"
+      ],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/mɔːrˈθriːn/",
+        "stress": "2nd",
+        "rhymes_with": "ravine"
+      },
+      "usage_log": []
+    },
+    "vossane": {
+      "id": "vossane",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "vossaneren",
+        "possessive": "vossaneis"
+      },
+      "introduced_in": "story_pralune",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_pralune",
+        "story_morthrene"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/vɒˈseɪn/",
+        "stress": "2nd",
+        "rhymes_with": "domain"
+      },
+      "usage_log": []
+    },
+    "voldrek": {
+      "id": "voldrek",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "voldreken",
+        "possessive": "voldrekis"
+      },
+      "introduced_in": "story_pralune",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_pralune",
+        "story_morthrene"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈvɒl.drɛk/",
+        "stress": "1st",
+        "rhymes_with": "trek"
+      },
+      "usage_log": []
+    },
+    "krendir": {
+      "id": "krendir",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "krendiren",
+        "possessive": "krendiris"
+      },
+      "introduced_in": "story_pralune",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_pralune",
+        "story_morthrene"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈkrɛn.dɪr/",
+        "stress": "1st",
+        "rhymes_with": "elixir"
+      },
+      "usage_log": []
+    },
+    "porvain": {
+      "id": "porvain",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "porvainara",
+        "participle": "porvainith",
+        "third_person": "porvainet",
+        "past_english": "porvained",
+        "participle_english": "porvaining"
+      },
+      "introduced_in": "story_pralune",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_pralune",
+        "story_savrune",
+        "story_morthrene"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/pɔːrˈveɪn/",
+        "stress": "2nd",
+        "rhymes_with": "domain"
+      },
+      "usage_log": []
+    },
+    "selmir": {
+      "id": "selmir",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "selmirara",
+        "participle": "selmirith",
+        "third_person": "selmiret",
+        "past_english": "selmired",
+        "participle_english": "selmiring"
+      },
+      "introduced_in": "story_pralune",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_pralune",
+        "story_morthrene"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈsɛl.mɪr/",
+        "stress": "1st",
+        "rhymes_with": "elixir"
+      },
+      "usage_log": []
+    },
+    "kethrim": {
+      "id": "kethrim",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "kethrimen",
+        "possessive": "kethrimis"
+      },
+      "introduced_in": "story_pralune",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_pralune",
+        "story_morthrene"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈkɛθ.rɪm/",
+        "stress": "1st",
+        "rhymes_with": "skim"
+      },
+      "usage_log": []
+    },
+    "selmara": {
+      "id": "selmara",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "selmaren",
+        "possessive": "selmarais"
+      },
+      "introduced_in": "story_pralune",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_pralune",
+        "story_morthrene"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/sɛlˈmɑː.rə/",
+        "stress": "2nd",
+        "rhymes_with": "Sahara"
+      },
+      "usage_log": []
+    },
+    "krendrik": {
+      "id": "krendrik",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "krendrikun",
+        "superlative": "krendrikest",
+        "adverb": "krendrikelu"
+      },
+      "introduced_in": "story_pralune",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_pralune"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈkrɛn.drɪk/",
+        "stress": "1st",
+        "rhymes_with": "fabric"
+      },
+      "usage_log": []
+    },
+    "thelvane": {
+      "id": "thelvane",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "thelvaneren",
+        "possessive": "thelvaneis"
+      },
+      "introduced_in": "story_pralune",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_pralune"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/θɛlˈveɪn/",
+        "stress": "2nd",
+        "rhymes_with": "domain"
+      },
+      "usage_log": []
+    },
+    "threlven": {
+      "id": "threlven",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "threlvenara",
+        "participle": "threlvenith",
+        "third_person": "threlvenet",
+        "past_english": "threlvened",
+        "participle_english": "threlvening"
+      },
+      "introduced_in": "story_pralune",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_pralune",
+        "story_morthrene"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈθrɛl.vən/",
+        "stress": "1st",
+        "rhymes_with": "felon"
+      },
+      "usage_log": []
+    },
+    "kelmrith": {
+      "id": "kelmrith",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "kelmrithen",
+        "possessive": "kelmrithis"
+      },
+      "introduced_in": "story_savrune",
+      "depth_introduced": 2,
+      "appears_in": [
+        "story_savrune"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈkɛl.mrɪθ/",
+        "stress": "1st",
+        "rhymes_with": "monolith"
+      },
+      "usage_log": []
+    },
+    "vossrim": {
+      "id": "vossrim",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "vossrimen",
+        "possessive": "vossrimis"
+      },
+      "introduced_in": "story_savrune",
+      "depth_introduced": 2,
+      "appears_in": [
+        "story_savrune",
+        "story_morthrene"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈvɒs.rɪm/",
+        "stress": "1st",
+        "rhymes_with": "skim"
+      },
+      "usage_log": []
+    },
+    "morvath": {
+      "id": "morvath",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "morvathen",
+        "possessive": "morvathis"
+      },
+      "introduced_in": "story_savrune",
+      "depth_introduced": 2,
+      "appears_in": [
+        "story_savrune"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈmɔːr.væθ/",
+        "stress": "1st",
+        "rhymes_with": "Nazareth"
+      },
+      "usage_log": []
+    },
+    "threnvik": {
+      "id": "threnvik",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "threnvikara",
+        "participle": "threnvikith",
+        "third_person": "threnviket",
+        "past_english": "threnviked",
+        "participle_english": "threnviking"
+      },
+      "introduced_in": "story_savrune",
+      "depth_introduced": 2,
+      "appears_in": [
+        "story_savrune",
+        "story_morthrene"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈθrɛn.vɪk/",
+        "stress": "1st",
+        "rhymes_with": "relic"
+      },
+      "usage_log": []
+    },
+    "drilthik": {
+      "id": "drilthik",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "drilthikun",
+        "superlative": "drilthikest",
+        "adverb": "drilthikelu"
+      },
+      "introduced_in": "story_savrune",
+      "depth_introduced": 2,
+      "appears_in": [
+        "story_savrune"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈdrɪl.θɪk/",
+        "stress": "1st",
+        "rhymes_with": "ethic"
+      },
+      "usage_log": []
+    },
+    "vrandun": {
+      "id": "vrandun",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "vrandunun",
+        "superlative": "vrandunest",
+        "adverb": "vrandunelu"
+      },
+      "introduced_in": "story_savrune",
+      "depth_introduced": 2,
+      "appears_in": [
+        "story_savrune",
+        "story_morthrene"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈvræn.dʌn/",
+        "stress": "1st",
+        "rhymes_with": "London"
+      },
+      "usage_log": []
+    },
+    "drevran": {
+      "id": "drevran",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "drevranen",
+        "possessive": "drevranis"
+      },
+      "introduced_in": "story_morthrene",
+      "depth_introduced": 2,
+      "appears_in": [
+        "story_morthrene"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈdrɛv.ræn/",
+        "stress": "1st",
+        "rhymes_with": "ran"
+      },
+      "usage_log": []
+    },
+    "vossune": {
+      "id": "vossune",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "vossuneren",
+        "possessive": "vossuneis"
+      },
+      "introduced_in": "story_morthrene",
+      "depth_introduced": 2,
+      "appears_in": [
+        "story_morthrene"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/vɒˈsuːn/",
+        "stress": "2nd",
+        "rhymes_with": "bassoon"
+      },
+      "usage_log": []
+    },
+    "porvath": {
+      "id": "porvath",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "porvathen",
+        "possessive": "porvathis"
+      },
+      "introduced_in": "story_morthrene",
+      "depth_introduced": 2,
+      "appears_in": [
+        "story_morthrene"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈpɔːr.væθ/",
+        "stress": "1st",
+        "rhymes_with": "Nazareth"
+      },
+      "usage_log": []
+    },
+    "drilvan": {
+      "id": "drilvan",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "drilvanara",
+        "participle": "drilvanith",
+        "third_person": "drilvanet",
+        "past_english": "drilvaned",
+        "participle_english": "drilvaning"
+      },
+      "introduced_in": "story_morthrene",
+      "depth_introduced": 2,
+      "appears_in": [
+        "story_morthrene"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈdrɪl.væn/",
+        "stress": "1st",
+        "rhymes_with": "ran"
+      },
+      "usage_log": []
+    },
+    "selmrith": {
+      "id": "selmrith",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "selmrithara",
+        "participle": "selmrithith",
+        "third_person": "selmrithet",
+        "past_english": "selmrithed",
+        "participle_english": "selmrithing"
+      },
+      "introduced_in": "story_morthrene",
+      "depth_introduced": 2,
+      "appears_in": [
+        "story_morthrene"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈsɛl.mrɪθ/",
+        "stress": "1st",
+        "rhymes_with": "monolith"
+      },
+      "usage_log": []
+    },
+    "krelvik": {
+      "id": "krelvik",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "krelvikun",
+        "superlative": "krelvikest",
+        "adverb": "krelvikelu"
+      },
+      "introduced_in": "story_morthrene",
+      "depth_introduced": 2,
+      "appears_in": [
+        "story_morthrene"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈkrɛl.vɪk/",
+        "stress": "1st",
+        "rhymes_with": "relic"
       },
       "usage_log": []
     }
@@ -3443,7 +4581,7 @@
         "marrath": null,
         "gelvon": null,
         "shendir": null,
-        "pralune": null,
+        "pralune": "story_pralune",
         "torvak": null,
         "zilmara": null,
         "ondrev": null,
@@ -3466,7 +4604,7 @@
         "melvir": null,
         "grothen": "story_grothen",
         "sulvek": "story_sulvek",
-        "ornique": null,
+        "ornique": "story_ornique",
         "brashel": null,
         "pellum": null,
         "drovaine": null,
@@ -4333,6 +5471,536 @@
       "death_note": null,
       "created": "2026-03-31",
       "week": 2
+    },
+    "story_ornique": {
+      "id": "story_ornique",
+      "title": "ornique",
+      "depth": 1,
+      "parent": "story_0",
+      "parent_nonce_word": "ornique",
+      "linked_from": [
+        "story_0",
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique",
+        "story_quelith",
+        "story_grothen",
+        "story_fenqua",
+        "story_vrenthane"
+      ],
+      "nonce_density_target": 0.94,
+      "nonce_density_actual": 0.906,
+      "word_count": 265,
+      "nonce_content_words": 96,
+      "functional_words": 159,
+      "real_english_content_words": [
+        "against",
+        "feared",
+        "left",
+        "trace",
+        "certainty",
+        "deepest"
+      ],
+      "text": "To ornique was not to drevith. Many drossiken had drevithed the venquaren without ever orniqueing what they were. The pralune themselves vrisora of the savrune — the halvune between drevith and ornique — and they vrisora that this savrune was vorelm, dorsmil, beyond the kelvasse of the brolm itself.\n\nA drevith was the kelmun's first selvain of a drossik. You drevithed a torvel against the gelvon, you drevithed a felgor melviring across the ondrev, but the drilque — the thrennig when the kelmun grothened a thrandel, when the drossik sondrakara into your porthane and jenvired there as itself — that was ornique.\n\nThe drilque could not be threnqued. Some drossiken were drilvik and orniquera themselves drilelu, vrenelu, like a velune kelvassing into its own thrennig. Others were vrandith — the felgoren could drevith them for many jorvunden, kethreking them into thrandelen they were not, and only after the kelmun had morvithed dorsmil enough did the drossik finally ornique itself through the savrune.\n\nThe pralune feared the kethreking more than the morvith. To kethrek was to ornique a drossik that had never sulvekara — to grothen a thrandel from your own porthane and threnque it the drossik. The morvith at least left a vrenthik, a brenthik trace where ornique had brashelara against a vrandith pellumom and morvithed. A kethrek left no vrenthik. It left a kelmik certainty in the kelmun that there had been a drossik when there had been only the porthane orniqueing itself.\n\nThis was the deepest grothane of ornique: the olvereth that orniquera was the same olvereth that could kethrek, and there was no thengar drilque between them.",
+      "nonce_words_used": [
+        "brashel",
+        "brenthik",
+        "brolm",
+        "dorsmil",
+        "drevith",
+        "drilelu",
+        "drilque",
+        "drilvik",
+        "drossik",
+        "felgor",
+        "gelvon",
+        "grothane",
+        "grothen",
+        "halvune",
+        "jenvir",
+        "jorvund",
+        "kelmik",
+        "kelmun",
+        "kelvasse",
+        "kethrek",
+        "melvir",
+        "morvith",
+        "olvereth",
+        "ondrev",
+        "ornique",
+        "pellum",
+        "porthane",
+        "pralune",
+        "savrune",
+        "selvain",
+        "sondrak",
+        "sulvek",
+        "thengar",
+        "thrandel",
+        "thrennig",
+        "threnque",
+        "torvel",
+        "velune",
+        "venquar",
+        "vorelm",
+        "vrandith",
+        "vrenelu",
+        "vrenthik",
+        "vriso"
+      ],
+      "nonce_words_new": [
+        "drevith",
+        "drilelu",
+        "drilque",
+        "drilvik",
+        "kelmik",
+        "kelmun",
+        "kethrek",
+        "morvith",
+        "olvereth",
+        "porthane",
+        "savrune",
+        "selvain",
+        "thrandel",
+        "vrandith",
+        "vrenthik"
+      ],
+      "children": {
+        "brashel": null,
+        "brenthik": null,
+        "brolm": "story_brolm",
+        "dorsmil": null,
+        "drevith": null,
+        "drilelu": null,
+        "drilque": null,
+        "drilvik": null,
+        "drossik": null,
+        "felgor": null,
+        "gelvon": null,
+        "grothane": null,
+        "grothen": "story_grothen",
+        "halvune": null,
+        "jenvir": null,
+        "jorvund": null,
+        "kelmik": null,
+        "kelmun": null,
+        "kelvasse": null,
+        "kethrek": null,
+        "melvir": null,
+        "morvith": null,
+        "olvereth": null,
+        "ondrev": null,
+        "pellum": null,
+        "porthane": null,
+        "pralune": null,
+        "savrune": "story_savrune",
+        "selvain": null,
+        "sondrak": null,
+        "sulvek": "story_sulvek",
+        "thengar": null,
+        "thrandel": null,
+        "thrennig": null,
+        "threnque": null,
+        "torvel": null,
+        "velune": null,
+        "venquar": null,
+        "vorelm": null,
+        "vrandith": null,
+        "vrenelu": null,
+        "vrenthik": null,
+        "vriso": null
+      },
+      "state": "expanded",
+      "status": "active",
+      "death_note": null,
+      "created": "2026-04-07",
+      "week": 3
+    },
+    "story_pralune": {
+      "id": "story_pralune",
+      "title": "pralune",
+      "depth": 1,
+      "parent": "story_0",
+      "parent_nonce_word": "pralune",
+      "linked_from": [
+        "story_0",
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique",
+        "story_quelith",
+        "story_grothen",
+        "story_fenqua",
+        "story_vrenthane",
+        "story_ornique"
+      ],
+      "nonce_density_target": 0.94,
+      "nonce_density_actual": 0.937,
+      "word_count": 286,
+      "nonce_content_words": 104,
+      "functional_words": 175,
+      "real_english_content_words": [
+        "behind",
+        "against",
+        "feared",
+        "faster"
+      ],
+      "text": "The pralune were not the felgoren. They were not the olverethen who orniquera by selvain. They were the thelvane that selmired — the krendrik thelvane who jenvired the kethrim of the brolm in their porthane and threlvened it, jorvund after jorvund, to the selmaren who would porvain after them.\n\nA pralune was not sulvekara vrisora. A selmara had to be threlvened — by a vossik pralune who had drevithed many drossiken, who had morvithed and kethreked and orniquera the savrune between them. The threlvening took many jorvunden. A selmara would jenvir behind a vossik pralune, drevithing how they vrandeled the vrandith drossiken, how they porvained the vossane when a krelith fenqua had to be grothened, how they morthrened when a voldrek brasheled against the kelvasse of all their vrisora.\n\nThe brolm needed the pralune because the brolm could not ornique itself. A felgor could melvir across the ondrev and drevith the gelvon, but the felgor did not selmir. When the jorvund halvornara, the felgor's drevith halvornara with it. Only the pralune selmired — only they jenvired the kethrim through the kelvassing, only they could threlven the next selmaren what had sulvekara from the marrath.\n\nBut the pralune feared their own thelvane. They feared the morthrene that came when no pralune could vrisora — the voldrek that even the vossikest among them could not grothen. They feared that one jorvund the kethrim would dulmire faster than the threlvening, that the selmaren would porvain into a krendir with no thelvane to selmir what the brolm had been.\n\nThe vossik pralune vrisora that this had already kelvassera, vrenelu, many jorvunden. That was why the marrath was so vorelm. That was why the brolm itself had no thrennig for what it had been.",
+      "nonce_words_used": [
+        "brashel",
+        "brolm",
+        "drevith",
+        "drossik",
+        "dulmire",
+        "felgor",
+        "fenqua",
+        "gelvon",
+        "grothen",
+        "halvorn",
+        "jenvir",
+        "jorvund",
+        "kelvasse",
+        "kethrek",
+        "kethrim",
+        "krelith",
+        "krendir",
+        "krendrik",
+        "marrath",
+        "melvir",
+        "morthrene",
+        "morvith",
+        "olvereth",
+        "ondrev",
+        "ornique",
+        "porthane",
+        "porvain",
+        "pralune",
+        "savrune",
+        "selmara",
+        "selmir",
+        "selvain",
+        "sulvek",
+        "thelvane",
+        "threlven",
+        "thrennig",
+        "voldrek",
+        "vorelm",
+        "vossane",
+        "vossik",
+        "vrandel",
+        "vrandith",
+        "vrenelu",
+        "vriso"
+      ],
+      "nonce_words_new": [
+        "kethrim",
+        "krendir",
+        "krendrik",
+        "morthrene",
+        "porvain",
+        "selmara",
+        "selmir",
+        "thelvane",
+        "threlven",
+        "voldrek",
+        "vossane",
+        "vossik",
+        "vrandel"
+      ],
+      "children": {
+        "brashel": null,
+        "brolm": "story_brolm",
+        "drevith": null,
+        "drossik": null,
+        "dulmire": null,
+        "felgor": null,
+        "fenqua": "story_fenqua",
+        "gelvon": null,
+        "grothen": "story_grothen",
+        "halvorn": null,
+        "jenvir": null,
+        "jorvund": null,
+        "kelvasse": null,
+        "kethrek": null,
+        "kethrim": null,
+        "krelith": null,
+        "krendir": null,
+        "krendrik": null,
+        "marrath": null,
+        "melvir": null,
+        "morthrene": "story_morthrene",
+        "morvith": null,
+        "olvereth": null,
+        "ondrev": null,
+        "ornique": "story_ornique",
+        "porthane": null,
+        "porvain": null,
+        "savrune": null,
+        "selmara": null,
+        "selmir": null,
+        "selvain": null,
+        "sulvek": "story_sulvek",
+        "thelvane": null,
+        "threlven": null,
+        "thrennig": null,
+        "voldrek": null,
+        "vorelm": null,
+        "vossane": null,
+        "vossik": null,
+        "vrandel": null,
+        "vrandith": null,
+        "vrenelu": null,
+        "vriso": null
+      },
+      "state": "expanded",
+      "status": "active",
+      "death_note": null,
+      "created": "2026-04-07",
+      "week": 3
+    },
+    "story_savrune": {
+      "id": "story_savrune",
+      "title": "savrune",
+      "depth": 2,
+      "parent": "story_ornique",
+      "parent_nonce_word": "savrune",
+      "linked_from": [
+        "story_ornique",
+        "story_pralune"
+      ],
+      "nonce_density_target": 0.87,
+      "nonce_density_actual": 0.872,
+      "word_count": 197,
+      "nonce_content_words": 75,
+      "functional_words": 111,
+      "real_english_content_words": [
+        "opened",
+        "being",
+        "barely",
+        "forever",
+        "attempt",
+        "against",
+        "left",
+        "unfinished",
+        "carried",
+        "stood"
+      ],
+      "text": "Every drevith opened a savrune. The kelmun would drevith a drossik — a felgor across the ondrev, a kethane in the brolm's velune — and there, between the drevith and the orniqueing, the savrune sondrakara into being. Some savruneren were drilthik, barely a halvune wide. The kelmun could threnvik them dorsmil and ornique vrenelu. Others were vrandun, vorelm beyond any kelvasse, and on the far side some drossiken jenvired forever, drevithed but never orniqueith.\n\nA kelmrith was an attempt to threnvik. The kelmun would porvain its porthane against the savrune, brashelith dorsmil, and either grothen the drilque or morvith into a vossrim — a thrandel made before the drossik had truly sondrakara. Vossrimen were a kind of kethrek. They felt kelmik, but they were the porthane orniqueing itself.\n\nEvery morvithed kelmrith left a morvath in the kelmun, a brenthik halvune where the unfinished drevith jenvired. The vossik pralune carried many morvath. The brolm itself, they vrisora, was a savrune: every drossik in it stood on the far side of some drevith, and this was why it kelvassera, jorvund after jorvund, threnviking dorsmil into its own pellumom and morvithing the kelmrith of orniqueing what it had been when it sulvekara.",
+      "nonce_words_used": [
+        "brashel",
+        "brenthik",
+        "brolm",
+        "dorsmil",
+        "drevith",
+        "drilque",
+        "drilthik",
+        "drossik",
+        "felgor",
+        "grothen",
+        "halvune",
+        "jenvir",
+        "jorvund",
+        "kelmik",
+        "kelmrith",
+        "kelmun",
+        "kelvasse",
+        "kethane",
+        "kethrek",
+        "morvath",
+        "morvith",
+        "ondrev",
+        "ornique",
+        "pellum",
+        "porthane",
+        "porvain",
+        "pralune",
+        "savrune",
+        "sondrak",
+        "sulvek",
+        "thrandel",
+        "threnvik",
+        "velune",
+        "vorelm",
+        "vossik",
+        "vossrim",
+        "vrandun",
+        "vrenelu",
+        "vriso"
+      ],
+      "nonce_words_new": [
+        "drilthik",
+        "kelmrith",
+        "morvath",
+        "threnvik",
+        "vossrim",
+        "vrandun"
+      ],
+      "children": {
+        "brashel": null,
+        "brenthik": null,
+        "brolm": "story_brolm",
+        "dorsmil": null,
+        "drevith": null,
+        "drilque": null,
+        "drilthik": null,
+        "drossik": null,
+        "felgor": null,
+        "grothen": "story_grothen",
+        "halvune": null,
+        "jenvir": null,
+        "jorvund": null,
+        "kelmik": null,
+        "kelmrith": null,
+        "kelmun": null,
+        "kelvasse": null,
+        "kethane": null,
+        "kethrek": null,
+        "morvath": null,
+        "morvith": null,
+        "ondrev": null,
+        "ornique": "story_ornique",
+        "pellum": null,
+        "porthane": null,
+        "porvain": null,
+        "pralune": "story_pralune",
+        "sondrak": null,
+        "sulvek": "story_sulvek",
+        "thrandel": null,
+        "threnvik": null,
+        "velune": null,
+        "vorelm": null,
+        "vossik": null,
+        "vossrim": null,
+        "vrandun": null,
+        "vrenelu": null,
+        "vriso": null
+      },
+      "state": "expanded",
+      "status": "active",
+      "death_note": null,
+      "created": "2026-04-07",
+      "week": 3
+    },
+    "story_morthrene": {
+      "id": "story_morthrene",
+      "title": "morthrene",
+      "depth": 2,
+      "parent": "story_pralune",
+      "parent_nonce_word": "morthrene",
+      "linked_from": [
+        "story_pralune"
+      ],
+      "nonce_density_target": 0.87,
+      "nonce_density_actual": 0.872,
+      "word_count": 183,
+      "nonce_content_words": 68,
+      "functional_words": 105,
+      "real_english_content_words": [
+        "absence",
+        "small",
+        "marked",
+        "against",
+        "holding",
+        "response",
+        "deepest",
+        "enter"
+      ],
+      "text": "A morthrene was not the absence of vrisora. It was vrisora's drilvan into its own savrune — when the kethrim grothened a voldrek so vrandun that no pralune could threnvik it. The kelmun would porvain its drevran, the porthane would drilvan, and the morthrene would sondrak into the vossane like a krelith halquen jenviring beneath every thrennig.\n\nThe pralune drevithed many morthreneren. Some were small — a krelvik selmara morthreneing for a single jorvund, drevithing that some kethrim had dulmired. Others were vossune, marked by every pralune in the krendir at once, when a voldrek brashelara against the kelvasse of all their selmiring.\n\nIn a vossune morthrene, the pralune did not vrisora. They did not threlven. They selmrithed — they jenvired in the porvath, holding the drevran of the vossane, and waited. The vossikest pralune vrisora that the morthrene was the only true response to the brolm. To threnque against a voldrek with morvith was kethrek. To porvain it with vrisora was vossrim. Only the morthrene jenvired in the savrune without trying to grothen it, and that was the deepest grothane the pralune could enter.",
+      "nonce_words_used": [
+        "brashel",
+        "brolm",
+        "drevith",
+        "drevran",
+        "drilvan",
+        "dulmire",
+        "grothane",
+        "grothen",
+        "halquen",
+        "jenvir",
+        "jorvund",
+        "kelmun",
+        "kelvasse",
+        "kethrek",
+        "kethrim",
+        "krelith",
+        "krelvik",
+        "krendir",
+        "morthrene",
+        "morvith",
+        "porthane",
+        "porvain",
+        "porvath",
+        "pralune",
+        "savrune",
+        "selmara",
+        "selmir",
+        "selmrith",
+        "sondrak",
+        "threlven",
+        "thrennig",
+        "threnque",
+        "threnvik",
+        "voldrek",
+        "vossane",
+        "vossik",
+        "vossrim",
+        "vossune",
+        "vrandun",
+        "vriso"
+      ],
+      "nonce_words_new": [
+        "drevran",
+        "drilvan",
+        "krelvik",
+        "porvath",
+        "selmrith",
+        "vossune"
+      ],
+      "children": {
+        "brashel": null,
+        "brolm": "story_brolm",
+        "drevith": null,
+        "drevran": null,
+        "drilvan": null,
+        "dulmire": null,
+        "grothane": null,
+        "grothen": "story_grothen",
+        "halquen": null,
+        "jenvir": null,
+        "jorvund": null,
+        "kelmun": null,
+        "kelvasse": null,
+        "kethrek": null,
+        "kethrim": null,
+        "krelith": null,
+        "krelvik": null,
+        "krendir": null,
+        "morvith": null,
+        "porthane": null,
+        "porvain": null,
+        "porvath": null,
+        "pralune": "story_pralune",
+        "savrune": "story_savrune",
+        "selmara": null,
+        "selmir": null,
+        "selmrith": null,
+        "sondrak": null,
+        "threlven": null,
+        "thrennig": null,
+        "threnque": null,
+        "threnvik": null,
+        "voldrek": null,
+        "vossane": null,
+        "vossik": null,
+        "vossrim": null,
+        "vossune": null,
+        "vrandun": null,
+        "vriso": null
+      },
+      "state": "expanded",
+      "status": "active",
+      "death_note": null,
+      "created": "2026-04-07",
+      "week": 3
     }
   },
   "expansion_log": [
@@ -4482,6 +6150,86 @@
         "silent"
       ],
       "notes": "Vrenthane discovered as the manner of unconscious transformation — changing without knowing you're changing. Contrasted with ondrique. The pralune fear it. 7 English footholds including 'blind', 'losing', 'silent'."
+    },
+    {
+      "week": 3,
+      "date": "2026-04-07",
+      "action": "expanded",
+      "story_id": "story_ornique",
+      "parent_story": "story_0",
+      "word_expanded": "ornique",
+      "words_introduced": 15,
+      "words_reused": 29,
+      "real_english_footholds": [
+        "against",
+        "feared",
+        "left",
+        "trace",
+        "certainty",
+        "deepest"
+      ],
+      "notes": "Ornique discovered as cognitive apprehension distinct from mere perception (drevith). Two failure modes: morvith (trying and failing) and kethrek (fabricating). The same olvereth can do either. 15 new words introduced."
+    },
+    {
+      "week": 3,
+      "date": "2026-04-07",
+      "action": "expanded",
+      "story_id": "story_pralune",
+      "parent_story": "story_0",
+      "word_expanded": "pralune",
+      "words_introduced": 13,
+      "words_reused": 31,
+      "real_english_footholds": [
+        "behind",
+        "against",
+        "feared",
+        "faster"
+      ],
+      "notes": "Pralune discovered as the social class of memory-keepers — the only beings who selmir across jorvunden. The brolm needs them because the brolm cannot ornique itself. 13 new words introduced including selmir/threlven/vossane (collective verbs and gathering)."
+    },
+    {
+      "week": 3,
+      "date": "2026-04-07",
+      "action": "expanded",
+      "story_id": "story_savrune",
+      "parent_story": "story_ornique",
+      "word_expanded": "savrune",
+      "words_introduced": 6,
+      "words_reused": 33,
+      "real_english_footholds": [
+        "opened",
+        "being",
+        "barely",
+        "forever",
+        "attempt",
+        "against",
+        "left",
+        "unfinished",
+        "carried",
+        "stood"
+      ],
+      "notes": "Savrune discovered at depth 2 as the cognitive gap between drevith and ornique. Every drevith opens its own savrune. Failed crossings leave morvath. The brolm itself may be a savrune. 6 new words introduced."
+    },
+    {
+      "week": 3,
+      "date": "2026-04-07",
+      "action": "expanded",
+      "story_id": "story_morthrene",
+      "parent_story": "story_pralune",
+      "word_expanded": "morthrene",
+      "words_introduced": 6,
+      "words_reused": 34,
+      "real_english_footholds": [
+        "absence",
+        "small",
+        "marked",
+        "against",
+        "holding",
+        "response",
+        "deepest",
+        "enter"
+      ],
+      "notes": "Morthrene discovered as the collective silence when vrisora reaches its limit. Not absence — vrisora's drilvan into its own savrune. The vossikest pralune teach it is the only true response to the brolm. 6 new words introduced."
     }
   ]
 }
