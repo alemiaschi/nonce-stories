@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import type { AppData } from '../../types';
 import {
   ChartCard, PosDonut, DepthBars, DensityScatter,
@@ -33,8 +33,13 @@ function BigStat({ value, label }: { value: string | number; label: string }) {
   );
 }
 
+const FRONTIER_LIMIT = 5;
+const REUSE_LIMIT = 8;
+
 export function StatsPage({ data }: StatsPageProps) {
   const { meta, stats } = data;
+  const [frontierExpanded, setFrontierExpanded] = useState(false);
+  const [reuseExpanded, setReuseExpanded] = useState(false);
 
   // Compute fog clarity for all nonce words in story_0
   const fogStats = useMemo(() => {
@@ -155,7 +160,7 @@ export function StatsPage({ data }: StatsPageProps) {
             <ChartCard title="Frontier Depth Distribution"
               subtitle="Where unexpanded words are waiting">
               <div className="space-y-3">
-                {stats.frontier_per_depth.map(d => (
+                {(frontierExpanded ? stats.frontier_per_depth : stats.frontier_per_depth.slice(0, FRONTIER_LIMIT)).map(d => (
                   <div key={d.depth}>
                     <ProgressBar
                       value={d.count / Math.max(...stats.frontier_per_depth.map(x => x.count), 1)}
@@ -167,6 +172,14 @@ export function StatsPage({ data }: StatsPageProps) {
                   </div>
                 ))}
               </div>
+              {stats.frontier_per_depth.length > FRONTIER_LIMIT && (
+                <button
+                  onClick={() => setFrontierExpanded(v => !v)}
+                  className="mt-3 text-[10px] font-mono text-stone-400 hover:text-stone-600 uppercase tracking-widest w-full text-center"
+                >
+                  {frontierExpanded ? '▲ show less' : `▼ show all ${stats.frontier_per_depth.length} depths`}
+                </button>
+              )}
             </ChartCard>
 
             <ChartCard title="Root Coverage"
@@ -233,11 +246,19 @@ export function StatsPage({ data }: StatsPageProps) {
 
             <ChartCard title="New vs Reused Words per Story"
               subtitle="Dark = newly coined, light = borrowed from existing lexicon">
-              <ReuseBars data={stats.reuse_per_story} />
+              <ReuseBars data={reuseExpanded ? stats.reuse_per_story : stats.reuse_per_story.slice(0, REUSE_LIMIT)} />
               {stats.reuse_per_story.every(s => s.reused_words === 0) && (
                 <p className="text-[10px] text-stone-400 font-serif italic mt-3 text-center">
                   No reuse yet — all words are freshly coined. Cross-referencing begins as the lexicon grows.
                 </p>
+              )}
+              {stats.reuse_per_story.length > REUSE_LIMIT && (
+                <button
+                  onClick={() => setReuseExpanded(v => !v)}
+                  className="mt-3 text-[10px] font-mono text-stone-400 hover:text-stone-600 uppercase tracking-widest w-full text-center"
+                >
+                  {reuseExpanded ? '▲ show less' : `▼ show all ${stats.reuse_per_story.length} stories`}
+                </button>
               )}
             </ChartCard>
           </div>
