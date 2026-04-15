@@ -425,6 +425,63 @@ def compute_stats(memory: dict, classified_stories: dict | None = None) -> dict:
     }
 
 
+def compute_clarity_scores(stories: dict) -> dict:
+    """
+    Pre-compute clarity scores for every nonce child_story.
+    clarity = 1 - avg(nonce_density along branch)
+    Returns a dict mapping child_story_id → {score, avg_density, branch_length}.
+    """
+    def nonce_density(story_id: str) -> float:
+        story = stories.get(story_id)
+        if not story:
+            return 1.0
+        tokens = story.get("tokens", [])
+        words = [t for t in tokens if t.get("type") in ("nonce", "content")]
+        if not words:
+            return 1.0
+        nonces = sum(1 for t in words if t.get("type") == "nonce")
+        return nonces / len(words)
+
+    def collect_branch(story_id: str, visited: set) -> list:
+        if story_id in visited:
+            return []
+        visited.add(story_id)
+        story = stories.get(story_id)
+        if not story:
+            return []
+        children = list({
+            t["child_story"]
+            for t in story.get("tokens", [])
+            if t.get("type") == "nonce" and t.get("child_story")
+        })
+        result = [story_id]
+        for child in children:
+            result.extend(collect_branch(child, set(visited)))
+        return result
+
+    # Collect all unique child_story IDs referenced anywhere
+    child_story_ids = set()
+    for story in stories.values():
+        for tok in story.get("tokens", []):
+            if tok.get("type") == "nonce" and tok.get("child_story"):
+                child_story_ids.add(tok["child_story"])
+
+    result = {}
+    for child_id in child_story_ids:
+        branch = collect_branch(child_id, set())
+        if not branch:
+            result[child_id] = {"score": 0.0, "avg_density": 1.0, "branch_length": 0}
+            continue
+        avg_density = sum(nonce_density(sid) for sid in branch) / len(branch)
+        score = max(0.0, min(1.0, 1.0 - avg_density))
+        result[child_id] = {
+            "score": round(score, 4),
+            "avg_density": round(avg_density, 4),
+            "branch_length": len(branch),
+        }
+    return result
+
+
 def main():
     print(f"Reading {MEMORY_PATH}...")
     with open(MEMORY_PATH, "r", encoding="utf-8") as f:
@@ -551,6 +608,9 @@ def main():
     # Compute aggregate statistics
     stats = compute_stats(memory, classified_stories=out_stories)
 
+    # Pre-compute clarity scores for every nonce lemma
+    clarity_scores = compute_clarity_scores(out_stories)
+
     output = {
         "stories": out_stories,
         "lexicon": out_lexicon,
@@ -558,6 +618,7 @@ def main():
         "breadcrumb_labels": breadcrumb_labels,
         "expansion_log": out_expansion_log,
         "stats": stats,
+        "clarity": clarity_scores,
     }
 
     print(f"Writing {OUTPUT_PATH}...")

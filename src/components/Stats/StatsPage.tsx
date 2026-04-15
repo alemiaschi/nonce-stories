@@ -5,7 +5,7 @@ import {
   LengthScatter, TopWordsBars, ReuseBars, GrowthLines,
   ProgressBar, WeekTimeline, FogClarityBars, NewWordsBar,
 } from './charts';
-import { computeClarity } from '../../utils/clarity';
+import { getClarity } from '../../utils/clarity';
 
 interface StatsPageProps {
   data: AppData;
@@ -47,7 +47,7 @@ export function StatsPage({ data }: StatsPageProps) {
       const lemma = token.lemma ?? token.text.toLowerCase();
       if (seen.has(lemma)) continue;
       seen.add(lemma);
-      const { score } = computeClarity(token.child_story, data);
+      const { score } = getClarity(token.child_story, data);
       entries.push({ word: lemma, score });
     }
     const avg = entries.length > 0

@@ -36536,5 +36536,82 @@
         "notes": "FIRST DEPTH-4 STORY. Kelmranix discovered as the porthane's listening posture before a kelmrith. Two kinds (krensil, voldrane), typology of pralune (drevrane = always-in-krensil). 4 new words. 21 English footholds — reader now gets substantial traction."
       }
     ]
+  },
+  "clarity": {
+    "story_fenqua": {
+      "score": 0.1907,
+      "avg_density": 0.8093,
+      "branch_length": 689448
+    },
+    "story_quelith": {
+      "score": 0.1981,
+      "avg_density": 0.8019,
+      "branch_length": 747957
+    },
+    "story_grothen": {
+      "score": 0.2065,
+      "avg_density": 0.7935,
+      "branch_length": 384580
+    },
+    "story_plendrique": {
+      "score": 0.1853,
+      "avg_density": 0.8147,
+      "branch_length": 435991
+    },
+    "story_kelmranix": {
+      "score": 0.1751,
+      "avg_density": 0.8249,
+      "branch_length": 1139085
+    },
+    "story_pralune": {
+      "score": 0.1902,
+      "avg_density": 0.8098,
+      "branch_length": 267761
+    },
+    "story_kelmrith": {
+      "score": 0.1708,
+      "avg_density": 0.8292,
+      "branch_length": 1639780
+    },
+    "story_vriso": {
+      "score": 0.1865,
+      "avg_density": 0.8135,
+      "branch_length": 296313
+    },
+    "story_vossune": {
+      "score": 0.173,
+      "avg_density": 0.827,
+      "branch_length": 1575000
+    },
+    "story_morthrene": {
+      "score": 0.1726,
+      "avg_density": 0.8274,
+      "branch_length": 1137034
+    },
+    "story_savrune": {
+      "score": 0.1693,
+      "avg_density": 0.8307,
+      "branch_length": 556299
+    },
+    "story_ornique": {
+      "score": 0.1954,
+      "avg_density": 0.8046,
+      "branch_length": 282631
+    },
+    "story_vrenthane": {
+      "score": 0.1943,
+      "avg_density": 0.8057,
+      "branch_length": 1733254
+    },
+    "story_sulvek": {
+      "score": 0.1983,
+      "avg_density": 0.8017,
+      "branch_length": 390461
+    },
+    "story_brolm": {
+      "score": 0.1997,
+      "avg_density": 0.8003,
+      "branch_length": 319728
+    }
   }
 }

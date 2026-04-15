@@ -79,6 +79,12 @@ export interface AppStats {
   weekly_changelog: ChangelogEntry[];
 }
 
+export interface ClarityEntry {
+  score: number;
+  avg_density: number;
+  branch_length: number;
+}
+
 export interface AppData {
   stories: Record<string, Story>;
   lexicon: Record<string, LexiconEntry>;
@@ -86,4 +92,5 @@ export interface AppData {
   breadcrumb_labels: Record<string, string>;
   expansion_log: ExpansionLogEntry[];
   stats: AppStats;
+  clarity: Record<string, ClarityEntry>; // child_story_id → clarity
 }

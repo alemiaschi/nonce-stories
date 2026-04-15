@@ -71,6 +71,22 @@ export function clarityToStyle(score: number): CSSProperties {
   };
 }
 
+/**
+ * Fast lookup using pre-computed clarity scores from stories_data.json.
+ * Falls back to zero if the child story isn't in the pre-computed map.
+ */
+export function getClarity(childStoryId: string | null | undefined, data: AppData): ClarityInfo {
+  if (!childStoryId) return { score: 0, avgDensity: 1, branchLength: 0, hasSubStory: false };
+  const entry = data.clarity?.[childStoryId];
+  if (!entry) return { score: 0, avgDensity: 1, branchLength: 0, hasSubStory: true };
+  return {
+    score: entry.score,
+    avgDensity: entry.avg_density,
+    branchLength: entry.branch_length,
+    hasSubStory: true,
+  };
+}
+
 export function clarityLabel(score: number): string {
   if (score < 0.05) return 'deep fog — no exploration yet';
   if (score < 0.15) return 'faint — first stories written, still mostly opaque';

@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import type { AppData, StoryToken } from '../../types';
-import { computeClarity, clarityToStyle, clarityLabel, type ClarityInfo } from '../../utils/clarity';
+import { getClarity, clarityToStyle, clarityLabel, type ClarityInfo } from '../../utils/clarity';
 
 interface FogPageProps { data: AppData; }
 
@@ -45,7 +45,7 @@ export function FogPage({ data }: FogPageProps) {
       if (token.type === 'nonce') {
         const lemma = token.lemma ?? token.text.toLowerCase();
         if (!clarityMap.has(lemma)) {
-          clarityMap.set(lemma, computeClarity(token.child_story, data));
+          clarityMap.set(lemma, getClarity(token.child_story, data));
         }
       }
     }
