@@ -214,8 +214,13 @@ def classify_token(
     return {"text": text, "type": "content"}
 
 
-def is_deep_solved(story_id: str, story_tree: dict, global_children: dict) -> bool:
+def is_deep_solved(story_id: str, story_tree: dict, global_children: dict, _visited: set | None = None) -> bool:
     """Recursively check if all nonce word branches are expanded."""
+    if _visited is None:
+        _visited = set()
+    if story_id in _visited:
+        return True  # already counted as solved in this branch (DAG cycle)
+    _visited.add(story_id)
     story = story_tree.get(story_id)
     if not story:
         return False
@@ -223,7 +228,7 @@ def is_deep_solved(story_id: str, story_tree: dict, global_children: dict) -> bo
         child_id = global_children.get(lemma)
         if child_id is None:
             return False
-        if not is_deep_solved(child_id, story_tree, global_children):
+        if not is_deep_solved(child_id, story_tree, global_children, _visited):
             return False
     return True
 
@@ -456,7 +461,7 @@ def compute_clarity_scores(stories: dict) -> dict:
         })
         result = [story_id]
         for child in children:
-            result.extend(collect_branch(child, set(visited)))
+            result.extend(collect_branch(child, visited))
         return result
 
     # Collect all unique child_story IDs referenced anywhere

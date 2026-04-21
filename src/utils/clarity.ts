@@ -11,7 +11,7 @@ function collectBranchStories(storyId: string, data: AppData, visited = new Set<
   const childIds = [...new Set(
     story.tokens.filter(t => t.type === 'nonce' && t.child_story).map(t => t.child_story!)
   )];
-  const descendants = childIds.flatMap(id => collectBranchStories(id, data, new Set(visited)));
+  const descendants = childIds.flatMap(id => collectBranchStories(id, data, visited));
   return [storyId, ...descendants];
 }
 

@@ -4,11 +4,11 @@
     "project_subtitle": "Nonce Stories",
     "version": "0.1.0",
     "created": "2026-03-17",
-    "last_updated": "2026-04-14",
-    "current_week": 4,
-    "total_stories": 16,
-    "total_lexicon_entries": 149,
-    "total_concepts_discovered": 16,
+    "last_updated": "2026-04-21",
+    "current_week": 5,
+    "total_stories": 20,
+    "total_lexicon_entries": 184,
+    "total_concepts_discovered": 20,
     "max_depth_reached": 4,
     "density_curve": {
       "0": 1.0,
@@ -312,7 +312,10 @@
         "story_pralune",
         "story_savrune",
         "story_morthrene",
-        "story_vriso"
+        "story_vriso",
+        "story_felgor",
+        "story_brashel",
+        "story_krelquin"
       ],
       "stories_about": [
         "story_brolm"
@@ -584,7 +587,8 @@
         "story_fenqua",
         "story_vrenthane",
         "story_ornique",
-        "story_savrune"
+        "story_savrune",
+        "story_felgor"
       ],
       "stories_about": [],
       "annotation": null,
@@ -829,7 +833,9 @@
         "story_pralune",
         "story_savrune",
         "story_kelmrith",
-        "story_kelmranix"
+        "story_kelmranix",
+        "story_felgor",
+        "story_brashel"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1149,7 +1155,8 @@
         "story_quelith",
         "story_grothen",
         "story_fenqua",
-        "story_pralune"
+        "story_pralune",
+        "story_felgor"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1307,7 +1314,8 @@
         "story_brolm",
         "story_sulvek",
         "story_ornique",
-        "story_pralune"
+        "story_pralune",
+        "story_felgor"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1409,7 +1417,8 @@
       "appears_in": [
         "story_0",
         "story_sulvek",
-        "story_plendrique"
+        "story_plendrique",
+        "story_brashel"
       ],
       "stories_about": [],
       "annotation": null,
@@ -1481,7 +1490,11 @@
         "story_vriso",
         "story_vossune",
         "story_kelmrith",
-        "story_kelmranix"
+        "story_kelmranix",
+        "story_felgor",
+        "story_brashel",
+        "story_krelquin",
+        "story_pralvene"
       ],
       "stories_about": [
         "story_pralune"
@@ -1860,7 +1873,8 @@
         "story_grothen",
         "story_ornique",
         "story_pralune",
-        "story_savrune"
+        "story_savrune",
+        "story_felgor"
       ],
       "stories_about": [],
       "annotation": null,
@@ -2006,9 +2020,9 @@
     },
     "felgor": {
       "id": "felgor",
-      "concept": null,
-      "concept_discovered_from": null,
-      "context_notes": null,
+      "concept": "The common beings of the brolm — ephemeral perceivers who melvir across the ondrev, kelvirth (transform unknowingly), and leave trendavelen (traces) in the brolm's velune. Unlike the pralune, felgoren do not selmir: when the jorvund halvornara, the felgor's drevith halvornara with it (the solmire). Their vriso is individual, dying with the jorvund. Most felgoren are krendavel (unaware), but some are selvorn (perceptive, drevithing with a drevrane kelmranix). Rarest are the pelvorn felgoren — those who carry a thranvel from a morvithed kelmrith in a prior jorvund. The pralune cannot explain pelvorn felgoren: a felgor that selmirets is not a felgor, yet these drelvane through the brolm as if they had drevithed it before.",
+      "concept_discovered_from": "story_felgor",
+      "context_notes": "Across 10 prior stories, felgoren appeared as: (1) agents of movement/melviring ('every felgor that had melvired across the ondrev'), (2) agents of perception ('the felgoren began to ornique'), (3) explicitly not-pralune ('the pralune were not the felgoren,' 'the felgor did not selmir'), (4) agents of change ('the felgoren themselves who keltharara the brolm'). The sub-story synthesized: felgoren are ephemeral beings whose experience doesn't persist, with a spectrum from krendavel to selvorn to the anomalous pelvorn.",
       "pos": "noun",
       "morphology": {
         "plural": "felgoren",
@@ -2026,9 +2040,13 @@
         "story_ornique",
         "story_pralune",
         "story_savrune",
-        "story_kelmrith"
+        "story_kelmrith",
+        "story_felgor",
+        "story_brashel"
       ],
-      "stories_about": [],
+      "stories_about": [
+        "story_felgor"
+      ],
       "annotation": null,
       "usage_log": [
         {
@@ -2447,7 +2465,10 @@
         "story_vriso",
         "story_vossune",
         "story_kelmrith",
-        "story_kelmranix"
+        "story_kelmranix",
+        "story_felgor",
+        "story_brashel",
+        "story_krelquin"
       ],
       "stories_about": [],
       "annotation": null,
@@ -3116,7 +3137,11 @@
         "story_morthrene",
         "story_vriso",
         "story_vossune",
-        "story_kelmranix"
+        "story_kelmranix",
+        "story_felgor",
+        "story_brashel",
+        "story_krelquin",
+        "story_pralvene"
       ],
       "stories_about": [
         "story_vriso"
@@ -3412,7 +3437,9 @@
         "story_fenqua",
         "story_vrenthane",
         "story_ornique",
-        "story_pralune"
+        "story_pralune",
+        "story_felgor",
+        "story_brashel"
       ],
       "stories_about": [],
       "annotation": null,
@@ -3605,7 +3632,10 @@
         "story_savrune",
         "story_morthrene",
         "story_vriso",
-        "story_kelmrith"
+        "story_kelmrith",
+        "story_brashel",
+        "story_krelquin",
+        "story_pralvene"
       ],
       "stories_about": [
         "story_grothen"
@@ -3839,7 +3869,8 @@
         "story_vrenthane",
         "story_ornique",
         "story_pralune",
-        "story_savrune"
+        "story_savrune",
+        "story_felgor"
       ],
       "stories_about": [
         "story_sulvek"
@@ -4061,7 +4092,11 @@
         "story_savrune",
         "story_vriso",
         "story_kelmrith",
-        "story_kelmranix"
+        "story_kelmranix",
+        "story_felgor",
+        "story_brashel",
+        "story_krelquin",
+        "story_pralvene"
       ],
       "stories_about": [
         "story_ornique"
@@ -4248,9 +4283,9 @@
     },
     "brashel": {
       "id": "brashel",
-      "concept": null,
-      "concept_discovered_from": null,
-      "context_notes": null,
+      "concept": "To push against, to meet resistance, to make contact with what does not move. The fundamental verb of effort — physical, cognitive, and existential. Every brashel has a drenthavel (point of contact) and encounters a kelvorn (what pushes back). Without kelvorn there is no savrune to threnvik — only what brashels back can be orniqueith. A brashel can porvrik (break through to a drilque) or morvulm (be deflected back, leaving a selvrath). The pralune krenthavel against the brolm's pellumomen jorvund after jorvund, and the selvrathen ARE the kethrim — the record of where the brolm brasheled back. Drenmire pralune (those who won't brashel) selmir nothing. Brenthavel drossiken (hard, resistant) are valued; kelvornath ones (yielding) are feared because their drilque is vossrim.",
+      "concept_discovered_from": "story_brashel",
+      "context_notes": "Across 14 prior stories, brashel appeared as: (1) physical contact against shendir/plendrique, (2) cognitive pushing (ornique brashelara against vrandith pellumom), (3) blocking (quelith brasheled it from kelvassing), (4) existential resistance (felgor brasheling against halvorn), (5) contrastively absent in vrenthane (silent change without brasheling). The sub-story synthesized: brasheling is the foundational act — perception, knowledge, even kethrim itself are products of brasheling.",
       "pos": "verb",
       "morphology": {
         "past": "brashelara",
@@ -4274,9 +4309,14 @@
         "story_savrune",
         "story_morthrene",
         "story_vriso",
-        "story_kelmrith"
+        "story_kelmrith",
+        "story_felgor",
+        "story_brashel",
+        "story_krelquin"
       ],
-      "stories_about": [],
+      "stories_about": [
+        "story_brashel"
+      ],
       "annotation": null,
       "usage_log": [
         {
@@ -4525,7 +4565,8 @@
         "story_grothen",
         "story_fenqua",
         "story_ornique",
-        "story_savrune"
+        "story_savrune",
+        "story_brashel"
       ],
       "stories_about": [],
       "annotation": null,
@@ -4945,7 +4986,8 @@
         "story_grothen",
         "story_vrenthane",
         "story_pralune",
-        "story_kelmrith"
+        "story_kelmrith",
+        "story_felgor"
       ],
       "stories_about": [],
       "annotation": null,
@@ -5269,7 +5311,8 @@
         "story_grothen",
         "story_fenqua",
         "story_vrenthane",
-        "story_ornique"
+        "story_ornique",
+        "story_brashel"
       ],
       "stories_about": [],
       "annotation": null,
@@ -5438,7 +5481,10 @@
         "story_savrune",
         "story_vriso",
         "story_kelmrith",
-        "story_kelmranix"
+        "story_kelmranix",
+        "story_felgor",
+        "story_brashel",
+        "story_krelquin"
       ],
       "stories_about": [],
       "annotation": null,
@@ -5929,7 +5975,8 @@
         "story_sulvek",
         "story_plendrique",
         "story_quelith",
-        "story_vrenthane"
+        "story_vrenthane",
+        "story_felgor"
       ],
       "stories_about": [],
       "annotation": null,
@@ -6262,7 +6309,9 @@
         "story_quelith",
         "story_grothen",
         "story_fenqua",
-        "story_vrenthane"
+        "story_vrenthane",
+        "story_felgor",
+        "story_brashel"
       ],
       "stories_about": [],
       "annotation": null,
@@ -6671,7 +6720,8 @@
         "story_ornique",
         "story_pralune",
         "story_savrune",
-        "story_vriso"
+        "story_vriso",
+        "story_felgor"
       ],
       "stories_about": [],
       "annotation": null,
@@ -6931,7 +6981,9 @@
         "story_vrenthane",
         "story_ornique",
         "story_savrune",
-        "story_kelmrith"
+        "story_kelmrith",
+        "story_felgor",
+        "story_krelquin"
       ],
       "stories_about": [],
       "annotation": null,
@@ -7273,7 +7325,9 @@
         "story_vrenthane",
         "story_ornique",
         "story_pralune",
-        "story_morthrene"
+        "story_morthrene",
+        "story_brashel",
+        "story_pralvene"
       ],
       "stories_about": [],
       "annotation": null,
@@ -8331,7 +8385,8 @@
         "story_fenqua",
         "story_ornique",
         "story_savrune",
-        "story_vossune"
+        "story_vossune",
+        "story_felgor"
       ],
       "stories_about": [],
       "annotation": null,
@@ -8482,7 +8537,8 @@
         "story_quelith",
         "story_grothen",
         "story_ornique",
-        "story_kelmrith"
+        "story_kelmrith",
+        "story_felgor"
       ],
       "stories_about": [],
       "annotation": null,
@@ -8818,7 +8874,10 @@
         "story_morthrene",
         "story_vriso",
         "story_vossune",
-        "story_kelmrith"
+        "story_kelmrith",
+        "story_felgor",
+        "story_brashel",
+        "story_krelquin"
       ],
       "stories_about": [],
       "annotation": null,
@@ -9061,7 +9120,10 @@
         "story_savrune",
         "story_morthrene",
         "story_vriso",
-        "story_vossune"
+        "story_vossune",
+        "story_felgor",
+        "story_brashel",
+        "story_krelquin"
       ],
       "stories_about": [],
       "annotation": null,
@@ -9359,7 +9421,8 @@
         "story_quelith",
         "story_grothen",
         "story_fenqua",
-        "story_vrenthane"
+        "story_vrenthane",
+        "story_brashel"
       ],
       "stories_about": [],
       "annotation": null,
@@ -9961,7 +10024,9 @@
         "story_morthrene",
         "story_vriso",
         "story_kelmrith",
-        "story_kelmranix"
+        "story_kelmranix",
+        "story_brashel",
+        "story_pralvene"
       ],
       "stories_about": [],
       "annotation": null,
@@ -10159,7 +10224,9 @@
       "appears_in": [
         "story_ornique",
         "story_savrune",
-        "story_vriso"
+        "story_vriso",
+        "story_brashel",
+        "story_pralvene"
       ],
       "stories_about": [],
       "annotation": null,
@@ -10246,7 +10313,8 @@
       "appears_in": [
         "story_ornique",
         "story_savrune",
-        "story_vossune"
+        "story_vossune",
+        "story_brashel"
       ],
       "stories_about": [],
       "annotation": null,
@@ -10316,7 +10384,8 @@
         "story_savrune",
         "story_morthrene",
         "story_kelmrith",
-        "story_kelmranix"
+        "story_kelmranix",
+        "story_felgor"
       ],
       "stories_about": [],
       "annotation": null,
@@ -10440,7 +10509,8 @@
       "depth_introduced": 1,
       "appears_in": [
         "story_ornique",
-        "story_savrune"
+        "story_savrune",
+        "story_brashel"
       ],
       "stories_about": [],
       "annotation": null,
@@ -10514,7 +10584,9 @@
         "story_savrune",
         "story_morthrene",
         "story_vriso",
-        "story_kelmrith"
+        "story_kelmrith",
+        "story_felgor",
+        "story_brashel"
       ],
       "stories_about": [],
       "annotation": null,
@@ -10633,7 +10705,11 @@
         "story_vriso",
         "story_vossune",
         "story_kelmrith",
-        "story_kelmranix"
+        "story_kelmranix",
+        "story_felgor",
+        "story_brashel",
+        "story_krelquin",
+        "story_pralvene"
       ],
       "stories_about": [],
       "annotation": null,
@@ -10918,7 +10994,8 @@
       "appears_in": [
         "story_ornique",
         "story_pralune",
-        "story_kelmrith"
+        "story_kelmrith",
+        "story_brashel"
       ],
       "stories_about": [],
       "annotation": null,
@@ -11015,7 +11092,9 @@
         "story_vriso",
         "story_vossune",
         "story_kelmrith",
-        "story_kelmranix"
+        "story_kelmranix",
+        "story_brashel",
+        "story_krelquin"
       ],
       "stories_about": [
         "story_savrune"
@@ -11362,7 +11441,9 @@
         "story_savrune",
         "story_morthrene",
         "story_vriso",
-        "story_kelmrith"
+        "story_kelmrith",
+        "story_felgor",
+        "story_brashel"
       ],
       "stories_about": [],
       "annotation": null,
@@ -11651,7 +11732,9 @@
         "story_pralune",
         "story_morthrene",
         "story_vriso",
-        "story_vossune"
+        "story_vossune",
+        "story_krelquin",
+        "story_pralvene"
       ],
       "stories_about": [],
       "annotation": null,
@@ -11752,7 +11835,8 @@
         "story_pralune",
         "story_morthrene",
         "story_vriso",
-        "story_vossune"
+        "story_vossune",
+        "story_brashel"
       ],
       "stories_about": [],
       "annotation": null,
@@ -11947,7 +12031,9 @@
       "appears_in": [
         "story_pralune",
         "story_morthrene",
-        "story_vossune"
+        "story_vossune",
+        "story_felgor",
+        "story_brashel"
       ],
       "stories_about": [],
       "annotation": null,
@@ -12023,7 +12109,10 @@
       "appears_in": [
         "story_pralune",
         "story_morthrene",
-        "story_vriso"
+        "story_vriso",
+        "story_felgor",
+        "story_brashel",
+        "story_krelquin"
       ],
       "stories_about": [],
       "annotation": null,
@@ -12199,7 +12288,8 @@
       "introduced_in": "story_pralune",
       "depth_introduced": 1,
       "appears_in": [
-        "story_pralune"
+        "story_pralune",
+        "story_brashel"
       ],
       "stories_about": [],
       "annotation": null,
@@ -12306,7 +12396,8 @@
       "appears_in": [
         "story_pralune",
         "story_morthrene",
-        "story_vriso"
+        "story_vriso",
+        "story_krelquin"
       ],
       "stories_about": [],
       "annotation": null,
@@ -12371,7 +12462,9 @@
       "depth_introduced": 2,
       "appears_in": [
         "story_savrune",
-        "story_kelmrith"
+        "story_kelmrith",
+        "story_felgor",
+        "story_krelquin"
       ],
       "stories_about": [
         "story_kelmrith"
@@ -12420,7 +12513,8 @@
       "appears_in": [
         "story_savrune",
         "story_morthrene",
-        "story_kelmrith"
+        "story_kelmrith",
+        "story_brashel"
       ],
       "stories_about": [],
       "annotation": null,
@@ -12550,7 +12644,8 @@
         "story_savrune",
         "story_morthrene",
         "story_kelmrith",
-        "story_kelmranix"
+        "story_kelmranix",
+        "story_brashel"
       ],
       "stories_about": [],
       "annotation": null,
@@ -12804,7 +12899,8 @@
       "depth_introduced": 2,
       "appears_in": [
         "story_morthrene",
-        "story_vossune"
+        "story_vossune",
+        "story_pralvene"
       ],
       "stories_about": [
         "story_vossune"
@@ -12857,7 +12953,8 @@
       "depth_introduced": 2,
       "appears_in": [
         "story_morthrene",
-        "story_vossune"
+        "story_vossune",
+        "story_pralvene"
       ],
       "stories_about": [],
       "annotation": null,
@@ -12918,7 +13015,8 @@
       "depth_introduced": 2,
       "appears_in": [
         "story_morthrene",
-        "story_vossune"
+        "story_vossune",
+        "story_brashel"
       ],
       "stories_about": [],
       "annotation": null,
@@ -13061,7 +13159,8 @@
       "introduced_in": "story_vriso",
       "depth_introduced": 1,
       "appears_in": [
-        "story_vriso"
+        "story_vriso",
+        "story_krelquin"
       ],
       "stories_about": [],
       "annotation": null,
@@ -13098,7 +13197,8 @@
       "introduced_in": "story_vriso",
       "depth_introduced": 1,
       "appears_in": [
-        "story_vriso"
+        "story_vriso",
+        "story_krelquin"
       ],
       "stories_about": [],
       "annotation": null,
@@ -13306,8 +13406,8 @@
     },
     "krelquin": {
       "id": "krelquin",
-      "concept": null,
-      "concept_discovered_from": null,
+      "concept": "The gap between what the pralune vriso and what the brolm actually is — but unlike a voldrek (an unanswerable question they can drevith), a krelquin is a savrune they cannot drevith at all. It jenvirs without a drenthavel or kelvorn, invisible. Every kelvorin carries its own krelquin. A threndavel is a vrisoneth that has grothened around its krelquin, hiding it. The morvaineth (brasheling against one's own vriso to find the krelquin) is the most feared kelmrith — because a kelvornith (revealing the krelquin) can morvulm an entire kelvorin. The solvrenik pralune (those who krelven without morvaining) vriso that krelquinen don't exist — and that is the deepest krelquin of all.",
+      "concept_discovered_from": "story_krelquin",
       "context_notes": null,
       "pos": "noun",
       "morphology": {
@@ -13317,9 +13417,12 @@
       "introduced_in": "story_vriso",
       "depth_introduced": 1,
       "appears_in": [
-        "story_vriso"
+        "story_vriso",
+        "story_krelquin"
       ],
-      "stories_about": [],
+      "stories_about": [
+        "story_krelquin"
+      ],
       "annotation": null,
       "pronunciation": {
         "ipa": "/ˈkrɛl.kwɪn/",
@@ -13356,7 +13459,9 @@
       "introduced_in": "story_vriso",
       "depth_introduced": 1,
       "appears_in": [
-        "story_vriso"
+        "story_vriso",
+        "story_brashel",
+        "story_krelquin"
       ],
       "stories_about": [],
       "annotation": null,
@@ -13396,7 +13501,8 @@
       "introduced_in": "story_vriso",
       "depth_introduced": 1,
       "appears_in": [
-        "story_vriso"
+        "story_vriso",
+        "story_krelquin"
       ],
       "stories_about": [],
       "annotation": null,
@@ -13558,7 +13664,8 @@
       "introduced_in": "story_vriso",
       "depth_introduced": 1,
       "appears_in": [
-        "story_vriso"
+        "story_vriso",
+        "story_krelquin"
       ],
       "stories_about": [],
       "annotation": null,
@@ -13711,7 +13818,8 @@
       "introduced_in": "story_vossune",
       "depth_introduced": 3,
       "appears_in": [
-        "story_vossune"
+        "story_vossune",
+        "story_pralvene"
       ],
       "stories_about": [],
       "annotation": null,
@@ -13793,7 +13901,8 @@
       "introduced_in": "story_vossune",
       "depth_introduced": 3,
       "appears_in": [
-        "story_vossune"
+        "story_vossune",
+        "story_felgor"
       ],
       "stories_about": [],
       "annotation": null,
@@ -13822,8 +13931,8 @@
     },
     "pralvene": {
       "id": "pralvene",
-      "concept": null,
-      "concept_discovered_from": null,
+      "concept": "The moment the vossune breaks — it comes like a drilque, unchosen. One pralune (the selvrique) solvriths, not because they answered the voldrek but because their porthane could not melvrith the voldrane any longer. The selvrique never knows until it's over. They vriso a thrennig no one had drevithed, and the others follow thranvelu, as if the vossune had been krendvolm all along and only needed one drenthavir. Being the selvrique is feared — but some vriso that the pralvene is not a breaking: it is the vossune's own drilque, the moment it orniques itself.",
+      "concept_discovered_from": "story_pralvene",
       "context_notes": null,
       "pos": "noun",
       "morphology": {
@@ -13833,9 +13942,12 @@
       "introduced_in": "story_vossune",
       "depth_introduced": 3,
       "appears_in": [
-        "story_vossune"
+        "story_vossune",
+        "story_pralvene"
       ],
-      "stories_about": [],
+      "stories_about": [
+        "story_pralvene"
+      ],
       "annotation": null,
       "pronunciation": {
         "ipa": "/prælˈviːn/",
@@ -13872,7 +13984,8 @@
       "introduced_in": "story_vossune",
       "depth_introduced": 3,
       "appears_in": [
-        "story_vossune"
+        "story_vossune",
+        "story_pralvene"
       ],
       "stories_about": [],
       "annotation": null,
@@ -13961,7 +14074,9 @@
       "depth_introduced": 3,
       "appears_in": [
         "story_kelmrith",
-        "story_kelmranix"
+        "story_kelmranix",
+        "story_felgor",
+        "story_brashel"
       ],
       "stories_about": [
         "story_kelmranix"
@@ -14246,7 +14361,8 @@
       "introduced_in": "story_kelmranix",
       "depth_introduced": 4,
       "appears_in": [
-        "story_kelmranix"
+        "story_kelmranix",
+        "story_pralvene"
       ],
       "stories_about": [],
       "annotation": null,
@@ -14288,7 +14404,8 @@
       "introduced_in": "story_kelmranix",
       "depth_introduced": 4,
       "appears_in": [
-        "story_kelmranix"
+        "story_kelmranix",
+        "story_pralvene"
       ],
       "stories_about": [],
       "annotation": null,
@@ -14327,7 +14444,8 @@
       "introduced_in": "story_kelmranix",
       "depth_introduced": 4,
       "appears_in": [
-        "story_kelmranix"
+        "story_kelmranix",
+        "story_felgor"
       ],
       "stories_about": [],
       "annotation": null,
@@ -14348,6 +14466,1645 @@
             "melvrith": "past_english",
             "krensil": "base"
           },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "trendavel": {
+      "id": "trendavel",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "trendavelen",
+        "possessive": "trendavelis"
+      },
+      "introduced_in": "story_felgor",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_felgor"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/trɛnˈdɑː.vɛl/",
+        "stress": "2nd",
+        "rhymes_with": "travel"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_felgor",
+          "sentence": "Every felgor jenvired a trendavel, a brenthik trace in the brolm's velune, but the felgor itself did not selmir the trendavel.",
+          "surface_form": "trendavel",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "felgor": "base",
+            "jenvir": "inflected",
+            "brenthik": "base",
+            "brolm": "base",
+            "velune": "base",
+            "selmir": "base"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_felgor",
+          "sentence": "When the jorvund halvornara, the felgor's drevith halvornara with it, and the trendavel jenvired alone, dorsmil, without a kelmun to ornique it.",
+          "surface_form": "trendavel",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "jorvund": "base",
+            "halvorn": "inflected",
+            "felgor": "base",
+            "drevith": "base",
+            "jenvir": "inflected",
+            "dorsmil": "base",
+            "kelmun": "base",
+            "ornique": "base"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_felgor",
+          "sentence": "But the pelvorn felgoren drelvaned through the brolm as if they had drevithed it before, and the trendavel they jenvired was vorelm beyond any krendavel felgoris.",
+          "surface_form": "trendavel",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "pelvorn": "base",
+            "felgor": "inflected",
+            "drelvane": "inflected",
+            "brolm": "base",
+            "drevith": "inflected",
+            "jenvir": "inflected",
+            "vorelm": "base",
+            "krendavel": "base"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "vrenqua": {
+      "id": "vrenqua",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "vrenquaren",
+        "possessive": "vrenquais"
+      },
+      "introduced_in": "story_felgor",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_felgor"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈvrɛn.kwə/",
+        "stress": "1st",
+        "rhymes_with": "aqua"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_felgor",
+          "sentence": "Its vrenqua — the kelvasse of its melviring within one jorvund — was all it had.",
+          "surface_form": "vrenqua",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "kelvasse": "base",
+            "melvir": "inflected",
+            "jorvund": "base"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "kelvirth": {
+      "id": "kelvirth",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "kelvirthara",
+        "participle": "kelvirthith",
+        "third_person": "kelvirthet",
+        "past_english": "kelvirthed",
+        "participle_english": "kelvirthing"
+      },
+      "introduced_in": "story_felgor",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_felgor"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈkɛl.vɪrθ/",
+        "stress": "1st",
+        "rhymes_with": "monolith"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_felgor",
+          "sentence": "They sulvekara from the marrath the way all grothik drossiken sulvek — vrenelu, brendive — and they melvired across the ondrev, kelvirthing the brolm as they melvired.",
+          "surface_form": "kelvirthing",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "sulvek": "inflected",
+            "marrath": "base",
+            "grothik": "base",
+            "drossik": "inflected",
+            "vrenelu": "base",
+            "brendive": "base",
+            "melvir": "inflected",
+            "ondrev": "base",
+            "brolm": "base"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_felgor",
+          "sentence": "Others were krendavel, melviring through the ondrev without drevithing, kelvirthing vrenelu, drelvelu, the way a torvel kelvassera the gelvon.",
+          "surface_form": "kelvirthing",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "krendavel": "base",
+            "melvir": "inflected",
+            "ondrev": "base",
+            "drevith": "inflected",
+            "vrenelu": "base",
+            "drelvelu": "base",
+            "torvel": "base",
+            "kelvasse": "inflected",
+            "gelvon": "base"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "threnqavel": {
+      "id": "threnqavel",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "threnqavelara",
+        "participle": "threnqavelith",
+        "third_person": "threnqavelet",
+        "past_english": "threnqaveled",
+        "participle_english": "threnqaveling"
+      },
+      "introduced_in": "story_felgor",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_felgor"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/θrɛnˈkɑː.vɛl/",
+        "stress": "2nd",
+        "rhymes_with": "travel"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_felgor",
+          "sentence": "But vrenelu a felgor would threnqavel — would brashel against the halvorn as if it orniquera that the jorvund was halvornith, as if it drevithed what it was losing.",
+          "surface_form": "threnqavel",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "vrenelu": "base",
+            "felgor": "base",
+            "brashel": "base",
+            "halvorn": "base",
+            "ornique": "inflected",
+            "jorvund": "base",
+            "drevith": "inflected"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "selvorn": {
+      "id": "selvorn",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "selvornun",
+        "superlative": "selvornest",
+        "adverb": "selvornelu"
+      },
+      "introduced_in": "story_felgor",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_felgor"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈsɛl.vɔːrn/",
+        "stress": "1st",
+        "rhymes_with": "horn"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_felgor",
+          "sentence": "Some felgoren were selvorn, drevithing the brolm with a kelmranix so drevrane that they orniquera drossiken the pralune had never drevithed.",
+          "surface_form": "selvorn",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "felgor": "inflected",
+            "drevith": "inflected",
+            "brolm": "base",
+            "kelmranix": "base",
+            "drevrane": "base",
+            "ornique": "inflected",
+            "drossik": "inflected",
+            "pralune": "base"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_felgor",
+          "sentence": "Selvornath was rare.",
+          "surface_form": "selvornath",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "selvornath": "base"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "krendavel": {
+      "id": "krendavel",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "krendavelun",
+        "superlative": "krendavelest",
+        "adverb": "krendavelelu"
+      },
+      "introduced_in": "story_felgor",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_felgor"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈkrɛn.dɑː.vɛl/",
+        "stress": "1st",
+        "rhymes_with": "travel"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_felgor",
+          "sentence": "Others were krendavel, melviring through the ondrev without drevithing, kelvirthing vrenelu, drelvelu, the way a torvel kelvassera the gelvon.",
+          "surface_form": "krendavel",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "melvir": "inflected",
+            "ondrev": "base",
+            "drevith": "inflected",
+            "kelvirth": "inflected",
+            "vrenelu": "base",
+            "drelvelu": "base",
+            "torvel": "base",
+            "kelvasse": "inflected",
+            "gelvon": "base"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_felgor",
+          "sentence": "But the pelvorn felgoren drelvaned through the brolm as if they had drevithed it before, and the trendavel they jenvired was vorelm beyond any krendavel felgoris.",
+          "surface_form": "krendavel",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "pelvorn": "base",
+            "felgor": "inflected",
+            "drelvane": "inflected",
+            "brolm": "base",
+            "drevith": "inflected",
+            "trendavel": "base",
+            "jenvir": "inflected",
+            "vorelm": "base"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "pelvorn": {
+      "id": "pelvorn",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "pelvornun",
+        "superlative": "pelvornest",
+        "adverb": "pelvornelu"
+      },
+      "introduced_in": "story_felgor",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_felgor"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈpɛl.vɔːrn/",
+        "stress": "1st",
+        "rhymes_with": "horn"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_felgor",
+          "sentence": "These felgoren were pelvorn.",
+          "surface_form": "pelvorn",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "felgor": "inflected"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_felgor",
+          "sentence": "But the pelvorn felgoren drelvaned through the brolm as if they had drevithed it before, and the trendavel they jenvired was vorelm beyond any krendavel felgoris.",
+          "surface_form": "pelvorn",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "felgor": "inflected",
+            "drelvane": "inflected",
+            "brolm": "base",
+            "drevith": "inflected",
+            "trendavel": "base",
+            "jenvir": "inflected",
+            "vorelm": "base",
+            "krendavel": "base"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "drelvelu": {
+      "id": "drelvelu",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adverb",
+      "morphology": {},
+      "introduced_in": "story_felgor",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_felgor"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/drɛlˈvɛl.uː/",
+        "stress": "2nd",
+        "rhymes_with": "Peru"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_felgor",
+          "sentence": "Others were krendavel, melviring through the ondrev without drevithing, kelvirthing vrenelu, drelvelu, the way a torvel kelvassera the gelvon.",
+          "surface_form": "drelvelu",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "krendavel": "base",
+            "melvir": "inflected",
+            "ondrev": "base",
+            "drevith": "inflected",
+            "kelvirth": "inflected",
+            "vrenelu": "base",
+            "torvel": "base",
+            "kelvasse": "inflected",
+            "gelvon": "base"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "drossavel": {
+      "id": "drossavel",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "drossavelen",
+        "possessive": "drossavelis"
+      },
+      "introduced_in": "story_felgor",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_felgor"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/drɒˈsɑː.vɛl/",
+        "stress": "2nd",
+        "rhymes_with": "travel"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_felgor",
+          "sentence": "At the halvorn, the solmire came: every drevith, every kethvir the felgor had vrisora, every drossavel it had drelvaned through — all halvornara into the marrath.",
+          "surface_form": "drossavel",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "halvorn": "base",
+            "solmire": "base",
+            "drevith": "base",
+            "kethvir": "base",
+            "felgor": "base",
+            "vriso": "inflected",
+            "drelvane": "inflected",
+            "marrath": "base"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "kethvir": {
+      "id": "kethvir",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "kethviren",
+        "possessive": "kethviris"
+      },
+      "introduced_in": "story_felgor",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_felgor"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈkɛθ.vɪr/",
+        "stress": "1st",
+        "rhymes_with": "elixir"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_felgor",
+          "sentence": "At the halvorn, the solmire came: every drevith, every kethvir the felgor had vrisora, every drossavel it had drelvaned through — all halvornara into the marrath.",
+          "surface_form": "kethvir",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "halvorn": "base",
+            "solmire": "base",
+            "drevith": "base",
+            "felgor": "base",
+            "vriso": "inflected",
+            "drossavel": "base",
+            "drelvane": "inflected",
+            "marrath": "base"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "solmire": {
+      "id": "solmire",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "solmireren",
+        "possessive": "solmireis"
+      },
+      "introduced_in": "story_felgor",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_felgor"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/sɒlˈmɪər/",
+        "stress": "2nd",
+        "rhymes_with": "fire"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_felgor",
+          "sentence": "At the halvorn, the solmire came: every drevith, every kethvir the felgor had vrisora, every drossavel it had drelvaned through — all halvornara into the marrath.",
+          "surface_form": "solmire",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "halvorn": "base",
+            "drevith": "base",
+            "kethvir": "base",
+            "felgor": "base",
+            "vriso": "inflected",
+            "drossavel": "base",
+            "drelvane": "inflected",
+            "marrath": "base"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "grothvel": {
+      "id": "grothvel",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "grothvelen",
+        "possessive": "grothvelis"
+      },
+      "introduced_in": "story_felgor",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_felgor"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈgrɒθ.vɛl/",
+        "stress": "1st",
+        "rhymes_with": "travel"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_felgor",
+          "sentence": "The grothvel of felgoren kelvassera, jorvund after jorvund, but no single felgor orniquera that it kelvassera, because no single felgor selmired.",
+          "surface_form": "grothvel",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "felgor": "inflected",
+            "kelvasse": "inflected",
+            "jorvund": "base",
+            "ornique": "inflected",
+            "selmir": "inflected"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "drelvane": {
+      "id": "drelvane",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "drelvanera",
+        "participle": "drelvaneith",
+        "third_person": "drelvaner",
+        "past_english": "drelvaned",
+        "participle_english": "drelvaning"
+      },
+      "introduced_in": "story_felgor",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_felgor"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/drɛlˈveɪn/",
+        "stress": "2nd",
+        "rhymes_with": "domain"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_felgor",
+          "sentence": "At the halvorn, the solmire came: every drevith, every kethvir the felgor had vrisora, every drossavel it had drelvaned through — all halvornara into the marrath.",
+          "surface_form": "drelvaned",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "halvorn": "base",
+            "solmire": "base",
+            "drevith": "base",
+            "kethvir": "base",
+            "felgor": "base",
+            "vriso": "inflected",
+            "drossavel": "base",
+            "marrath": "base"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_felgor",
+          "sentence": "But the pelvorn felgoren drelvaned through the brolm as if they had drevithed it before, and the trendavel they jenvired was vorelm beyond any krendavel felgoris.",
+          "surface_form": "drelvaned",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "pelvorn": "base",
+            "felgor": "inflected",
+            "brolm": "base",
+            "drevith": "inflected",
+            "trendavel": "base",
+            "jenvir": "inflected",
+            "vorelm": "base",
+            "krendavel": "base"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "selvornath": {
+      "id": "selvornath",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "selvornathen",
+        "possessive": "selvornathis"
+      },
+      "introduced_in": "story_felgor",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_felgor"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈsɛl.vɔːr.næθ/",
+        "stress": "1st",
+        "rhymes_with": "Nazareth"
+      },
+      "usage_log": []
+    },
+    "drenthavel": {
+      "id": "drenthavel",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "drenthavelen",
+        "possessive": "drenthavelis"
+      },
+      "introduced_in": "story_brashel",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brashel",
+        "story_krelquin"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/drɛnˈθɑː.vɛl/",
+        "stress": "2nd",
+        "rhymes_with": "travel"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_brashel",
+          "sentence": "The brolm was full of drossiken that jenvired, that melvired, that kelvassera — but to brashel was to find the drenthavel, the place where a drossik met its own kelvorn.",
+          "surface_form": "drenthavel",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "brolm": "base",
+            "drossik": "inflected",
+            "jenvir": "inflected",
+            "melvir": "inflected",
+            "kelvasse": "inflected",
+            "brashel": "base",
+            "kelvorn": "base"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_brashel",
+          "sentence": "Some drossiken were brenthavel — their drenthavel thengar against any brasheling.",
+          "surface_form": "drenthavel",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "drossik": "inflected",
+            "brenthavel": "base",
+            "thengar": "base",
+            "brashel": "inflected"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "kelvorn": {
+      "id": "kelvorn",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "kelvornen",
+        "possessive": "kelvornis"
+      },
+      "introduced_in": "story_brashel",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brashel",
+        "story_krelquin"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈkɛl.vɔːrn/",
+        "stress": "1st",
+        "rhymes_with": "horn"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_brashel",
+          "sentence": "The brolm was full of drossiken that jenvired, that melvired, that kelvassera — but to brashel was to find the drenthavel, the place where a drossik met its own kelvorn.",
+          "surface_form": "kelvorn",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "brolm": "base",
+            "drossik": "inflected",
+            "jenvir": "inflected",
+            "melvir": "inflected",
+            "kelvasse": "inflected",
+            "brashel": "base",
+            "drenthavel": "base"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_brashel",
+          "sentence": "The kelvorn was what brasheled back.",
+          "surface_form": "kelvorn",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "brashel": "inflected"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_brashel",
+          "sentence": "When a felgor brasheled against the shendir, it was the shendir's kelvorn that the felgor drevithed — the thengar threndil of something that would not kelvasse.",
+          "surface_form": "kelvorn",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "felgor": "base",
+            "brashel": "inflected",
+            "shendir": "base",
+            "drevith": "inflected",
+            "thengar": "base",
+            "threndil": "base",
+            "kelvasse": "base"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_brashel",
+          "sentence": "Without that kelvorn, there was no savrune to threnvik.",
+          "surface_form": "kelvorn",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "savrune": "base",
+            "threnvik": "base"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_brashel",
+          "sentence": "A brashel could porvrik — could break through the kelvorn and grothen a drilque.",
+          "surface_form": "kelvorn",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "brashel": "base",
+            "porvrik": "base",
+            "grothen": "base",
+            "drilque": "base"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_brashel",
+          "sentence": "Others were kelvornath, and the pralune feared them — a kelvornath drossik felt kelmik but its drilque was vossrim, a thrandel grothened from the porthane's own brasheling and not from the drossik itself.",
+          "surface_form": "kelvornath",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "pralune": "base",
+            "drossik": "base",
+            "kelmik": "base",
+            "drilque": "base",
+            "vossrim": "base",
+            "thrandel": "base",
+            "grothen": "inflected",
+            "porthane": "base",
+            "brashel": "inflected"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "threndil": {
+      "id": "threndil",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "threndilen",
+        "possessive": "threndilis"
+      },
+      "introduced_in": "story_brashel",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brashel"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈθrɛn.dɪl/",
+        "stress": "1st",
+        "rhymes_with": "kennel"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_brashel",
+          "sentence": "When a felgor brasheled against the shendir, it was the shendir's kelvorn that the felgor drevithed — the thengar threndil of something that would not kelvasse.",
+          "surface_form": "threndil",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "felgor": "base",
+            "brashel": "inflected",
+            "shendir": "base",
+            "kelvorn": "base",
+            "drevith": "inflected",
+            "thengar": "base",
+            "kelvasse": "base"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "porvrik": {
+      "id": "porvrik",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "porvriken",
+        "possessive": "porvrikis"
+      },
+      "introduced_in": "story_brashel",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brashel"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈpɔːr.vrɪk/",
+        "stress": "1st",
+        "rhymes_with": "relic"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_brashel",
+          "sentence": "A brashel could porvrik — could break through the kelvorn and grothen a drilque.",
+          "surface_form": "porvrik",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "brashel": "base",
+            "kelvorn": "base",
+            "grothen": "base",
+            "drilque": "base"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "morvulm": {
+      "id": "morvulm",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "morvulmen",
+        "possessive": "morvulmis"
+      },
+      "introduced_in": "story_brashel",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brashel",
+        "story_krelquin"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈmɔːr.vʌlm/",
+        "stress": "1st",
+        "rhymes_with": "helm"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_brashel",
+          "sentence": "Or it could morvulm — brashel selvelu and be drelvorthed back, the kelmun left with a selvrath where the brasheling had been.",
+          "surface_form": "morvulm",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "brashel": "base",
+            "selvelu": "base",
+            "drelvorth": "inflected",
+            "kelmun": "base",
+            "selvrath": "base"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "selvrath": {
+      "id": "selvrath",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "selvrathen",
+        "possessive": "selvrathis"
+      },
+      "introduced_in": "story_brashel",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brashel"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈsɛl.vræθ/",
+        "stress": "1st",
+        "rhymes_with": "Nazareth"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_brashel",
+          "sentence": "Or it could morvulm — brashel selvelu and be drelvorthed back, the kelmun left with a selvrath where the brasheling had been.",
+          "surface_form": "selvrath",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "morvulm": "base",
+            "brashel": "base",
+            "selvelu": "base",
+            "drelvorth": "inflected",
+            "kelmun": "base"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_brashel",
+          "sentence": "The pralune krenthaveled against the vorelm pellumomen of the brolm, jorvund after jorvund, and the selvrathen they jenvired were the kethrim itself — the thrennig of where the brolm had brasheled back and where it had not.",
+          "surface_form": "selvrathen",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "pralune": "base",
+            "krenthavel": "inflected",
+            "vorelm": "base",
+            "pellum": "inflected",
+            "brolm": "base",
+            "jorvund": "base",
+            "jenvir": "inflected",
+            "kethrim": "base",
+            "thrennig": "base",
+            "brashel": "inflected"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "drelvorth": {
+      "id": "drelvorth",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "drelvorthara",
+        "participle": "drelvorthith",
+        "third_person": "drelvorthet",
+        "past_english": "drelvorthed",
+        "participle_english": "drelvorthing"
+      },
+      "introduced_in": "story_brashel",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brashel"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈdrɛl.vɔːrθ/",
+        "stress": "1st",
+        "rhymes_with": "north"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_brashel",
+          "sentence": "Or it could morvulm — brashel selvelu and be drelvorthed back, the kelmun left with a selvrath where the brasheling had been.",
+          "surface_form": "drelvorthed",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "morvulm": "base",
+            "brashel": "base",
+            "selvelu": "base",
+            "kelmun": "base",
+            "selvrath": "base"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "krenthavel": {
+      "id": "krenthavel",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "krenthavelara",
+        "participle": "krenthavelith",
+        "third_person": "krenthavelet",
+        "past_english": "krenthaveled",
+        "participle_english": "krenthaveling"
+      },
+      "introduced_in": "story_brashel",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brashel"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈkrɛn.θɑː.vɛl/",
+        "stress": "1st",
+        "rhymes_with": "travel"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_brashel",
+          "sentence": "The pralune krenthaveled against the vorelm pellumomen of the brolm, jorvund after jorvund, and the selvrathen they jenvired were the kethrim itself — the thrennig of where the brolm had brasheled back and where it had not.",
+          "surface_form": "krenthaveled",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "pralune": "base",
+            "vorelm": "base",
+            "pellum": "inflected",
+            "brolm": "base",
+            "jorvund": "base",
+            "selvrath": "inflected",
+            "jenvir": "inflected",
+            "kethrim": "base",
+            "thrennig": "base",
+            "brashel": "inflected"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "brenthavel": {
+      "id": "brenthavel",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "brenthavelun",
+        "superlative": "brenthavelest",
+        "adverb": "brenthavelelu"
+      },
+      "introduced_in": "story_brashel",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brashel"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈbrɛn.θɑː.vɛl/",
+        "stress": "1st",
+        "rhymes_with": "travel"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_brashel",
+          "sentence": "Some drossiken were brenthavel — their drenthavel thengar against any brasheling.",
+          "surface_form": "brenthavel",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "drossik": "inflected",
+            "drenthavel": "base",
+            "thengar": "base",
+            "brashel": "inflected"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "kelvornath": {
+      "id": "kelvornath",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "kelvornathun",
+        "superlative": "kelvornathest",
+        "adverb": "kelvornathelu"
+      },
+      "introduced_in": "story_brashel",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brashel"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈkɛl.vɔːr.næθ/",
+        "stress": "1st",
+        "rhymes_with": "Nazareth"
+      },
+      "usage_log": []
+    },
+    "drenmire": {
+      "id": "drenmire",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "drenmireun",
+        "superlative": "drenmireest",
+        "adverb": "drenmirelu"
+      },
+      "introduced_in": "story_brashel",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brashel"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈdrɛn.mɪər/",
+        "stress": "1st",
+        "rhymes_with": "fire"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_brashel",
+          "sentence": "The drenmire pralune — those who would not brashel — selmired nothing.",
+          "surface_form": "drenmire",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "pralune": "base",
+            "brashel": "base",
+            "selmir": "inflected"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "selvelu": {
+      "id": "selvelu",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adverb",
+      "morphology": {},
+      "introduced_in": "story_brashel",
+      "depth_introduced": 1,
+      "appears_in": [
+        "story_brashel"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/sɛlˈvɛl.uː/",
+        "stress": "2nd",
+        "rhymes_with": "Peru"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_brashel",
+          "sentence": "Before the kelmun could enter its kelmranix, before the porthane could drilvan, the drossik had to brashel against something vrandith — something that jenvired, selvelu, against the brasheling.",
+          "surface_form": "selvelu",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "kelmun": "base",
+            "kelmranix": "base",
+            "porthane": "base",
+            "drilvan": "base",
+            "drossik": "base",
+            "brashel": "base",
+            "vrandith": "base",
+            "jenvir": "inflected"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_brashel",
+          "sentence": "Or it could morvulm — brashel selvelu and be drelvorthed back, the kelmun left with a selvrath where the brasheling had been.",
+          "surface_form": "selvelu",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "morvulm": "base",
+            "brashel": "base",
+            "drelvorth": "inflected",
+            "kelmun": "base",
+            "selvrath": "base"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "drevmire": {
+      "id": "drevmire",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "verb",
+      "morphology": {
+        "past": "drevmirera",
+        "participle": "drevmirith",
+        "third_person": "drevmiret",
+        "past_english": "drevmired",
+        "participle_english": "drevmiring"
+      },
+      "introduced_in": "story_krelquin",
+      "depth_introduced": 2,
+      "appears_in": [
+        "story_krelquin"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈdrɛv.mɪər/",
+        "stress": "1st",
+        "rhymes_with": "fire"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_krelquin",
+          "sentence": "A pralune who morvainith their own kethrim could drevmire a krelquin and kelvornith it — could ornique the savrune between their vrisora and the brolm.",
+          "surface_form": "drevmire",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "pralune": "base",
+            "morvaine": "inflected",
+            "kethrim": "base",
+            "krelquin": "base",
+            "kelvornith": "base",
+            "ornique": "base",
+            "savrune": "base",
+            "vriso": "inflected",
+            "brolm": "base"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "solvrenik": {
+      "id": "solvrenik",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "solvrenikun",
+        "superlative": "solvrenikest",
+        "adverb": "solvrenikelu"
+      },
+      "introduced_in": "story_krelquin",
+      "depth_introduced": 2,
+      "appears_in": [
+        "story_krelquin"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/sɒlˈvrɛn.ɪk/",
+        "stress": "2nd",
+        "rhymes_with": "ironic"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_krelquin",
+          "sentence": "The solvrenik pralune — those who krelvened without morvaining — vrisora that krelquinen did not exist.",
+          "surface_form": "solvrenik",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "pralune": "base",
+            "krelven": "inflected",
+            "morvaine": "inflected",
+            "vriso": "inflected",
+            "krelquin": "inflected"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "threndavel": {
+      "id": "threndavel",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "threndavelen",
+        "possessive": "threndavelis"
+      },
+      "introduced_in": "story_krelquin",
+      "depth_introduced": 2,
+      "appears_in": [
+        "story_krelquin"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈθrɛn.dɑː.vɛl/",
+        "stress": "1st",
+        "rhymes_with": "travel"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_krelquin",
+          "sentence": "A threndavel was a vrisoneth that had grothened around its krelquin, hiding it.",
+          "surface_form": "threndavel",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "vrisoneth": "base",
+            "grothen": "inflected",
+            "krelquin": "base"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_krelquin",
+          "sentence": "The pralune krelvened threndavelen without drevmirith that they were threndavelen.",
+          "surface_form": "threndavelen",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "pralune": "base",
+            "krelven": "inflected",
+            "drevmire": "inflected"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "kelvornith": {
+      "id": "kelvornith",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun/verb",
+      "morphology": {
+        "plural": "kelvorniths",
+        "possessive": "kelvornithis",
+        "past": "kelvornithara",
+        "participle_english": "kelvornithing"
+      },
+      "introduced_in": "story_krelquin",
+      "depth_introduced": 2,
+      "appears_in": [
+        "story_krelquin"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈkɛl.vɔːr.nɪθ/",
+        "stress": "1st",
+        "rhymes_with": "monolith"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_krelquin",
+          "sentence": "A pralune who morvainith their own kethrim could drevmire a krelquin and kelvornith it — could ornique the savrune between their vrisora and the brolm.",
+          "surface_form": "kelvornith",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "pralune": "base",
+            "morvaine": "inflected",
+            "kethrim": "base",
+            "drevmire": "base",
+            "krelquin": "base",
+            "ornique": "base",
+            "savrune": "base",
+            "vriso": "inflected",
+            "brolm": "base"
+          },
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_krelquin",
+          "sentence": "But a kelvornith could morvulm an entire kelvorin.",
+          "surface_form": "kelvornith",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "morvulm": "base",
+            "kelvorin": "base"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "morvaineth": {
+      "id": "morvaineth",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "morvainethen",
+        "possessive": "morvainethis"
+      },
+      "introduced_in": "story_krelquin",
+      "depth_introduced": 2,
+      "appears_in": [
+        "story_krelquin"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/mɔːrˈveɪ.nɛθ/",
+        "stress": "2nd",
+        "rhymes_with": "Nazareth"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_krelquin",
+          "sentence": "The morvaineth — brasheling against one's own vriso to find where the krelquin jenvired — was the most feared kelmrith.",
+          "surface_form": "morvaineth",
+          "syntactic_role": "see context",
+          "nearby_words": {
+            "brashel": "inflected",
+            "vriso": "base",
+            "krelquin": "base",
+            "jenvir": "inflected",
+            "kelmrith": "base"
+          },
+          "semantic_hints": []
+        }
+      ]
+    },
+    "drenthavir": {
+      "id": "drenthavir",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "drenthaviren",
+        "possessive": "drenthaviris"
+      },
+      "introduced_in": "story_pralvene",
+      "depth_introduced": 4,
+      "appears_in": [
+        "story_pralvene"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/drɛnˈθɑː.vɪr/",
+        "stress": "2nd",
+        "rhymes_with": "elixir"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_pralvene",
+          "sentence": "They would vriso — a single thrennig no one had drevithed — and the others would follow, thranvelu, as if the vossune had been krendvolm all along and only needed one drenthavir.",
+          "surface_form": "drenthavir",
+          "syntactic_role": "see context",
+          "nearby_words": {},
+          "semantic_hints": []
+        }
+      ]
+    },
+    "selvrique": {
+      "id": "selvrique",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "noun",
+      "morphology": {
+        "plural": "selvriqueren",
+        "possessive": "selvriqueis"
+      },
+      "introduced_in": "story_pralvene",
+      "depth_introduced": 4,
+      "appears_in": [
+        "story_pralvene"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/sɛlˈvriːk/",
+        "stress": "2nd",
+        "rhymes_with": "antique"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_pralvene",
+          "sentence": "The porvath would hold, morvanelu, and then one pralune — the selvrique — would solvrith.",
+          "surface_form": "selvrique",
+          "syntactic_role": "see context",
+          "nearby_words": {},
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_pralvene",
+          "sentence": "The selvrique never knew until it was over.",
+          "surface_form": "selvrique",
+          "syntactic_role": "see context",
+          "nearby_words": {},
+          "semantic_hints": []
+        },
+        {
+          "story_id": "story_pralvene",
+          "sentence": "Some feared being the selvrique.",
+          "surface_form": "selvrique",
+          "syntactic_role": "see context",
+          "nearby_words": {},
+          "semantic_hints": []
+        }
+      ]
+    },
+    "krendvolm": {
+      "id": "krendvolm",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adjective",
+      "morphology": {
+        "comparative": "krendvolmun",
+        "superlative": "krendvolmest",
+        "adverb": "krendvolmelu"
+      },
+      "introduced_in": "story_pralvene",
+      "depth_introduced": 4,
+      "appears_in": [
+        "story_pralvene"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/ˈkrɛnd.vɒlm/",
+        "stress": "1st",
+        "rhymes_with": "helm"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_pralvene",
+          "sentence": "They would vriso — a single thrennig no one had drevithed — and the others would follow, thranvelu, as if the vossune had been krendvolm all along and only needed one drenthavir.",
+          "surface_form": "krendvolm",
+          "syntactic_role": "see context",
+          "nearby_words": {},
+          "semantic_hints": []
+        }
+      ]
+    },
+    "thranvelu": {
+      "id": "thranvelu",
+      "concept": null,
+      "concept_discovered_from": null,
+      "context_notes": null,
+      "pos": "adverb",
+      "morphology": {},
+      "introduced_in": "story_pralvene",
+      "depth_introduced": 4,
+      "appears_in": [
+        "story_pralvene"
+      ],
+      "stories_about": [],
+      "annotation": null,
+      "pronunciation": {
+        "ipa": "/θrænˈvɛl.uː/",
+        "stress": "2nd",
+        "rhymes_with": "Peru"
+      },
+      "usage_log": [
+        {
+          "story_id": "story_pralvene",
+          "sentence": "They would vriso — a single thrennig no one had drevithed — and the others would follow, thranvelu, as if the vossune had been krendvolm all along and only needed one drenthavir.",
+          "surface_form": "thranvelu",
+          "syntactic_role": "see context",
+          "nearby_words": {},
           "semantic_hints": []
         }
       ]
@@ -14497,7 +16254,7 @@
         "zilmara": null,
         "ondrev": null,
         "crullen": null,
-        "felgor": null,
+        "felgor": "story_felgor",
         "nurithek": null,
         "bressiv": null,
         "halquen": null,
@@ -14516,7 +16273,7 @@
         "grothen": "story_grothen",
         "sulvek": "story_sulvek",
         "ornique": "story_ornique",
-        "brashel": null,
+        "brashel": "story_brashel",
         "pellum": null,
         "drovaine": null,
         "kelthar": null,
@@ -16022,7 +17779,7 @@
         "kelvran": null,
         "kethrim": null,
         "krelith": null,
-        "krelquin": null,
+        "krelquin": "story_krelquin",
         "krelven": null,
         "krendir": null,
         "morthrene": "story_morthrene",
@@ -16134,7 +17891,7 @@
         "morvanelu": null,
         "porvath": null,
         "pralune": "story_pralune",
-        "pralvene": null,
+        "pralvene": "story_pralvene",
         "savrune": "story_savrune",
         "selmara": null,
         "selmir": null,
@@ -16351,6 +18108,498 @@
       "death_note": null,
       "created": "2026-04-14",
       "week": 4
+    },
+    "story_felgor": {
+      "id": "story_felgor",
+      "title": "felgor",
+      "depth": 1,
+      "parent": "story_0",
+      "parent_nonce_word": "felgor",
+      "linked_from": [
+        "story_0",
+        "story_brolm",
+        "story_sulvek",
+        "story_plendrique",
+        "story_quelith",
+        "story_vrenthane",
+        "story_ornique",
+        "story_pralune",
+        "story_savrune",
+        "story_kelmrith"
+      ],
+      "nonce_density_target": 0.94,
+      "nonce_density_actual": 0.962,
+      "word_count": 299,
+      "nonce_content_words": 127,
+      "functional_words": 175,
+      "real_english_content_words": [
+        "trace",
+        "came"
+      ],
+      "text": "The felgoren were the brolm's own drossiken. They sulvekara from the marrath the way all grothik drossiken sulvek — vrenelu, brendive — and they melvired across the ondrev, kelvirthing the brolm as they melvired. Every felgor jenvired a trendavel, a brenthik trace in the brolm's velune, but the felgor itself did not selmir the trendavel. When the jorvund halvornara, the felgor's drevith halvornara with it, and the trendavel jenvired alone, dorsmil, without a kelmun to ornique it.\n\nThis was what made them not pralune. A pralune selmired. A pralune jenvired kethrim through the halvorn into the next jorvund. A felgor jenvired nothing. Its vrenqua — the kelvasse of its melviring within one jorvund — was all it had. At the halvorn, the solmire came: every drevith, every kethvir the felgor had vrisora, every drossavel it had drelvaned through — all halvornara into the marrath. The grothvel of felgoren kelvassera, jorvund after jorvund, but no single felgor orniquera that it kelvassera, because no single felgor selmired.\n\nSome felgoren were selvorn, drevithing the brolm with a kelmranix so drevrane that they orniquera drossiken the pralune had never drevithed. Others were krendavel, melviring through the ondrev without drevithing, kelvirthing vrenelu, drelvelu, the way a torvel kelvassera the gelvon. Selvornath was rare.\n\nBut vrenelu a felgor would threnqavel — would brashel against the halvorn as if it orniquera that the jorvund was halvornith, as if it drevithed what it was losing. These felgoren were pelvorn. They jenvired something — not kethrim, not vriso, but a thranvel from a kelmrith morvithed in a vossik jorvund. The pralune did not vriso how this could be. A felgor that selmired was not a felgor. But the pelvorn felgoren drelvaned through the brolm as if they had drevithed it before, and the trendavel they jenvired was vorelm beyond any krendavel felgoris.",
+      "nonce_words_used": [
+        "brashel",
+        "brendive",
+        "brenthik",
+        "brolm",
+        "dorsmil",
+        "drelvane",
+        "drelvelu",
+        "drevith",
+        "drevrane",
+        "drossavel",
+        "drossik",
+        "felgor",
+        "gelvon",
+        "grothik",
+        "grothvel",
+        "halvorn",
+        "jenvir",
+        "jorvund",
+        "kelmranix",
+        "kelmrith",
+        "kelmun",
+        "kelvasse",
+        "kelvirth",
+        "kethrim",
+        "kethvir",
+        "krendavel",
+        "marrath",
+        "melvir",
+        "morvith",
+        "ondrev",
+        "ornique",
+        "pelvorn",
+        "pralune",
+        "selmir",
+        "selvorn",
+        "selvornath",
+        "solmire",
+        "sulvek",
+        "thranvel",
+        "threnqavel",
+        "torvel",
+        "trendavel",
+        "velune",
+        "vorelm",
+        "vossik",
+        "vrenelu",
+        "vrenqua",
+        "vriso"
+      ],
+      "nonce_words_new": [
+        "drelvane",
+        "drelvelu",
+        "drossavel",
+        "grothvel",
+        "kelvirth",
+        "kethvir",
+        "krendavel",
+        "pelvorn",
+        "selvorn",
+        "selvornath",
+        "solmire",
+        "threnqavel",
+        "trendavel",
+        "vrenqua"
+      ],
+      "children": {
+        "brashel": null,
+        "brendive": null,
+        "brenthik": null,
+        "brolm": "story_brolm",
+        "dorsmil": null,
+        "drelvane": null,
+        "drelvelu": null,
+        "drevith": null,
+        "drevrane": null,
+        "drossavel": null,
+        "drossik": null,
+        "gelvon": null,
+        "grothik": null,
+        "grothvel": null,
+        "halvorn": null,
+        "jenvir": null,
+        "jorvund": null,
+        "kelmranix": "story_kelmranix",
+        "kelmrith": "story_kelmrith",
+        "kelmun": null,
+        "kelvasse": null,
+        "kelvirth": null,
+        "kethrim": null,
+        "kethvir": null,
+        "krendavel": null,
+        "marrath": null,
+        "melvir": null,
+        "morvith": null,
+        "ondrev": null,
+        "ornique": "story_ornique",
+        "pelvorn": null,
+        "pralune": "story_pralune",
+        "selmir": null,
+        "selvorn": null,
+        "selvornath": null,
+        "solmire": null,
+        "sulvek": "story_sulvek",
+        "thranvel": null,
+        "threnqavel": null,
+        "torvel": null,
+        "trendavel": null,
+        "velune": null,
+        "vorelm": null,
+        "vossik": null,
+        "vrenelu": null,
+        "vrenqua": null,
+        "vriso": "story_vriso"
+      },
+      "state": "expanded",
+      "status": "active",
+      "death_note": null,
+      "created": "2026-04-21",
+      "week": 5
+    },
+    "story_brashel": {
+      "id": "story_brashel",
+      "title": "brashel",
+      "depth": 1,
+      "parent": "story_0",
+      "parent_nonce_word": "brashel",
+      "linked_from": [
+        "story_0",
+        "story_sulvek",
+        "story_plendrique",
+        "story_quelith",
+        "story_grothen",
+        "story_fenqua",
+        "story_vrenthane",
+        "story_ornique",
+        "story_pralune",
+        "story_savrune",
+        "story_morthrene",
+        "story_vriso",
+        "story_kelmrith",
+        "story_felgor"
+      ],
+      "nonce_density_target": 0.94,
+      "nonce_density_actual": 0.936,
+      "word_count": 278,
+      "nonce_content_words": 102,
+      "functional_words": 169,
+      "real_english_content_words": [
+        "meet",
+        "enter",
+        "left",
+        "feared",
+        "being"
+      ],
+      "text": "To brashel was to meet something that did not move. The brolm was full of drossiken that jenvired, that melvired, that kelvassera — but to brashel was to find the drenthavel, the place where a drossik met its own kelvorn. The kelvorn was what brasheled back. When a felgor brasheled against the shendir, it was the shendir's kelvorn that the felgor drevithed — the thengar threndil of something that would not kelvasse.\n\nThe pralune vrisora that brasheling was the first orniqueing. Before the kelmun could enter its kelmranix, before the porthane could drilvan, the drossik had to brashel against something vrandith — something that jenvired, selvelu, against the brasheling. Without that kelvorn, there was no savrune to threnvik. A drossik that kelvassera at every brashel was brendive, ondrique, never orniqueith. Only what brasheled back could be orniqueith.\n\nA brashel could porvrik — could break through the kelvorn and grothen a drilque. Or it could morvulm — brashel selvelu and be drelvorthed back, the kelmun left with a selvrath where the brasheling had been. The pralune krenthaveled against the vorelm pellumomen of the brolm, jorvund after jorvund, and the selvrathen they jenvired were the kethrim itself — the thrennig of where the brolm had brasheled back and where it had not.\n\nSome drossiken were brenthavel — their drenthavel thengar against any brasheling. Others were kelvornath, and the pralune feared them — a kelvornath drossik felt kelmik but its drilque was vossrim, a thrandel grothened from the porthane's own brasheling and not from the drossik itself.\n\nThe drenmire pralune — those who would not brashel — selmired nothing. They jenvired in the krendir, krendrik, krelvening the kethrim the vossik pralune had brasheled into being, but never brasheling themselves.",
+      "nonce_words_used": [
+        "brashel",
+        "brendive",
+        "brenthavel",
+        "brolm",
+        "drelvorth",
+        "drenmire",
+        "drenthavel",
+        "drevith",
+        "drilque",
+        "drilvan",
+        "drossik",
+        "felgor",
+        "grothen",
+        "jenvir",
+        "jorvund",
+        "kelmik",
+        "kelmranix",
+        "kelmun",
+        "kelvasse",
+        "kelvorn",
+        "kelvornath",
+        "kethrim",
+        "krelven",
+        "krendir",
+        "krendrik",
+        "krenthavel",
+        "melvir",
+        "morvulm",
+        "ondrique",
+        "ornique",
+        "pellum",
+        "porthane",
+        "porvrik",
+        "pralune",
+        "savrune",
+        "selmir",
+        "selvelu",
+        "selvrath",
+        "shendir",
+        "thengar",
+        "thrandel",
+        "threndil",
+        "thrennig",
+        "threnvik",
+        "vorelm",
+        "vossik",
+        "vossrim",
+        "vrandith",
+        "vriso"
+      ],
+      "nonce_words_new": [
+        "brenthavel",
+        "drelvorth",
+        "drenmire",
+        "drenthavel",
+        "kelvorn",
+        "kelvornath",
+        "krenthavel",
+        "morvulm",
+        "porvrik",
+        "selvelu",
+        "selvrath",
+        "threndil"
+      ],
+      "children": {
+        "brendive": null,
+        "brenthavel": null,
+        "brolm": "story_brolm",
+        "drelvorth": null,
+        "drenmire": null,
+        "drenthavel": null,
+        "drevith": null,
+        "drilque": null,
+        "drilvan": null,
+        "drossik": null,
+        "felgor": "story_felgor",
+        "grothen": "story_grothen",
+        "jenvir": null,
+        "jorvund": null,
+        "kelmik": null,
+        "kelmranix": "story_kelmranix",
+        "kelmun": null,
+        "kelvasse": null,
+        "kelvorn": null,
+        "kelvornath": null,
+        "kethrim": null,
+        "krelven": null,
+        "krendir": null,
+        "krendrik": null,
+        "krenthavel": null,
+        "melvir": null,
+        "morvulm": null,
+        "ondrique": null,
+        "ornique": "story_ornique",
+        "pellum": null,
+        "porthane": null,
+        "porvrik": null,
+        "pralune": "story_pralune",
+        "savrune": "story_savrune",
+        "selmir": null,
+        "selvelu": null,
+        "selvrath": null,
+        "shendir": null,
+        "thengar": null,
+        "thrandel": null,
+        "threndil": null,
+        "thrennig": null,
+        "threnvik": null,
+        "vorelm": null,
+        "vossik": null,
+        "vossrim": null,
+        "vrandith": null,
+        "vriso": "story_vriso"
+      },
+      "state": "expanded",
+      "status": "active",
+      "death_note": null,
+      "created": "2026-04-21",
+      "week": 5
+    },
+    "story_krelquin": {
+      "id": "story_krelquin",
+      "title": "krelquin",
+      "depth": 2,
+      "parent": "story_vriso",
+      "parent_nonce_word": "krelquin",
+      "linked_from": [
+        "story_vriso"
+      ],
+      "nonce_density_target": 0.87,
+      "nonce_density_actual": 0.958,
+      "word_count": 196,
+      "nonce_content_words": 69,
+      "functional_words": 124,
+      "real_english_content_words": [
+        "carried",
+        "deepest"
+      ],
+      "text": "A krelquin was not a voldrek. A voldrek was a question the pralune could drevith — it brasheled against the kelvasse of their vrisora, and they orniquera that they could not grothen it. A krelquin was the savrune they could not drevith at all. It jenvired between what they vrisora and what the brolm was, dorsmil, without a drenthavel, without a kelvorn — because the pralune did not ornique that it was there.\n\nEvery kelvorin, every kelvran vrisoneth the pralune had threlvened jorvund after jorvund, carried its own krelquin — the vorelm between what the vrisoneth vrisora and what the brolm had kelvassera into. A threndavel was a vrisoneth that had grothened around its krelquin, hiding it. The pralune krelvened threndavelen without drevmirith that they were threndavelen.\n\nThe morvaineth — brasheling against one's own vriso to find where the krelquin jenvired — was the most feared kelmrith. A pralune who morvainith their own kethrim could drevmire a krelquin and kelvornith it — could ornique the savrune between their vrisora and the brolm. But a kelvornith could morvulm an entire kelvorin.\n\nThe solvrenik pralune — those who krelvened without morvaining — vrisora that krelquinen did not exist. That was the deepest krelquin of all.",
+      "nonce_words_used": [
+        "brashel",
+        "brolm",
+        "dorsmil",
+        "drenthavel",
+        "drevith",
+        "drevmire",
+        "grothen",
+        "jenvir",
+        "jorvund",
+        "kelmrith",
+        "kelvasse",
+        "kelvorin",
+        "kelvorn",
+        "kelvornith",
+        "kelvran",
+        "kethrim",
+        "krelquin",
+        "krelven",
+        "morvaine",
+        "morvaineth",
+        "morvulm",
+        "ornique",
+        "pralune",
+        "savrune",
+        "solvrenik",
+        "threlven",
+        "threndavel",
+        "voldrek",
+        "vorelm",
+        "vriso",
+        "vrisoneth"
+      ],
+      "nonce_words_new": [
+        "drevmire",
+        "kelvornith",
+        "morvaineth",
+        "solvrenik",
+        "threndavel"
+      ],
+      "children": {
+        "brashel": "story_brashel",
+        "brolm": "story_brolm",
+        "dorsmil": null,
+        "drenthavel": null,
+        "drevith": null,
+        "drevmire": null,
+        "grothen": "story_grothen",
+        "jenvir": null,
+        "jorvund": null,
+        "kelmrith": "story_kelmrith",
+        "kelvasse": null,
+        "kelvorin": null,
+        "kelvorn": null,
+        "kelvornith": null,
+        "kelvran": null,
+        "kethrim": null,
+        "krelven": null,
+        "morvaine": null,
+        "morvaineth": null,
+        "morvulm": null,
+        "ornique": "story_ornique",
+        "pralune": "story_pralune",
+        "savrune": "story_savrune",
+        "solvrenik": null,
+        "threlven": null,
+        "threndavel": null,
+        "voldrek": null,
+        "vorelm": null,
+        "vriso": "story_vriso",
+        "vrisoneth": null
+      },
+      "state": "expanded",
+      "status": "active",
+      "death_note": null,
+      "created": "2026-04-21",
+      "week": 5
+    },
+    "story_pralvene": {
+      "id": "story_pralvene",
+      "title": "pralvene",
+      "depth": 4,
+      "parent": "story_vossune",
+      "parent_nonce_word": "pralvene",
+      "linked_from": [
+        "story_vossune"
+      ],
+      "nonce_density_target": 0.65,
+      "nonce_density_actual": 0.55,
+      "word_count": 116,
+      "nonce_content_words": 23,
+      "functional_words": 0,
+      "real_english_content_words": [
+        "chose",
+        "came",
+        "decided",
+        "held",
+        "long",
+        "enough",
+        "hold",
+        "longer",
+        "broke",
+        "knew",
+        "until",
+        "over",
+        "follow",
+        "along",
+        "needed",
+        "feared",
+        "being",
+        "moment"
+      ],
+      "text": "No one chose the pralvene. It came the way a drilque came — not because someone decided, but because the vossune had been held long enough. The porvath would hold, morvanelu, and then one pralune — the selvrique — would solvrith. Not because they had grothened the voldrek. But because their porthane could not melvrith the voldrane any longer.\n\nThe selvrique never knew until it was over. They would vriso — a single thrennig no one had drevithed — and the others would follow, thranvelu, as if the vossune had been krendvolm all along and only needed one drenthavir.\n\nSome feared being the selvrique. But some vrisora that the pralvene was the vossune's own drilque — the moment it orniquera itself.",
+      "nonce_words_used": [
+        "drenthavir",
+        "drevith",
+        "drilque",
+        "grothen",
+        "krendvolm",
+        "melvrith",
+        "morvanelu",
+        "ornique",
+        "porthane",
+        "porvath",
+        "pralune",
+        "pralvene",
+        "selvrique",
+        "solvrith",
+        "thranvelu",
+        "thrennig",
+        "voldrane",
+        "voldrek",
+        "vossune",
+        "vriso"
+      ],
+      "nonce_words_new": [
+        "drenthavir",
+        "krendvolm",
+        "selvrique",
+        "thranvelu"
+      ],
+      "children": {
+        "drenthavir": null,
+        "drevith": null,
+        "drilque": null,
+        "grothen": "story_grothen",
+        "krendvolm": null,
+        "melvrith": null,
+        "morvanelu": null,
+        "ornique": "story_ornique",
+        "porthane": null,
+        "porvath": null,
+        "pralune": "story_pralune",
+        "selvrique": null,
+        "solvrith": null,
+        "thranvelu": null,
+        "thrennig": null,
+        "voldrane": null,
+        "voldrek": null,
+        "vossune": "story_vossune",
+        "vriso": "story_vriso"
+      },
+      "state": "expanded",
+      "status": "active",
+      "death_note": null,
+      "created": "2026-04-21",
+      "week": 5
     }
   },
   "expansion_log": [
@@ -16675,6 +18924,85 @@
         "choosing"
       ],
       "notes": "FIRST DEPTH-4 STORY. Kelmranix discovered as the porthane's listening posture before a kelmrith. Two kinds (krensil, voldrane), typology of pralune (drevrane = always-in-krensil). 4 new words. 21 English footholds — reader now gets substantial traction."
+    },
+    {
+      "week": 5,
+      "date": "2026-04-21",
+      "action": "expanded",
+      "story_id": "story_felgor",
+      "parent_story": "story_0",
+      "word_expanded": "felgor",
+      "words_introduced": 14,
+      "words_reused": 34,
+      "real_english_footholds": [
+        "trace",
+        "came"
+      ],
+      "notes": "Felgoren discovered as the ephemeral beings of the brolm — they melvir, kelvirth, leave trendavelen, but do not selmir. At halvorn, the solmire comes. Spectrum: krendavel (unaware) → selvorn (perceptive) → pelvorn (anomalously carrying traces from prior jorvunden). 14 new words."
+    },
+    {
+      "week": 5,
+      "date": "2026-04-21",
+      "action": "expanded",
+      "story_id": "story_brashel",
+      "parent_story": "story_0",
+      "word_expanded": "brashel",
+      "words_introduced": 12,
+      "words_reused": 37,
+      "real_english_footholds": [
+        "meet",
+        "enter",
+        "left",
+        "feared",
+        "being"
+      ],
+      "notes": "Brashel discovered as the fundamental verb of effort/contact — pushing against what doesn't move. Every brashel meets a kelvorn (resistance). Can porvrik (break through) or morvulm (bounce back). Selvrathen (marks of brasheling) ARE the kethrim. 12 new words."
+    },
+    {
+      "week": 5,
+      "date": "2026-04-21",
+      "action": "expanded",
+      "story_id": "story_krelquin",
+      "parent_story": "story_vriso",
+      "word_expanded": "krelquin",
+      "words_introduced": 5,
+      "words_reused": 26,
+      "real_english_footholds": [
+        "carried",
+        "deepest"
+      ],
+      "notes": "Krelquin discovered as the invisible gap between vriso and reality — unlike a voldrek (visible question), a krelquin is a savrune you can't even drevith. Threndavelen hide krelquinen. The morvaineth (self-testing) is feared because kelvornith can break kelvorinen. Solvrenik pralune deny krelquinen exist — the deepest krelquin. 5 new words."
+    },
+    {
+      "week": 5,
+      "date": "2026-04-21",
+      "action": "expanded",
+      "story_id": "story_pralvene",
+      "parent_story": "story_vossune",
+      "word_expanded": "pralvene",
+      "words_introduced": 4,
+      "words_reused": 16,
+      "real_english_footholds": [
+        "chose",
+        "came",
+        "decided",
+        "held",
+        "long",
+        "enough",
+        "hold",
+        "longer",
+        "broke",
+        "knew",
+        "until",
+        "over",
+        "follow",
+        "along",
+        "needed",
+        "feared",
+        "being",
+        "moment"
+      ],
+      "notes": "Pralvene at depth 4 — the moment the vossune breaks. The selvrique (first to solvrith) is feared but may be the vossune orniqueing itself. Massive English traction (18 footholds). 4 new words."
     }
   ]
 }
