@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { InfoModal } from './InfoModal';
 
@@ -14,16 +14,27 @@ const NAV_LINKS = [
 export function Header() {
   const { pathname } = useLocation();
   const [showInfo, setShowInfo] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 6);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   return (
     <>
-      <header className="border-b border-stone-200 bg-stone-50/95 backdrop-blur-sm sticky top-0 z-50">
+      <header
+        className={`border-b border-stone-200 bg-stone-50/95 backdrop-blur-sm sticky top-0 z-50 transition-shadow duration-300 ${
+          scrolled ? 'shadow-[0_2px_16px_rgba(0,0,0,0.07)]' : ''
+        }`}
+      >
         <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
           <Link to="/" className="flex items-center gap-3 group shrink-0">
             <img
               src={`${import.meta.env.BASE_URL}brolm_logo.png`}
               alt="The Brolm"
-              className="w-9 h-9 rounded-full opacity-90 group-hover:opacity-100 transition-opacity"
+              className="w-9 h-9 rounded-full opacity-85 group-hover:opacity-100 transition-all duration-200 group-hover:scale-105"
             />
             <div>
               <h1 className="font-serif text-base font-medium text-stone-700 leading-tight group-hover:text-stone-900 transition-colors">
@@ -35,12 +46,12 @@ export function Header() {
             </div>
           </Link>
 
-          <nav className="flex items-center gap-1 overflow-x-auto">
+          <nav className="flex items-center gap-0.5 overflow-x-auto">
             {NAV_LINKS.map(({ to, label }) => (
               <Link
                 key={to}
                 to={to}
-                className={`px-3 py-1.5 text-xs rounded transition-colors font-mono tracking-wide whitespace-nowrap ${
+                className={`px-3 py-1.5 text-xs rounded-md transition-colors font-mono tracking-wide whitespace-nowrap ${
                   pathname === to
                     ? 'bg-stone-800 text-stone-100'
                     : 'text-stone-500 hover:text-stone-700 hover:bg-stone-100'
@@ -51,7 +62,7 @@ export function Header() {
             ))}
             <button
               onClick={() => setShowInfo(true)}
-              className="ml-1 w-7 h-7 shrink-0 rounded-full border border-stone-300 text-stone-500 hover:text-stone-700 hover:border-stone-400 transition-colors text-xs font-medium font-mono flex items-center justify-center"
+              className="ml-1.5 w-7 h-7 shrink-0 rounded-full border border-stone-300 text-stone-500 hover:text-stone-700 hover:border-stone-400 hover:bg-stone-100 transition-all text-xs font-medium font-mono flex items-center justify-center"
               aria-label="About this project"
               title="About"
             >

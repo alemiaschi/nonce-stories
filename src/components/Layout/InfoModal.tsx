@@ -166,7 +166,7 @@ export function InfoModal({ onClose }: InfoModalProps) {
               and authored in conversation with{' '}
               <a href="https://claude.ai" target="_blank" rel="noopener noreferrer"
                 className="text-amber-700 underline hover:text-amber-900">Claude</a>{' '}
-              (Anthropic). Each weekly expansion is written the same way — meaning is co-discovered,
+              (Anthropic). Each expansion is written the same way — meaning is co-discovered,
               not pre-determined. The human author selects which frontier word to expand next and
               curates the result. The web application was built with{' '}
               <a href="https://claude.ai/code" target="_blank" rel="noopener noreferrer"

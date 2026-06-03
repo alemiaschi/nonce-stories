@@ -62,6 +62,12 @@ export function StatsPage({ data }: StatsPageProps) {
     return { avg, top, allScores: entries };
   }, [data]);
 
+  // Sequential session labels — maps week number → session index (1-based)
+  const sessionMap = useMemo(() => {
+    const weeks = stats.words_per_week.map(d => d.week);
+    return Object.fromEntries(weeks.map((w, i) => [w, i + 1])) as Record<number, number>;
+  }, [stats.words_per_week]);
+
   const densityPoints = stats.story_density_scatter;
   const lengthPoints = densityPoints.map(p => ({
     story_id: p.story_id,
@@ -135,9 +141,9 @@ export function StatsPage({ data }: StatsPageProps) {
               </div>
             </ChartCard>
 
-            <ChartCard title="New Words per Week"
-              subtitle="How many lemmas are introduced each week">
-              <NewWordsBar data={stats.words_per_week} />
+            <ChartCard title="New Words per Update"
+              subtitle="How many lemmas are introduced each session">
+              <NewWordsBar data={stats.words_per_week} sessionMap={sessionMap} />
             </ChartCard>
           </div>
 
@@ -268,18 +274,18 @@ export function StatsPage({ data }: StatsPageProps) {
         <section>
           <SectionHeader
             title="Growth Timeline"
-            subtitle="A record of what has been written, week by week"
+            subtitle="A record of what has been written, session by session"
           />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
             <ChartCard title="Cumulative Growth"
               subtitle="Total stories, words, and concepts over time">
-              <GrowthLines data={stats.cumulative_growth} />
+              <GrowthLines data={stats.cumulative_growth} sessionMap={sessionMap} />
             </ChartCard>
 
-            <ChartCard title="Weekly Chronicle"
-              subtitle="What happened each week of the project">
-              <WeekTimeline entries={stats.weekly_changelog} />
+            <ChartCard title="Session Chronicle"
+              subtitle="What happened each update of the project">
+              <WeekTimeline entries={stats.weekly_changelog} sessionMap={sessionMap} />
             </ChartCard>
           </div>
         </section>
@@ -287,7 +293,7 @@ export function StatsPage({ data }: StatsPageProps) {
         {/* Footer note */}
         <div className="text-center pb-4">
           <p className="text-[10px] text-stone-500 font-serif italic">
-            Last updated {meta.last_updated} · week {meta.latest_week}
+            Last updated {meta.last_updated} · session {sessionMap[meta.latest_week] ?? meta.latest_week}
           </p>
         </div>
       </div>

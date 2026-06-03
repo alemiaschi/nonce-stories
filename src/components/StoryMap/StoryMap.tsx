@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState, useCallback } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import * as d3 from 'd3';
 import type { AppData } from '../../types';
 import { useTreeData, type TreeNode } from '../../hooks/useTreeData';
@@ -33,12 +33,25 @@ export function StoryMap({ data, activeStoryId, onNavigate }: StoryMapProps) {
   const [highlightedWord, setHighlightedWord] = useState<string | null>(locationState?.highlight ?? null);
   const [currentActive, setCurrentActive] = useState<string>(activeStoryId ?? 'story_0');
   const [sidebarOpen, setSidebarOpen] = useState(() => window.innerWidth >= 640);
+  const [selectedStoryId, setSelectedStoryId] = useState<string | null>(null);
+  const navigate = useNavigate();
   const rootNode = useTreeData(data);
+
+  // Session label mapping (week → session number, 1-indexed)
+  const sessionMap = (() => {
+    const weeks = [...new Set(Object.values(data.stories).map(s => s.week))].sort((a, b) => a - b);
+    return Object.fromEntries(weeks.map((w, i) => [w, i + 1]));
+  })();
 
   const handleNavigate = useCallback((storyId: string) => {
     setCurrentActive(storyId);
     onNavigate?.(storyId);
   }, [onNavigate]);
+
+  const handleNodeClick = useCallback((storyId: string) => {
+    setSelectedStoryId(prev => prev === storyId ? null : storyId);
+    setCurrentActive(storyId);
+  }, []);
 
   useEffect(() => {
     if (!svgRef.current) return;
@@ -97,7 +110,7 @@ export function StoryMap({ data, activeStoryId, onNavigate }: StoryMapProps) {
       .attr('class', 'node')
       .attr('transform', d => `translate(${d.x},${d.y})`)
       .attr('cursor', 'pointer')
-      .on('click', (_, d) => handleNavigate(d.data.id));
+      .on('click', (_, d) => handleNodeClick(d.data.id));
 
     nodeGroups.each(function(d) {
       const el = d3.select(this);
@@ -247,8 +260,70 @@ export function StoryMap({ data, activeStoryId, onNavigate }: StoryMapProps) {
 
           {/* Instructions */}
           <div className="absolute top-4 right-4 text-[10px] text-stone-500 font-mono bg-white/70 backdrop-blur-sm px-2.5 py-1.5 rounded border border-stone-200">
-            scroll to zoom · drag to pan · click to navigate
+            scroll to zoom · drag to pan · click to select
           </div>
+
+          {/* Story info panel */}
+          {selectedStoryId && (() => {
+            const story = data.stories[selectedStoryId];
+            if (!story) return null;
+            const label = data.breadcrumb_labels[selectedStoryId] ?? selectedStoryId;
+            const lexEntry = story.parent_word ? data.lexicon[story.parent_word] : null;
+            const nonceCount = story.tokens.filter(t => t.type === 'nonce').length;
+            const session = sessionMap[story.week] ?? story.week;
+            return (
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 sm:left-auto sm:translate-x-0 sm:right-4 sm:bottom-4 w-[280px] bg-white/95 backdrop-blur-sm border border-stone-200 rounded-xl shadow-xl p-4 z-10">
+                <div className="flex items-start justify-between gap-2 mb-3">
+                  <div>
+                    <p className="font-serif italic text-stone-800 text-base leading-tight mb-0.5">{label}</p>
+                    <p className="font-mono text-[10px] text-stone-400 uppercase tracking-widest">{selectedStoryId}</p>
+                  </div>
+                  <button
+                    onClick={() => setSelectedStoryId(null)}
+                    className="text-stone-300 hover:text-stone-500 transition-colors mt-0.5 shrink-0 font-mono text-xs"
+                  >✕</button>
+                </div>
+                <div className="space-y-1.5 mb-4 text-[11px] font-mono text-stone-500">
+                  <div className="flex justify-between">
+                    <span className="text-stone-400">depth</span>
+                    <span className="text-stone-700">{story.depth}</span>
+                  </div>
+                  {story.parent_word && (
+                    <div className="flex justify-between">
+                      <span className="text-stone-400">expands</span>
+                      <span className="text-amber-800 font-medium">{story.parent_word}</span>
+                    </div>
+                  )}
+                  {lexEntry?.pos && (
+                    <div className="flex justify-between">
+                      <span className="text-stone-400">part of speech</span>
+                      <span className="text-stone-600">{lexEntry.pos}</span>
+                    </div>
+                  )}
+                  <div className="flex justify-between">
+                    <span className="text-stone-400">nonce tokens</span>
+                    <span className="text-stone-700">{nonceCount}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-stone-400">session</span>
+                    <span className="text-stone-700">S{session}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-stone-400">status</span>
+                    <span className={story.status === 'dead' ? 'text-stone-400 italic' : 'text-stone-700'}>
+                      {story.status === 'dead' ? '† withered' : 'active'}
+                    </span>
+                  </div>
+                </div>
+                <button
+                  onClick={() => navigate('/read', { state: { storyId: selectedStoryId } })}
+                  className="w-full bg-stone-800 hover:bg-stone-900 text-stone-100 font-mono text-[11px] tracking-wide py-2 rounded-lg transition-colors cursor-pointer"
+                >
+                  read this story →
+                </button>
+              </div>
+            );
+          })()}
         </div>
       </div>
 

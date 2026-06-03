@@ -449,8 +449,9 @@ export function ReuseBars({ data }: { data: ReuseStory[] }) {
 
 // ── 8. New Words per Week (bar) ────────────────────────────────────────────
 
-export function NewWordsBar({ data }: { data: WeeklyWords[] }) {
+export function NewWordsBar({ data, sessionMap }: { data: WeeklyWords[]; sessionMap: Record<number, number> }) {
   const VW = 320, VH = 190, padL = 36, padB = 50, padR = 12, padT = 12;
+  const sl = (w: number) => `S${sessionMap[w] ?? w}`;
 
   if (data.length <= 1) {
     const d = data[0];
@@ -467,7 +468,7 @@ export function NewWordsBar({ data }: { data: WeeklyWords[] }) {
           </div>
         </div>
         <p className="text-[10px] text-stone-400 font-serif italic text-center mt-2 px-2">
-          Chart will appear once multiple weeks are recorded
+          Chart will appear once multiple sessions are recorded
         </p>
       </div>
     );
@@ -497,21 +498,19 @@ export function NewWordsBar({ data }: { data: WeeklyWords[] }) {
           const yEng = yScale(d.new_content);
           return (
             <g key={d.week}>
-              {/* nonce bar */}
               <rect x={x} y={yNonce} width={bw} height={(VH - padB) - yNonce} rx={2} fill="#44403c" opacity={0.85}>
-                <title>Week {d.week}: {d.new} new nonce word{d.new !== 1 ? 's' : ''}</title>
+                <title>{sl(d.week)}: {d.new} new nonce word{d.new !== 1 ? 's' : ''}</title>
               </rect>
-              {/* english content bar */}
               <rect x={x + bw + 2} y={yEng} width={bw} height={(VH - padB) - yEng} rx={2} fill="#b45309" opacity={0.75}>
-                <title>Week {d.week}: {d.new_content} new English word{d.new_content !== 1 ? 's' : ''}</title>
+                <title>{sl(d.week)}: {d.new_content} new English word{d.new_content !== 1 ? 's' : ''}</title>
               </rect>
               <text x={x + groupW / 2} y={VH - padB + 14} textAnchor="middle"
-                fontFamily={FONT_MONO} fontSize={11} fill={FILL_AXIS}>{d.week}</text>
+                fontFamily={FONT_MONO} fontSize={11} fill={FILL_AXIS}>{sl(d.week)}</text>
             </g>
           );
         })}
         <text x={(padL + VW - padR) / 2} y={VH - padB + 28} textAnchor="middle"
-          fontFamily={FONT_SERIF} fontSize={10} fill={FILL_LABEL} fontStyle="italic">week</text>
+          fontFamily={FONT_SERIF} fontSize={10} fill={FILL_LABEL} fontStyle="italic">session</text>
         <line x1={padL} x2={VW - padR} y1={VH - padB} y2={VH - padB} stroke={STROKE_AXIS} strokeWidth={1} />
       </svg>
       <div className="flex justify-center gap-6 mt-1">
@@ -530,21 +529,24 @@ export function NewWordsBar({ data }: { data: WeeklyWords[] }) {
 
 // ── 9. Growth Lines ───────────────────────────────────────────────────────
 
-export function GrowthLines({ data }: { data: GrowthPoint[] }) {
+export function GrowthLines({ data, sessionMap }: { data: GrowthPoint[]; sessionMap: Record<number, number> }) {
   const VW = 360, VH = 210, padL = 46, padB = 36, padR = 16, padT = 14;
+  const sl = (w: number) => `S${sessionMap[w] ?? w}`;
 
   if (data.length === 0) {
     return <p className="text-xs text-stone-400 font-serif italic text-center py-8">No data yet</p>;
   }
 
-  const maxWeek = Math.max(...data.map(d => d.week), 1);
+  // Use session index for x-axis so there are no gaps from skipped weeks
+  const sessions = data.map((d, i) => ({ ...d, session: i + 1 }));
+  const maxSession = sessions.length;
   const maxVal = Math.max(...data.map(d => Math.max(d.stories, d.words, d.concepts)), 10);
 
-  const xScale = d3.scaleLinear().domain([0, maxWeek]).range([padL, VW - padR]);
+  const xScale = d3.scaleLinear().domain([1, maxSession]).range([padL, VW - padR]);
   const yScale = d3.scaleLinear().domain([0, maxVal]).range([VH - padB, padT]).nice();
 
   function linePts(key: keyof GrowthPoint) {
-    return data.map(d => `${xScale(d.week).toFixed(1)},${yScale(d[key] as number).toFixed(1)}`).join(' ');
+    return sessions.map(d => `${xScale(d.session).toFixed(1)},${yScale(d[key] as number).toFixed(1)}`).join(' ');
   }
 
   const lines = [
@@ -565,25 +567,25 @@ export function GrowthLines({ data }: { data: GrowthPoint[] }) {
         ))}
         {lines.map(l => (
           <g key={l.key}>
-            {data.length > 1 && (
+            {sessions.length > 1 && (
               <polyline points={linePts(l.key)} fill="none" stroke={l.color} strokeWidth={2} opacity={0.85} />
             )}
-            {data.map(d => (
-              <circle key={d.week} cx={xScale(d.week)} cy={yScale(d[l.key] as number)} r={4}
+            {sessions.map(d => (
+              <circle key={d.week} cx={xScale(d.session)} cy={yScale(d[l.key] as number)} r={4}
                 fill={l.color} stroke="white" strokeWidth={1.5}>
-                <title>Week {d.week} · {l.label}: {d[l.key]}</title>
+                <title>{sl(d.week)} · {l.label}: {d[l.key]}</title>
               </circle>
             ))}
           </g>
         ))}
         <line x1={padL} x2={VW - padR} y1={VH - padB} y2={VH - padB} stroke={STROKE_AXIS} strokeWidth={1} />
         <line x1={padL} x2={padL} y1={padT} y2={VH - padB} stroke={STROKE_AXIS} strokeWidth={1} />
-        {data.map(d => (
-          <text key={d.week} x={xScale(d.week)} y={VH - padB + 16} textAnchor="middle"
-            fontFamily={FONT_MONO} fontSize={11} fill={FILL_AXIS}>{d.week}</text>
+        {sessions.map(d => (
+          <text key={d.week} x={xScale(d.session)} y={VH - padB + 16} textAnchor="middle"
+            fontFamily={FONT_MONO} fontSize={11} fill={FILL_AXIS}>{sl(d.week)}</text>
         ))}
         <text x={(padL + VW - padR) / 2} y={VH - 4} textAnchor="middle"
-          fontFamily={FONT_SERIF} fontSize={10} fill={FILL_LABEL} fontStyle="italic">week</text>
+          fontFamily={FONT_SERIF} fontSize={10} fill={FILL_LABEL} fontStyle="italic">session</text>
         <text x={12} y={(padT + VH - padB) / 2} textAnchor="middle"
           fontFamily={FONT_SERIF} fontSize={10} fill={FILL_LABEL} fontStyle="italic"
           transform={`rotate(-90,12,${(padT + VH - padB) / 2})`}>count</text>
@@ -622,8 +624,9 @@ const ACTION_LABEL: Record<string, string> = {
   added: 'Story added',
 };
 
-export function WeekTimeline({ entries }: { entries: ChangelogEntry[] }) {
+export function WeekTimeline({ entries, sessionMap }: { entries: ChangelogEntry[]; sessionMap: Record<number, number> }) {
   const [expanded, setExpanded] = useState(false);
+  const sl = (w: number) => `S${sessionMap[w] ?? w}`;
   if (entries.length === 0) {
     return <p className="text-xs text-stone-400 font-serif italic text-center py-6">No history yet</p>;
   }
@@ -644,7 +647,7 @@ export function WeekTimeline({ entries }: { entries: ChangelogEntry[] }) {
             <div className="pb-5 min-w-0">
               <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5 mb-0.5">
                 <span className="font-mono text-[10px] text-stone-400 uppercase tracking-wide shrink-0">
-                  week {entry.week}
+                  {sl(entry.week)}
                 </span>
                 <span className="text-[10px] text-stone-400 font-serif italic">{entry.date}</span>
               </div>

@@ -12,6 +12,7 @@ import { DepthIndicator } from '../Layout/DepthIndicator';
 import { WeeklyBadge } from '../Layout/WeeklyBadge';
 import { StoryPanel } from './StoryPanel';
 import { ComparePicker } from './ComparePicker';
+import { weekToSession } from '../../utils/tree';
 
 interface ReadingPaneProps {
   data: AppData;
@@ -225,7 +226,7 @@ export function ReadingPane({ data, onStoryChange }: ReadingPaneProps) {
           <span>·</span>
           <span>{data.meta.total_concepts_discovered} words expanded</span>
           <span>·</span>
-          <span>week {currentStory.week}</span>
+          <span>session {weekToSession(currentStory.week, data)}</span>
           <span>·</span>
           <span>{currentStory.created}</span>
         </div>

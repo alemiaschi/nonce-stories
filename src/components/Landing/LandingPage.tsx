@@ -43,23 +43,35 @@ export function LandingPage() {
   return (
     <div className="min-h-[calc(100vh-65px)] flex flex-col items-center justify-center px-6 py-16">
 
-      {/* Hero image */}
-      <div className="mb-10 w-full max-w-sm">
+      {/* Hero image — warm glow behind, ring shadow in front */}
+      <div className="mb-8 w-full max-w-[340px] relative">
+        <div
+          className="absolute inset-0 -z-10 scale-125 blur-3xl rounded-full"
+          style={{ background: 'radial-gradient(ellipse, rgba(251,191,36,0.22) 0%, transparent 70%)' }}
+        />
         <img
           src={`${import.meta.env.BASE_URL}the_brolm.png`}
           alt="The Brolm"
-          className="w-full rounded-2xl shadow-lg"
+          className="w-full rounded-2xl shadow-xl"
+          style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.12), 0 0 0 1px rgba(214,211,209,0.5)' }}
         />
       </div>
 
       {/* Title */}
-      <div className="text-center mb-4">
-        <h1 className="font-serif text-4xl font-medium text-stone-800 italic mb-2">
+      <div className="text-center mb-8">
+        <h1
+          className="font-serif font-medium text-stone-800 italic mb-4 leading-tight tracking-tight"
+          style={{ fontSize: 'clamp(2.6rem, 6vw, 3.75rem)' }}
+        >
           The Brolm
         </h1>
-        <p className="font-mono text-xs text-stone-400 tracking-[0.25em] uppercase">
-          Nonce Stories
-        </p>
+        <div className="flex items-center justify-center gap-4">
+          <div className="h-px w-10 bg-stone-200" />
+          <p className="font-mono text-[10px] text-stone-400 tracking-[0.35em] uppercase">
+            Nonce Stories
+          </p>
+          <div className="h-px w-10 bg-stone-200" />
+        </div>
       </div>
 
       {/* Tagline */}
@@ -75,9 +87,9 @@ export function LandingPage() {
           <Link
             key={to}
             to={to}
-            className="group border border-stone-200 rounded-xl px-5 py-4 bg-white hover:border-amber-300 hover:shadow-sm transition-all"
+            className="group border border-stone-200 rounded-xl px-5 py-4 bg-white hover:border-amber-300 hover:shadow-lg hover:-translate-y-1 transition-all duration-200"
           >
-            <p className="font-mono text-[10px] uppercase tracking-widest text-stone-400 group-hover:text-amber-600 transition-colors mb-1">
+            <p className="font-mono text-[10px] uppercase tracking-widest text-stone-400 group-hover:text-amber-600 transition-colors mb-1.5">
               {mono}
             </p>
             <p className="font-serif text-stone-700 font-medium mb-1">{label}</p>
@@ -87,21 +99,25 @@ export function LandingPage() {
       </div>
 
       {/* Credits */}
-      <p className="mt-12 text-xs text-stone-400 font-serif italic text-center">
-        created by{' '}
-        <a
-          href="https://alemiaschi.github.io/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-amber-700 transition-colors"
-        >
-          Alessio Miaschi
-        </a>
-        {' '}in collaboration with{' '}
-        <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer" className="hover:text-amber-700 transition-colors">Claude</a>
-        {' '}&amp;{' '}
-        <a href="https://claude.ai/code" target="_blank" rel="noopener noreferrer" className="hover:text-amber-700 transition-colors">Claude Code</a>
-      </p>
+      <div className="mt-12 flex items-center gap-4">
+        <div className="h-px w-10 bg-stone-200" />
+        <p className="text-xs text-stone-400 font-serif italic text-center">
+          created by{' '}
+          <a
+            href="https://alemiaschi.github.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-amber-700 transition-colors"
+          >
+            Alessio Miaschi
+          </a>
+          {' '}in collaboration with{' '}
+          <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer" className="hover:text-amber-700 transition-colors">Claude</a>
+          {' '}&amp;{' '}
+          <a href="https://claude.ai/code" target="_blank" rel="noopener noreferrer" className="hover:text-amber-700 transition-colors">Claude Code</a>
+        </p>
+        <div className="h-px w-10 bg-stone-200" />
+      </div>
 
     </div>
   );

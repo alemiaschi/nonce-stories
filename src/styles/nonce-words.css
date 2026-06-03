@@ -9,17 +9,19 @@
 /* Frontier: word exists but no story yet */
 .nonce-frontier {
   color: #7c5c38;
-  opacity: 0.82;
+  opacity: 0.72;
   text-decoration: underline;
   text-decoration-style: dotted;
   text-decoration-color: #b8945a;
   text-underline-offset: 3px;
   cursor: default;
-  transition: opacity 0.2s ease, color 0.2s ease;
+  transition: opacity 0.25s ease, color 0.25s ease, background-color 0.25s ease;
+  border-radius: 2px;
 }
 .nonce-frontier:hover {
   opacity: 1;
   color: #5e4328;
+  background-color: rgba(254, 243, 199, 0.45);
 }
 
 /* Expanded: sub-story exists, clickable */
@@ -31,34 +33,38 @@
   text-decoration-color: #c26820;
   text-underline-offset: 3px;
   cursor: pointer;
-  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+  border-radius: 2px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease, background-color 0.15s ease;
 }
 .nonce-expanded:hover {
   color: #4a2406;
   text-decoration-color: #7c3d0e;
+  background-color: rgba(254, 243, 199, 0.4);
 }
 
 /* Deep-solved: entire sub-tree explored */
 .nonce-deep-solved {
-  color: #4a2406;
+  color: #3d1a04;
   opacity: 1;
   text-decoration: underline;
   text-decoration-style: solid;
   text-decoration-color: #7c3d0e;
   text-underline-offset: 3px;
   cursor: pointer;
-  text-shadow: 0 0 12px rgba(180, 90, 20, 0.3);
-  transition: color 0.15s ease, text-shadow 0.15s ease;
+  border-radius: 2px;
+  text-shadow: 0 0 14px rgba(180, 90, 20, 0.28);
+  transition: color 0.15s ease, text-shadow 0.2s ease, background-color 0.15s ease;
 }
 .nonce-deep-solved:hover {
   color: #2d1404;
-  text-shadow: 0 0 16px rgba(180, 90, 20, 0.5);
+  text-shadow: 0 0 22px rgba(180, 90, 20, 0.6);
+  background-color: rgba(254, 243, 199, 0.45);
 }
 
 /* Dead: child story has been declared withered/closed */
 .nonce-dead {
   color: #78716c;
-  opacity: 0.6;
+  opacity: 0.55;
   text-decoration: underline;
   text-decoration-style: solid;
   text-decoration-color: #a8a29e;
@@ -67,14 +73,14 @@
   transition: color 0.15s ease, opacity 0.15s ease;
 }
 .nonce-dead:hover {
-  opacity: 0.85;
+  opacity: 0.8;
   color: #57534e;
 }
 
 /* Highlight flash — triggered from Atlas / Word Trail navigation */
 @keyframes nonce-highlight-flash {
-  0%   { background-color: rgba(251, 191, 36, 0.45); border-radius: 2px; }
-  60%  { background-color: rgba(251, 191, 36, 0.2);  border-radius: 2px; }
+  0%   { background-color: rgba(251, 191, 36, 0.5); border-radius: 2px; }
+  60%  { background-color: rgba(251, 191, 36, 0.2); border-radius: 2px; }
   100% { background-color: transparent; }
 }
 .nonce-highlighted {
@@ -91,19 +97,19 @@
   animation: frontier-pulse 0.55s ease-in-out;
 }
 
-/* Story enter transition */
+/* Story enter — gentle fade + rise */
 @keyframes story-enter {
-  from { opacity: 0; transform: translateY(10px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(10px) scale(0.997); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
 }
 .story-enter {
-  animation: story-enter 0.35s ease-out;
+  animation: story-enter 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* Tooltip */
 .nonce-tooltip {
   position: absolute;
-  bottom: calc(100% + 8px);
+  bottom: calc(100% + 10px);
   left: 50%;
   transform: translateX(-50%);
   z-index: 100;
@@ -112,23 +118,25 @@
 }
 .nonce-tooltip-inner {
   display: block;
-  background: #292524;
+  background: #1c1917;
   color: #e7e5e4;
   font-family: 'Lora', Georgia, serif;
   font-size: 12px;
-  line-height: 1.5;
-  padding: 6px 10px;
-  border-radius: 4px;
-  max-width: 260px;
+  font-style: italic;
+  line-height: 1.65;
+  padding: 8px 14px 8px 12px;
+  border-radius: 6px;
+  border-left: 3px solid #c26820;
+  max-width: 280px;
   white-space: normal;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  text-align: left;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.32), 0 2px 6px rgba(0,0,0,0.18);
 }
 .nonce-tooltip-arrow {
   display: block;
   width: 8px;
   height: 8px;
-  background: #292524;
+  background: #1c1917;
   transform: rotate(45deg);
   margin: -5px auto 0;
 }

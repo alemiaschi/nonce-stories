@@ -5,28 +5,31 @@ interface DepthIndicatorProps {
 
 export function DepthIndicator({ depth, maxDepth }: DepthIndicatorProps) {
   const effectiveMax = Math.max(maxDepth, 6);
-  // At depth 0: most opaque. At max depth: most clear.
-  const clarity = Math.min(depth / effectiveMax, 1);
-
-  const labels = ['opaque', '', '', '', '', '', 'clear'];
-  const label = labels[Math.min(depth, labels.length - 1)] ?? '';
+  const dotCount = Math.min(effectiveMax + 1, 8);
 
   return (
     <div className="flex items-center gap-2.5">
       <span className="font-mono text-[10px] text-stone-500 tracking-widest uppercase">
         depth {depth}
       </span>
-      {/* Gradient bar — hidden on mobile */}
-      <div className="hidden sm:flex items-center gap-2.5">
-        <div className="relative w-24 h-1.5 rounded-full overflow-hidden bg-gradient-to-r from-stone-400 to-stone-100">
-          <div
-            className="absolute top-0 h-full w-1 bg-stone-600 rounded-full shadow-sm transition-all duration-500"
-            style={{ left: `${clarity * 88}%` }}
-          />
-        </div>
-        {label && (
-          <span className="text-[10px] text-stone-500 italic">{label}</span>
-        )}
+      {/* Dot sequence — hidden on mobile */}
+      <div className="hidden sm:flex items-center gap-1.5">
+        {Array.from({ length: dotCount }).map((_, i) => {
+          const isCurrent = i === depth;
+          const isPast = i < depth;
+          return (
+            <div
+              key={i}
+              className="rounded-full transition-all duration-500"
+              style={{
+                width:  isCurrent ? 7 : 5,
+                height: isCurrent ? 7 : 5,
+                background: isCurrent ? '#44403c' : isPast ? '#a8a29e' : '#e7e5e4',
+                boxShadow: isCurrent ? '0 0 0 2px #fafaf9, 0 0 0 3px #78716c' : 'none',
+              }}
+            />
+          );
+        })}
       </div>
     </div>
   );

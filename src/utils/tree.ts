@@ -1,5 +1,12 @@
 import type { AppData } from '../types';
 
+/** Returns the 1-based session number for a given week number (skipped weeks don't create gaps). */
+export function weekToSession(week: number, data: AppData): number {
+  const weeks = [...new Set(Object.values(data.stories).map(s => s.week))].sort((a, b) => a - b);
+  const idx = weeks.indexOf(week);
+  return idx >= 0 ? idx + 1 : week;
+}
+
 export function isDeepSolved(storyId: string, data: AppData): boolean {
   const story = data.stories[storyId];
   if (!story) return false;

@@ -27,6 +27,11 @@ export function StoryIndexPage({ data }: StoryIndexPageProps) {
   const maxDepth = useMemo(() => Math.max(...Object.values(data.stories).map(s => s.depth), 0), [data]);
   const maxWeek  = useMemo(() => Math.max(...Object.values(data.stories).map(s => s.week), 0), [data]);
 
+  const sessionMap = useMemo(() => {
+    const weeks = [...new Set(Object.values(data.stories).map(s => s.week))].sort((a, b) => a - b);
+    return Object.fromEntries(weeks.map((w, i) => [w, i + 1])) as Record<number, number>;
+  }, [data]);
+
   const rows = useMemo(() => {
     let list = Object.values(data.stories).map(story => ({
       story,
@@ -104,11 +109,16 @@ export function StoryIndexPage({ data }: StoryIndexPageProps) {
           </div>
           {maxWeek > 0 && (
             <div className="flex items-center gap-2">
-              <span className="text-[10px] font-mono text-stone-400 uppercase tracking-widest">From week</span>
+              <span className="text-[10px] font-mono text-stone-400 uppercase tracking-widest">From session</span>
               <input
-                type="number" min={0} max={maxWeek} value={filterWeekMin}
-                onChange={e => setFilterWeekMin(Number(e.target.value))}
+                type="number" min={0} max={Object.keys(sessionMap).length} value={filterWeekMin === 0 ? '' : (sessionMap[filterWeekMin] ?? filterWeekMin)}
+                onChange={e => {
+                  const sNum = Number(e.target.value);
+                  const week = Object.entries(sessionMap).find(([, s]) => s === sNum)?.[0];
+                  setFilterWeekMin(week !== undefined ? Number(week) : 0);
+                }}
                 className="w-14 border border-stone-300 rounded bg-white text-stone-700 font-mono text-xs px-2 py-1 focus:outline-none focus:border-stone-500"
+                placeholder="—"
               />
             </div>
           )}
@@ -125,7 +135,7 @@ export function StoryIndexPage({ data }: StoryIndexPageProps) {
                 <th className={thCls('depth')} onClick={() => handleSort('depth')}>Depth{arrow('depth')}</th>
                 <th className="px-3 py-2.5 text-left text-[10px] font-mono uppercase tracking-widest text-stone-400">Parent</th>
                 <th className="px-3 py-2.5 text-left text-[10px] font-mono uppercase tracking-widest text-stone-400">Expands</th>
-                <th className={thCls('week')} onClick={() => handleSort('week')}>Week{arrow('week')}</th>
+                <th className={thCls('week')} onClick={() => handleSort('week')}>Session{arrow('week')}</th>
                 <th className={thCls('words')} onClick={() => handleSort('words')}>Words{arrow('words')}</th>
                 <th className={thCls('density')} onClick={() => handleSort('density')}>Nonce %{arrow('density')}</th>
                 <th className={thCls('expanded')} onClick={() => handleSort('expanded')}>Exp{arrow('expanded')}</th>
@@ -156,7 +166,7 @@ export function StoryIndexPage({ data }: StoryIndexPageProps) {
                     <td className="px-3 py-2.5 font-mono text-[11px] text-stone-500">
                       {story.parent_word ?? '—'}
                     </td>
-                    <td className="px-3 py-2.5 font-mono text-[11px] text-stone-500">{story.week}</td>
+                    <td className="px-3 py-2.5 font-mono text-[11px] text-stone-500">S{sessionMap[story.week] ?? story.week}</td>
                     <td className="px-3 py-2.5 font-mono text-[11px] text-stone-500">{stats.wordCount}</td>
                     <td className="px-3 py-2.5 font-mono text-[11px] text-stone-500">
                       {(stats.nonceDensity * 100).toFixed(1)}%

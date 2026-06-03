@@ -6,7 +6,7 @@ import { Breadcrumb } from './Breadcrumb';
 import { PreviouslyOn } from './PreviouslyOn';
 import { WordTrail } from './WordTrail';
 import { DepthIndicator } from '../Layout/DepthIndicator';
-import { getAncestorPath } from '../../utils/tree';
+import { getAncestorPath, weekToSession } from '../../utils/tree';
 
 interface StoryPanelProps {
   data: AppData;
@@ -96,7 +96,7 @@ export function StoryPanel({ data, initialStoryId, sharedHoverLemma, onHoverLemm
         <div className="mt-10 pt-5 border-t border-stone-200 text-[10px] text-stone-400 font-mono flex flex-wrap gap-x-3 gap-y-1">
           <span>depth {story.depth}</span>
           <span>·</span>
-          <span>week {story.week}</span>
+          <span>session {weekToSession(story.week, data)}</span>
           <span>·</span>
           <span>{story.created}</span>
         </div>

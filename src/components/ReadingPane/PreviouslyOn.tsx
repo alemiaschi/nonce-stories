@@ -18,7 +18,6 @@ function extractSentenceContext(tokens: StoryToken[], targetIdx: number): StoryT
     if (SENTENCE_END.has(prev.text)) break;
     start--;
   }
-  // Skip leading whitespace
   while (start < targetIdx && tokens[start].text.trim() === '') start++;
 
   let end = targetIdx + 1;
@@ -38,8 +37,6 @@ export function PreviouslyOn({ currentStory, data, onNavigate, cameFromId }: Pre
 
   const parentWord = currentStory.parent_word.toLowerCase();
 
-  // Prefer the story the reader actually came from; fall back to primary parent.
-  // If cameFrom doesn't contain the word (e.g. navigated from map), fall back too.
   const resolveParentId = (): string | null => {
     if (cameFromId && cameFromId !== currentStory.id) {
       const s = data.stories[cameFromId];
@@ -55,8 +52,6 @@ export function PreviouslyOn({ currentStory, data, onNavigate, cameFromId }: Pre
   if (!parentStory) return null;
 
   const tokens = parentStory.tokens;
-
-  // Find first nonce token matching parent_word
   const targetIdx = tokens.findIndex(
     t => t.type === 'nonce' && (t.lemma === parentWord || t.text.toLowerCase() === parentWord)
   );
@@ -66,35 +61,35 @@ export function PreviouslyOn({ currentStory, data, onNavigate, cameFromId }: Pre
   const parentLabel = data.breadcrumb_labels[parentId!] ?? parentId;
 
   return (
-    <div className="mb-8 border border-stone-200 rounded bg-stone-50/60">
+    <div className="mb-8 border-l-2 border-amber-300 bg-gradient-to-r from-amber-50/50 to-transparent rounded-r pl-4 pr-2">
       <button
         onClick={() => setCollapsed(c => !c)}
-        className="w-full flex items-center justify-between px-4 py-2.5 text-left"
+        className="w-full flex items-center justify-between py-2.5 text-left gap-3"
       >
-        <span className="font-mono text-[10px] uppercase tracking-widest text-stone-400">
-          ↖ This story explores{' '}
-          <span className="text-amber-700">{currentStory.parent_word}</span>
+        <span className="font-mono text-[10px] uppercase tracking-widest text-stone-400 leading-relaxed">
+          ↳ exploring{' '}
+          <span className="text-amber-700 font-medium">{currentStory.parent_word}</span>
           {' '}from{' '}
           <button
             onClick={e => { e.stopPropagation(); onNavigate(parentId!); }}
-            className="underline underline-offset-2 decoration-dotted text-stone-500 hover:text-stone-800 transition-colors"
+            className="text-stone-500 hover:text-stone-800 transition-colors underline underline-offset-2 decoration-dotted"
           >
             {parentLabel}
           </button>
         </span>
-        <span className="text-stone-400 font-mono text-[10px] ml-4 shrink-0">
-          {collapsed ? '▸ show' : '▾ hide'}
+        <span className="text-stone-300 font-mono text-[10px] shrink-0">
+          {collapsed ? '▸' : '▾'}
         </span>
       </button>
 
       {!collapsed && (
-        <div className="px-4 pb-3 font-serif text-[0.9rem] leading-relaxed text-stone-600 italic border-t border-stone-200 pt-2.5">
+        <div className="pb-3 font-serif text-[0.9rem] leading-relaxed text-stone-600 italic">
           {contextTokens.map((t, i) => {
             const isTarget = t.type === 'nonce' && (
               t.lemma === parentWord || t.text.toLowerCase() === parentWord
             );
             return isTarget
-              ? <span key={i} className="font-mono not-italic text-amber-700 bg-amber-50 px-0.5 rounded">{t.text}</span>
+              ? <span key={i} className="font-mono not-italic text-amber-800 font-medium px-0.5">{t.text}</span>
               : <span key={i}>{t.text}</span>;
           })}
         </div>
